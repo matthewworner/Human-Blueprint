@@ -33,16 +33,19 @@ Opens automatically at `http://localhost:5173`
      - 10 second cooldown before next rupture
 
 3. **Navigation**
-   - Currently camera is fixed (Phase 0)
-   - Rupture transports you to new location
+   - **Drag** to orbit camera around the scene
+   - **Rupture** transports you to a distant image location
+   - **VR button** (bottom right) - enter WebXR if supported
    - Future: Smooth navigation via gaze
 
 ## What You Should See
 
-- **50 colored placeholder images** arranged in a 3D spiral
+- **50 real images** from human history (cave paintings, graffiti, art) arranged in 3D space
 - **Black background** (space-like)
-- **Mouse movement** highlights images
-- **3-second dwell** triggers rupture transport
+- **Mouse movement** highlights images (glow and scale effect)
+- **Generative ambient soundscape** (starts after first click/touch)
+- **3-second dwell** triggers rupture transport with white flash
+- **Orbit controls** - drag to rotate camera around scene
 
 ## Debugging
 

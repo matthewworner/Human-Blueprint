@@ -4,15 +4,18 @@ A spatial computing experience that reveals the pattern of human mark-making con
 
 ## Phase 0: Proof of Concept
 
-**Current Status:** Basic Three.js scene with mouse-based navigation and rupture system.
+**Current Status:** Fully functional Three.js scene with real image loading, gaze tracking, rupture system, and generative audio.
 
 ### Features (Phase 0)
-- ✅ 50 test images in 3D space
-- ✅ Spiral arrangement algorithm
-- ✅ Mouse-based gaze detection
-- ✅ Dwell-triggered rupture system
-- ✅ Basic audio cues
-- ✅ WebXR-ready architecture
+- ✅ 50 real images loaded from JSON (spanning 50,000 years)
+- ✅ Modular positioning system (JSON, Spiral, Grid strategies)
+- ✅ Efficient texture management with caching
+- ✅ Mouse-based gaze detection with dwell tracking
+- ✅ Dwell-triggered rupture system (3-second threshold)
+- ✅ Generative ambient soundscape system
+- ✅ WebXR support (VR button enabled when available)
+- ✅ Click detection on images
+- ✅ Visual feedback (glow, scale) on gaze
 
 ### Getting Started
 
@@ -30,32 +33,42 @@ npm run build
 Visit `http://localhost:5173` in your browser.
 
 ### Controls (Phase 0)
-- **Mouse movement**: Simulates gaze (looks at images)
+- **Mouse movement**: Simulates gaze (looks at images, highlights them)
+- **Click**: Click on images for interaction
+- **Drag**: Orbit camera around the scene (OrbitControls)
 - **Dwell on image**: Hold mouse over image for 3 seconds to trigger rupture
-- **Rupture**: Camera transports to distant image with visual/audio effect
+- **Rupture**: Camera transports to distant image with white flash and audio cue
+- **VR**: Click "Enter VR" button if WebXR is supported
 
 ### Project Structure
 
 ```
 src/
-  main.js                 # Application entry point
+  main.js                 # Application entry point & orchestration
   core/
-    SceneManager.js      # Three.js scene setup
-    ImageLoader.js       # Image loading and metadata
-    ArrangementAlgorithm.js  # 3D positioning logic
-    GazeTracker.js       # Gaze/mouse tracking
-    RuptureSystem.js     # Rupture mechanics
-    AudioSystem.js       # Generative audio (foundation)
+    SceneManager.js      # Three.js scene, camera, renderer, WebXR
+    ImageLoader.js       # Image loading from JSON with async handling
+    PositionStrategy.js  # Modular positioning (JSON, Spiral, Grid)
+    TextureManager.js    # Efficient texture caching and management
+    ArrangementAlgorithm.js  # 3D positioning logic (legacy)
+    GazeTracker.js       # Gaze/mouse tracking with raycasting
+    RuptureSystem.js     # Rupture mechanics and camera transport
+    AudioSystem.js       # Generative ambient soundscapes
+
+public/
+  images.json            # 50 real images with metadata and positions
 ```
 
 ### Next Steps (Phase 1)
 
-- [ ] WebXR integration
-- [ ] Real image loading from APIs
+- [x] Real image loading from JSON ✅
+- [x] WebXR integration (basic) ✅
+- [x] Generative audio system ✅
 - [ ] Multi-dimensional similarity arrangement (t-SNE/UMAP)
-- [ ] Full generative audio system
 - [ ] Eye tracking (Vision Pro)
 - [ ] Connecting thread visualization
+- [ ] Expand image dataset to 500+ images
+- [ ] Continuous image ingestion pipeline
 
 ### Tech Stack
 

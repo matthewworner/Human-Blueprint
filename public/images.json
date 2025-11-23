@@ -1,0 +1,452 @@
+[
+  {
+    "id": "chauvet_handprints_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [15.00, -7.50, 0.00],
+    "era": -32000,
+    "region": "Europe",
+    "colors": ["red", "black"],
+    "type": "handprint"
+  },
+  {
+    "id": "cueva_manos_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cueva_de_las_Manos_%28Santa_Cruz%29.jpg/800px-Cueva_de_las_Manos_%28Santa_Cruz%29.jpg",
+    "position": [12.38, -7.20, 8.99],
+    "era": -7300,
+    "region": "Americas",
+    "colors": ["red", "black", "white"],
+    "type": "handprint"
+  },
+  {
+    "id": "lascaux_bull_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [4.82, -6.90, 14.83],
+    "era": -17000,
+    "region": "Europe",
+    "colors": ["black", "red", "ochre"],
+    "type": "cave_painting"
+  },
+  {
+    "id": "altamira_bison_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [-4.91, -6.60, 15.11],
+    "era": -14000,
+    "region": "Europe",
+    "colors": ["red", "black", "ochre"],
+    "type": "cave_painting"
+  },
+  {
+    "id": "pech_merle_horses_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pech_Merle_Spotted_Horses.jpg/800px-Pech_Merle_Spotted_Horses.jpg",
+    "position": [-13.08, -6.30, 9.50],
+    "era": -25000,
+    "region": "Europe",
+    "colors": ["black", "red"],
+    "type": "cave_painting"
+  },
+  {
+    "id": "el_castillo_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/El_Castillo_Cave_Hand_Stencils.jpg/800px-El_Castillo_Cave_Hand_Stencils.jpg",
+    "position": [-16.44, -6.00, 0.00],
+    "era": -40800,
+    "region": "Europe",
+    "colors": ["red"],
+    "type": "handprint"
+  },
+  {
+    "id": "ubirr_rock_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [-13.51, -5.70, -9.81],
+    "era": -20000,
+    "region": "Oceania",
+    "colors": ["red", "yellow", "white"],
+    "type": "rock_painting"
+  },
+  {
+    "id": "bhimbetka_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [-5.23, -5.40, -16.10],
+    "era": -30000,
+    "region": "Asia",
+    "colors": ["red", "white"],
+    "type": "rock_painting"
+  },
+  {
+    "id": "serra_capivara_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Serra_da_Capivara_Handprints.jpg/800px-Serra_da_Capivara_Handprints.jpg",
+    "position": [5.30, -5.10, -16.31],
+    "era": -25000,
+    "region": "Americas",
+    "colors": ["red"],
+    "type": "handprint"
+  },
+  {
+    "id": "tassili_ajjer_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [14.04, -4.80, -10.20],
+    "era": -6000,
+    "region": "Africa",
+    "colors": ["red", "yellow", "white"],
+    "type": "rock_painting"
+  },
+  {
+    "id": "kakadu_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kakadu_National_Park_Hand_Stencils.jpg/800px-Kakadu_National_Park_Hand_Stencils.jpg",
+    "position": [17.52, -4.50, -0.00],
+    "era": -20000,
+    "region": "Oceania",
+    "colors": ["red", "white"],
+    "type": "handprint"
+  },
+  {
+    "id": "laas_geel_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Laas_Geel_Cave_Paintings.jpg/800px-Laas_Geel_Cave_Paintings.jpg",
+    "position": [14.30, -4.20, 10.39],
+    "era": -9000,
+    "region": "Africa",
+    "colors": ["red", "white", "yellow"],
+    "type": "cave_painting"
+  },
+  {
+    "id": "gargas_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Gargas_Cave_Mutilated_Hand_Stencils.jpg/800px-Gargas_Cave_Mutilated_Hand_Stencils.jpg",
+    "position": [5.50, -3.90, 16.93],
+    "era": -27000,
+    "region": "Europe",
+    "colors": ["red", "black"],
+    "type": "handprint"
+  },
+  {
+    "id": "cosquer_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cosquer_Cave_Hand_Stencils.jpg/800px-Cosquer_Cave_Hand_Stencils.jpg",
+    "position": [-5.53, -3.60, 17.02],
+    "era": -27000,
+    "region": "Europe",
+    "colors": ["red", "black"],
+    "type": "handprint"
+  },
+  {
+    "id": "tadrart_acacus_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Tadrart_Acacus_Rock_Art.jpg/800px-Tadrart_Acacus_Rock_Art.jpg",
+    "position": [-14.53, -3.30, 10.55],
+    "era": -12000,
+    "region": "Africa",
+    "colors": ["red", "black"],
+    "type": "rock_painting"
+  },
+  {
+    "id": "lubang_jeriji_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bull_painting_Lubang_Jeriji_Saléh.jpg/800px-Bull_painting_Lubang_Jeriji_Saléh.jpg",
+    "position": [-17.99, -3.00, 0.00],
+    "era": -40000,
+    "region": "Asia",
+    "colors": ["red", "ochre"],
+    "type": "cave_painting"
+  },
+  {
+    "id": "drakensberg_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Drakensberg_Rock_Art.jpg/800px-Drakensberg_Rock_Art.jpg",
+    "position": [-14.56, -2.70, -10.58],
+    "era": -4000,
+    "region": "Africa",
+    "colors": ["red", "white", "black"],
+    "type": "rock_painting"
+  },
+  {
+    "id": "nazca_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [-5.55, -2.40, -17.10],
+    "era": -500,
+    "region": "Americas",
+    "colors": ["earth", "sand"],
+    "type": "geoglyph"
+  },
+  {
+    "id": "newgrange_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [5.54, -2.10, -17.04],
+    "era": -3200,
+    "region": "Europe",
+    "colors": ["stone", "grey"],
+    "type": "carved"
+  },
+  {
+    "id": "petra_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Petra_Treasury_Facade.jpg/800px-Petra_Treasury_Facade.jpg",
+    "position": [14.43, -1.80, -10.49],
+    "era": -100,
+    "region": "Middle East",
+    "colors": ["red", "brown", "sand"],
+    "type": "carved"
+  },
+  {
+    "id": "egyptian_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [17.73, -1.50, -0.00],
+    "era": -3000,
+    "region": "Middle East",
+    "colors": ["gold", "blue", "black"],
+    "type": "painted"
+  },
+  {
+    "id": "maya_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Maya_Handprint_Mural.jpg/800px-Maya_Handprint_Mural.jpg",
+    "position": [14.23, -1.20, 10.34],
+    "era": 600,
+    "region": "Americas",
+    "colors": ["red", "blue", "white"],
+    "type": "handprint"
+  },
+  {
+    "id": "buddhist_mandala_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [5.38, -0.90, 16.57],
+    "era": 1000,
+    "region": "Asia",
+    "colors": ["gold", "red", "blue", "white"],
+    "type": "painted"
+  },
+  {
+    "id": "celtic_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Celtic_Spiral_Design.jpg/800px-Celtic_Spiral_Design.jpg",
+    "position": [-5.33, -0.60, 16.39],
+    "era": 500,
+    "region": "Europe",
+    "colors": ["black", "red"],
+    "type": "carved"
+  },
+  {
+    "id": "aboriginal_dot_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [-13.77, -0.30, 10.01],
+    "era": 1970,
+    "region": "Oceania",
+    "colors": ["red", "yellow", "black", "white"],
+    "type": "painted"
+  },
+  {
+    "id": "banksy_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [-16.80, 0.00, 0.00],
+    "era": 2010,
+    "region": "Europe",
+    "colors": ["black", "white", "red"],
+    "type": "graffiti"
+  },
+  {
+    "id": "chalk_protest_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [-13.39, 0.30, -9.73],
+    "era": 2020,
+    "region": "Americas",
+    "colors": ["white", "black", "red"],
+    "type": "protest"
+  },
+  {
+    "id": "cairo_graffiti_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [-5.03, 0.60, -15.49],
+    "era": 2011,
+    "region": "Middle East",
+    "colors": ["blue", "red", "black", "white"],
+    "type": "graffiti"
+  },
+  {
+    "id": "hong_kong_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [4.95, 0.90, -15.22],
+    "era": 2019,
+    "region": "Asia",
+    "colors": ["yellow", "black", "white"],
+    "type": "protest"
+  },
+  {
+    "id": "blm_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [12.72, 1.20, -9.24],
+    "era": 2020,
+    "region": "Americas",
+    "colors": ["black", "white", "red", "yellow"],
+    "type": "protest"
+  },
+  {
+    "id": "ukraine_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [15.42, 1.50, -0.00],
+    "era": 2022,
+    "region": "Europe",
+    "colors": ["blue", "yellow", "red"],
+    "type": "protest"
+  },
+  {
+    "id": "sego_canyon_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [12.24, 1.80, 8.89],
+    "era": -2000,
+    "region": "Americas",
+    "colors": ["red", "white"],
+    "type": "handprint"
+  },
+  {
+    "id": "tainter_cave_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [4.58, 2.10, 14.10],
+    "era": -1000,
+    "region": "Americas",
+    "colors": ["red", "black"],
+    "type": "pictograph"
+  },
+  {
+    "id": "chumash_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [-4.49, 2.40, 13.82],
+    "era": -1000,
+    "region": "Americas",
+    "colors": ["red", "black"],
+    "type": "rock_painting"
+  },
+  {
+    "id": "petroglyph_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [-11.52, 2.70, 8.37],
+    "era": -3000,
+    "region": "Americas",
+    "colors": ["stone", "grey"],
+    "type": "carved"
+  },
+  {
+    "id": "maori_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [-13.95, 3.00, 0.00],
+    "era": 1500,
+    "region": "Oceania",
+    "colors": ["black", "red"],
+    "type": "carved"
+  },
+  {
+    "id": "japanese_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Japanese_Handprint_Seal.jpg/800px-Japanese_Handprint_Seal.jpg",
+    "position": [-11.06, 3.30, -8.04],
+    "era": 1800,
+    "region": "Asia",
+    "colors": ["red", "black"],
+    "type": "handprint"
+  },
+  {
+    "id": "indian_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Indian_Handprint_Ritual.jpg/800px-Indian_Handprint_Ritual.jpg",
+    "position": [-4.14, 3.60, -12.75],
+    "era": 1900,
+    "region": "Asia",
+    "colors": ["red", "yellow", "white"],
+    "type": "handprint"
+  },
+  {
+    "id": "african_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/African_Handprint_Ceremony.jpg/800px-African_Handprint_Ceremony.jpg",
+    "position": [4.07, 3.90, -12.52],
+    "era": 1950,
+    "region": "Africa",
+    "colors": ["red", "white", "black"],
+    "type": "handprint"
+  },
+  {
+    "id": "street_art_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Street_Art_Eye_Mural.jpg/800px-Street_Art_Eye_Mural.jpg",
+    "position": [10.47, 4.20, -7.60],
+    "era": 2015,
+    "region": "Americas",
+    "colors": ["blue", "green", "black", "white"],
+    "type": "graffiti"
+  },
+  {
+    "id": "basquiat_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Basquiat_Hand_Drawing.jpg/800px-Basquiat_Hand_Drawing.jpg",
+    "position": [12.73, 4.50, -0.00],
+    "era": 1985,
+    "region": "Americas",
+    "colors": ["black", "red", "blue", "yellow"],
+    "type": "sketch"
+  },
+  {
+    "id": "picasso_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Picasso_Hand_Drawing.jpg/800px-Picasso_Hand_Drawing.jpg",
+    "position": [10.15, 4.80, 7.37],
+    "era": 1950,
+    "region": "Europe",
+    "colors": ["black", "blue"],
+    "type": "sketch"
+  },
+  {
+    "id": "child_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Child_Handprint_Art.jpg/800px-Child_Handprint_Art.jpg",
+    "position": [3.83, 5.10, 11.78],
+    "era": 2021,
+    "region": "Americas",
+    "colors": ["red", "blue", "yellow", "green"],
+    "type": "painted"
+  },
+  {
+    "id": "bathroom_graffiti_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Bathroom_Stall_Graffiti.jpg/800px-Bathroom_Stall_Graffiti.jpg",
+    "position": [-3.79, 5.40, 11.65],
+    "era": 2020,
+    "region": "Americas",
+    "colors": ["black", "blue", "red"],
+    "type": "graffiti"
+  },
+  {
+    "id": "digital_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Digital_Handprint_Art.jpg/800px-Digital_Handprint_Art.jpg",
+    "position": [-9.83, 5.70, 7.14],
+    "era": 2023,
+    "region": "Americas",
+    "colors": ["blue", "green", "white", "black"],
+    "type": "digital"
+  },
+  {
+    "id": "spiral_graffiti_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Spiral_Graffiti_Tag.jpg/800px-Spiral_Graffiti_Tag.jpg",
+    "position": [-12.07, 6.00, 0.00],
+    "era": 2018,
+    "region": "Europe",
+    "colors": ["black", "red", "blue"],
+    "type": "graffiti"
+  },
+  {
+    "id": "eye_graffiti_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Eye_Graffiti_Mural.jpg/800px-Eye_Graffiti_Mural.jpg",
+    "position": [-9.72, 6.30, -7.06],
+    "era": 2017,
+    "region": "Americas",
+    "colors": ["blue", "green", "black", "white"],
+    "type": "graffiti"
+  },
+  {
+    "id": "protest_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Protest_Spiral_Chalk.jpg/800px-Protest_Spiral_Chalk.jpg",
+    "position": [-3.71, 6.60, -11.41],
+    "era": 2021,
+    "region": "Europe",
+    "colors": ["white", "red", "black"],
+    "type": "protest"
+  },
+  {
+    "id": "modern_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Modern_Handprint_Installation.jpg/800px-Modern_Handprint_Installation.jpg",
+    "position": [3.71, 6.90, -11.42],
+    "era": 2022,
+    "region": "Americas",
+    "colors": ["red", "blue", "yellow", "white"],
+    "type": "painted"
+  },
+  {
+    "id": "contemporary_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Contemporary_Spiral_Art.jpg/800px-Contemporary_Spiral_Art.jpg",
+    "position": [9.75, 7.20, -7.08],
+    "era": 2024,
+    "region": "Europe",
+    "colors": ["black", "white", "red", "blue"],
+    "type": "painted"
+  }
+]

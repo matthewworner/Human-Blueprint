@@ -14,15 +14,17 @@ arthistory/
 │   ├── main.js            # Application entry point & orchestration
 │   │
 │   └── core/              # Core system modules
-│       ├── SceneManager.js          # Three.js scene, camera, renderer
-│       ├── ImageLoader.js           # Image loading & metadata generation
-│       ├── ArrangementAlgorithm.js  # 3D positioning logic
-│       ├── GazeTracker.js          # Gaze/mouse detection
-│       ├── RuptureSystem.js         # Rupture mechanics
-│       └── AudioSystem.js          # Generative audio foundation
+│       ├── SceneManager.js          # Three.js scene, camera, renderer, WebXR
+│       ├── ImageLoader.js           # Image loading from JSON with async handling
+│       ├── PositionStrategy.js      # Modular positioning strategies
+│       ├── TextureManager.js        # Efficient texture caching
+│       ├── ArrangementAlgorithm.js  # 3D positioning logic (legacy)
+│       ├── GazeTracker.js          # Gaze/mouse detection with raycasting
+│       ├── RuptureSystem.js         # Rupture mechanics and transport
+│       └── AudioSystem.js          # Generative ambient soundscapes
 │
-└── data/                  # Static JSON data (future)
-    └── images.json        # Image metadata (Phase 1+)
+└── public/                # Static assets
+    └── images.json        # 50 real images with metadata and positions
 ```
 
 ---
@@ -73,17 +75,25 @@ arthistory/
 ---
 
 ### `ImageLoader.js` - Image Data Management
-**Purpose:** Load and generate image metadata
+**Purpose:** Load images from JSON files with async error handling
 
 **Responsibilities:**
-- Load test images (Phase 0)
-- Generate image metadata (temporal, geographic, visual)
-- Create placeholder textures
-- Future: Load from APIs/JSON
+- Load images from JSON files (`/images.json`)
+- Handle async image loading with progress tracking
+- Apply positioning strategies (JSON, Spiral, Grid)
+- Manage texture loading via TextureManager
+- Handle loading errors gracefully (creates placeholders)
 
 **Key Methods:**
-- `loadTestImages(count)` - Generate test image data
-- `loadImageFromURL(url)` - Load actual images (future)
+- `loadFromJSON(path)` - Load images from JSON file
+- `loadTestImages(count)` - Generate test image data (fallback)
+- `setPositionStrategy(strategy)` - Change positioning logic
+- `getLoadingState()` - Get current loading progress
+- `getTextureStats()` - Get texture cache statistics
+
+**Dependencies:**
+- TextureManager (texture caching)
+- PositionStrategy (modular positioning)
 
 **Data Structure:**
 ```javascript
@@ -167,23 +177,65 @@ arthistory/
 
 ---
 
-### `AudioSystem.js` - Generative Audio
-**Purpose:** Generate ambient soundscapes (foundation for Phase 1)
+### `PositionStrategy.js` - Modular Positioning System
+**Purpose:** Flexible positioning strategies for images in 3D space
 
 **Responsibilities:**
-- Initialize Web Audio API
-- Generate rupture audio cues
-- Future: Generate ambient soundscapes based on current images
+- Provide base interface for positioning strategies
+- Implement JSON-based positioning (uses positions from JSON)
+- Implement Spiral positioning (3D spiral arrangement)
+- Implement Grid positioning (3D grid layout)
+- Allow custom strategies via inheritance
+
+**Key Classes:**
+- `BasePositionStrategy` - Abstract base class
+- `JSONPositionStrategy` - Uses positions from JSON (default)
+- `SpiralPositionStrategy` - Arranges in 3D spiral
+- `GridPositionStrategy` - Arranges in 3D grid
+
+**Key Methods:**
+- `getPosition(imageData, index, allImages)` - Calculate position
+
+---
+
+### `TextureManager.js` - Texture Caching
+**Purpose:** Efficient texture loading and memory management
+
+**Responsibilities:**
+- Cache textures to avoid duplicate loads
+- Manage texture loading promises (prevents concurrent loads)
+- Handle texture disposal and cleanup
+- Provide texture statistics
+
+**Key Methods:**
+- `loadTexture(url)` - Load texture with caching
+- `createPlaceholderTexture()` - Create fallback texture
+- `dispose()` - Clean up all textures
+- `getStats()` - Get cache statistics
+
+---
+
+### `AudioSystem.js` - Generative Audio
+**Purpose:** Generate ambient soundscapes based on images and camera position
+
+**Responsibilities:**
+- Initialize Web Audio API context
+- Generate continuous ambient soundscape
+- Play rupture audio cues
+- Update soundscape based on camera position and nearby images
+- Handle browser autoplay policies
 
 **Key Methods:**
 - `init()` - Initialize audio context
-- `triggerRupture()` - Play rupture sound
-- `generateSoundscape(images)` - Future: Eno-style generative audio
+- `startSoundscape(images, camera)` - Start ambient soundscape
+- `triggerRupture()` - Play rupture sound effect
+- `updateSoundscape()` - Update soundscape based on context
 
-**Future:**
-- Real-time synthesis based on image properties
-- Spatial audio positioning
-- Binaural audio for headphones
+**Features:**
+- ✅ Real-time synthesis based on image properties
+- ✅ Spatial audio positioning (based on camera distance)
+- ✅ Continuous ambient drone
+- ✅ Rupture audio cues
 
 ---
 
@@ -192,13 +244,15 @@ arthistory/
 ### Initialization Flow
 ```
 1. main.js creates all core systems
-2. ImageLoader generates test image data
-3. ArrangementAlgorithm calculates positions
-4. SceneManager creates 3D objects
-5. GazeTracker sets up mouse tracking
-6. RuptureSystem initializes
-7. AudioSystem initializes
-8. Render loop starts
+2. ImageLoader loads images from /images.json
+3. PositionStrategy calculates positions (JSON positions used)
+4. TextureManager loads textures asynchronously
+5. SceneManager creates 3D image planes
+6. GazeTracker sets up mouse tracking
+7. RuptureSystem initializes
+8. AudioSystem initializes (waits for user interaction)
+9. Render loop starts
+10. Soundscape starts after first user interaction
 ```
 
 ### Interaction Flow
@@ -284,20 +338,24 @@ npm run build
 ## Phase 0 → Phase 1 Migration Path
 
 ### Current (Phase 0)
-- ✅ 50 test images with generated metadata
-- ✅ Simple spiral arrangement
-- ✅ Mouse-based gaze detection
-- ✅ Basic rupture system
-- ✅ Placeholder textures
+- ✅ 50 real images loaded from JSON (Wikimedia Commons)
+- ✅ Modular positioning system (JSON, Spiral, Grid strategies)
+- ✅ Efficient texture caching (TextureManager)
+- ✅ Mouse-based gaze detection with raycasting
+- ✅ Full rupture system with visual effects
+- ✅ Generative ambient soundscape
+- ✅ WebXR support (VR button)
+- ✅ Click detection on images
 
 ### Phase 1 Goals
-- [ ] Load real images from JSON/APIs
+- [x] Load real images from JSON ✅
+- [x] WebXR integration (basic) ✅
+- [x] Generative audio system ✅
 - [ ] Multi-dimensional similarity arrangement (t-SNE/UMAP)
-- [ ] WebXR integration
 - [ ] Eye tracking (Vision Pro)
-- [ ] Full generative audio system
 - [ ] Connecting thread visualization
-- [ ] Real image textures
+- [ ] Expand to 500+ images
+- [ ] Continuous image ingestion pipeline
 
 ### Migration Steps
 1. Replace `ImageLoader.loadTestImages()` with real data loading
