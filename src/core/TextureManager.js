@@ -16,7 +16,8 @@ export class TextureManager {
             generateMipmaps: true,
             minFilter: THREE.LinearMipmapLinearFilter,
             magFilter: THREE.LinearFilter,
-            format: THREE.RGBAFormat
+            format: THREE.RGBAFormat,
+            colorSpace: THREE.SRGBColorSpace
         };
     }
     
@@ -42,17 +43,23 @@ export class TextureManager {
                 url,
                 (texture) => {
                     // Apply default settings
-                    Object.assign(texture, this.defaultTextureSettings);
+                    texture.flipY = true; // Fix upside-down images
+                    texture.generateMipmaps = true;
+                    texture.minFilter = THREE.LinearMipmapLinearFilter;
+                    texture.magFilter = THREE.LinearFilter;
+                    texture.colorSpace = THREE.SRGBColorSpace;
                     texture.needsUpdate = true;
                     
                     // Cache the texture
                     this.textureCache.set(url, texture);
                     this.loadingPromises.delete(url);
                     
+                    console.log(`Texture loaded: ${url}`);
                     resolve(texture);
                 },
                 undefined, // Progress callback (optional)
                 (error) => {
+                    console.error(`Texture load failed: ${url}`, error);
                     this.loadingPromises.delete(url);
                     reject(error);
                 }

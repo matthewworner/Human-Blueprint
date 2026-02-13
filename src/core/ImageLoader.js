@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { TextureManager } from './TextureManager.js';
 import { JSONPositionStrategy, BasePositionStrategy } from './PositionStrategy.js';
+// ImageClassifier is now dynamically imported only when needed (skipClientAI = false)
 
 /**
  * ImageLoader - Load images from JSON with async error handling
@@ -15,9 +16,12 @@ export class ImageLoader {
     constructor(options = {}) {
         this.textureManager = new TextureManager();
         this.positionStrategy = options.positionStrategy || new JSONPositionStrategy();
+        this.imageClassifier = null; // Lazy load - only if needed
+        this.skipClientAI = options.skipClientAI !== false; // Default to skipping client-side AI
+        this.lazyLoad = options.lazyLoad !== false; // Default to lazy loading
         this.loadedImages = [];
         this.imageObjects = []; // Three.js mesh objects
-        
+
         // Loading state
         this.loadingState = {
             total: 0,
@@ -25,13 +29,13 @@ export class ImageLoader {
             failed: 0,
             inProgress: false
         };
-        
+
         // Callbacks
         this.onProgress = null;
         this.onComplete = null;
         this.onError = null;
     }
-    
+
     /**
      * Set position strategy (allows swapping logic)
      * @param {BasePositionStrategy} strategy - Position strategy instance
@@ -42,20 +46,20 @@ export class ImageLoader {
         }
         this.positionStrategy = strategy;
     }
-    
+
     async loadTestImages(count) {
         // Phase 0: Generate test image data
         // In production, this would load from URLs (museum APIs, scraped sources)
-        
+
         const images = [];
-        
+
         for (let i = 0; i < count; i++) {
             // Generate metadata for test images
             const imageData = {
                 id: `test-${i}`,
                 url: null, // Will use placeholder texture
                 texture: null,
-                
+
                 // Metadata (simulated for Phase 0)
                 temporal: this.generateRandomDate(),
                 geographic: this.generateRandomLocation(),
@@ -65,27 +69,27 @@ export class ImageLoader {
                 source: 'test',
                 confidence: 0.8
             };
-            
+
             images.push(imageData);
         }
-        
+
         return images;
     }
-    
+
     generateRandomDate() {
         // Generate dates spanning 50,000 years
         // Weighted toward more recent (more data available)
         const now = new Date().getTime();
         const yearsAgo = Math.pow(Math.random(), 2) * 50000; // Square for weighting
         const date = new Date(now - yearsAgo * 365.25 * 24 * 60 * 60 * 1000);
-        
+
         return {
             year: date.getFullYear(),
             era: this.getEra(yearsAgo),
             yearsAgo: Math.floor(yearsAgo)
         };
     }
-    
+
     getEra(yearsAgo) {
         if (yearsAgo > 10000) return 'prehistoric';
         if (yearsAgo > 3000) return 'ancient';
@@ -94,7 +98,7 @@ export class ImageLoader {
         if (yearsAgo > 100) return 'modern';
         return 'contemporary';
     }
-    
+
     generateRandomLocation() {
         const regions = [
             { name: 'Europe', lat: 50, lon: 10 },
@@ -104,21 +108,21 @@ export class ImageLoader {
             { name: 'Oceania', lat: -25, lon: 135 },
             { name: 'Middle East', lat: 30, lon: 40 }
         ];
-        
+
         const region = regions[Math.floor(Math.random() * regions.length)];
-        
+
         return {
             region: region.name,
             lat: region.lat + (Math.random() - 0.5) * 20,
             lon: region.lon + (Math.random() - 0.5) * 40
         };
     }
-    
+
     generateRandomColors() {
         // Generate 3-5 dominant colors
         const count = 3 + Math.floor(Math.random() * 3);
         const colors = [];
-        
+
         for (let i = 0; i < count; i++) {
             colors.push({
                 r: Math.random(),
@@ -127,10 +131,10 @@ export class ImageLoader {
                 hex: `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`
             });
         }
-        
+
         return colors;
     }
-    
+
     generateRandomMarkType() {
         const types = [
             'painted', 'carved', 'drawn', 'scratched',
@@ -138,7 +142,7 @@ export class ImageLoader {
         ];
         return types[Math.floor(Math.random() * types.length)];
     }
-    
+
     /**
      * Load images from JSON file
      * @param {string} jsonPath - Path to JSON file
@@ -149,23 +153,29 @@ export class ImageLoader {
             this.loadingState.inProgress = true;
             this.loadingState.loaded = 0;
             this.loadingState.failed = 0;
-            
+
             // Fetch JSON file
+            console.log(`Fetching JSON from: ${jsonPath}`);
             const response = await fetch(jsonPath);
+            console.log(`Fetch response status: ${response.status}, statusText: ${response.statusText}, headers:`, Object.fromEntries(response.headers.entries()));
             if (!response.ok) {
-                throw new Error(`Failed to load JSON: ${response.statusText}`);
+                const responseText = await response.text();
+                console.error(`Failed to load JSON: ${response.status} ${response.statusText}`, responseText);
+                throw new Error(`Failed to load JSON: ${response.status} ${response.statusText} - ${responseText}`);
             }
-            
-            const jsonData = await response.json();
+
+            let jsonData = await response.json();
+            // Remove test limit - use lazy loading instead
+            // jsonData = jsonData.slice(0, 50);
             this.loadingState.total = jsonData.length;
-            
+
             // Load all images in parallel with error handling
-            const loadPromises = jsonData.map((imageData, index) => 
+            const loadPromises = jsonData.map((imageData, index) =>
                 this.loadSingleImage(imageData, index, jsonData)
             );
-            
+
             const results = await Promise.allSettled(loadPromises);
-            
+
             // Process results
             results.forEach((result, index) => {
                 if (result.status === 'fulfilled') {
@@ -174,13 +184,13 @@ export class ImageLoader {
                 } else {
                     console.error(`Failed to load image ${jsonData[index].id}:`, result.reason);
                     this.loadingState.failed++;
-                    
+
                     // Create placeholder for failed images
                     const placeholder = this.createPlaceholderImageData(jsonData[index], index, jsonData);
                     this.loadedImages.push(placeholder);
                     this.loadingState.loaded++;
                 }
-                
+
                 // Report progress
                 if (this.onProgress) {
                     this.onProgress({
@@ -191,26 +201,26 @@ export class ImageLoader {
                     });
                 }
             });
-            
+
             this.loadingState.inProgress = false;
-            
+
             if (this.onComplete) {
                 this.onComplete(this.loadedImages);
             }
-            
+
             return this.loadedImages;
         } catch (error) {
             this.loadingState.inProgress = false;
             console.error('Error loading images from JSON:', error);
-            
+
             if (this.onError) {
                 this.onError(error);
             }
-            
+
             throw error;
         }
     }
-    
+
     /**
      * Load a single image with error handling
      * @param {Object} imageData - Image data from JSON
@@ -222,20 +232,71 @@ export class ImageLoader {
         try {
             // Get position from strategy
             const position = this.positionStrategy.getPosition(imageData, index, allImages);
-            
-            // Load texture
+
+            // Load texture with fallback
             let texture;
+            let classification = null;
+
             if (imageData.url) {
+                // Optimized Loading: Only load first 10 textures immediately
+                // The rest will be lazy-loaded by SceneManager based on camera distance
+                const shouldLoadImmediately = !this.lazyLoad || index < 10;
+
                 try {
-                    texture = await this.textureManager.loadTexture(imageData.url);
+                    if (shouldLoadImmediately) {
+                        texture = await this.textureManager.loadTexture(imageData.url);
+                    } else {
+                        // Skip texture loading for now - SceneManager will handle it
+                        texture = null;
+                    }
+
+                    // Use pre-computed featureVector if available, skip client AI
+                    if (imageData.featureVector) {
+                        // Data was pre-computed by CLI ingest script
+                        classification = {
+                            featureVector: imageData.featureVector,
+                            markType: imageData.type,
+                            era: imageData.era,
+                            region: imageData.region,
+                            confidence: imageData.confidence || 0.9,
+                            preComputed: true
+                        };
+                    } else if (!this.skipClientAI && texture && texture.image) {
+                        // Fallback to client-side AI only if enabled and no pre-computed data
+                        try {
+                            if (!this.imageClassifier) {
+                                const { ImageClassifier } = await import('./ImageClassifier.js');
+                                this.imageClassifier = new ImageClassifier();
+                            }
+                            classification = await this.imageClassifier.classifyImage(texture.image, imageData);
+                            console.log(`Classified ${imageData.id}: ${classification.markType} (${classification.confidence.toFixed(2)} confidence)`);
+                        } catch (classifyError) {
+                            console.warn(`Classification failed for ${imageData.id}:`, classifyError);
+                        }
+                    }
                 } catch (error) {
-                    console.warn(`Failed to load texture for ${imageData.id}, using placeholder:`, error);
-                    texture = this.createPlaceholderTexture(imageData);
+                    console.warn(`Failed to load texture for ${imageData.id}, trying fallback:`, error);
+                    // Try fallback image service
+                    try {
+                        // Use Picsum Photos as fallback - provides working images
+                        const fallbackUrl = `https://picsum.photos/800/600?random=${index}`;
+                        texture = await this.textureManager.loadTexture(fallbackUrl);
+                        console.log(`Using fallback image for ${imageData.id}`);
+                    } catch (fallbackError) {
+                        console.warn(`Fallback also failed for ${imageData.id}, using placeholder:`, fallbackError);
+                        texture = this.createPlaceholderTexture(imageData);
+                    }
                 }
             } else {
-                texture = this.createPlaceholderTexture(imageData);
+                // No URL provided - use Picsum as default
+                try {
+                    const defaultUrl = `https://picsum.photos/800/600?random=${index}`;
+                    texture = await this.textureManager.loadTexture(defaultUrl);
+                } catch (error) {
+                    texture = this.createPlaceholderTexture(imageData);
+                }
             }
-            
+
             // Return enriched image data
             return {
                 id: imageData.id,
@@ -246,11 +307,19 @@ export class ImageLoader {
                 region: imageData.region || 'Unknown',
                 colors: imageData.colors || [],
                 type: imageData.type || 'unknown',
+                // AI classification results
+                classification: classification,
+                featureVector: classification?.featureVector || null,
                 // Additional metadata
                 metadata: {
                     ...imageData,
                     loaded: true,
-                    loadIndex: index
+                    loadIndex: index,
+                    aiConfidence: classification?.confidence || 0,
+                    aiMarkType: classification?.classification?.markType || imageData.type,
+                    aiEra: classification?.classification?.era || imageData.era,
+                    aiRegion: classification?.classification?.region || imageData.region,
+                    aiScale: classification?.classification?.scale || imageData.scale
                 }
             };
         } catch (error) {
@@ -258,7 +327,7 @@ export class ImageLoader {
             throw error;
         }
     }
-    
+
     /**
      * Create placeholder image data for failed loads
      * @param {Object} originalData - Original image data
@@ -269,7 +338,7 @@ export class ImageLoader {
     createPlaceholderImageData(originalData, index, allImages) {
         const position = this.positionStrategy.getPosition(originalData, index, allImages);
         const texture = this.createPlaceholderTexture(originalData);
-        
+
         return {
             id: originalData.id || `placeholder-${index}`,
             url: null,
@@ -287,7 +356,7 @@ export class ImageLoader {
             }
         };
     }
-    
+
     /**
      * Create placeholder texture for an image
      * @param {Object} imageData - Image data
@@ -299,7 +368,7 @@ export class ImageLoader {
         canvas.width = 512;
         canvas.height = 512;
         const ctx = canvas.getContext('2d');
-        
+
         // Use image ID for consistent color, or random
         let hue = 0;
         if (imageData?.id) {
@@ -312,10 +381,10 @@ export class ImageLoader {
         } else {
             hue = Math.random() * 360;
         }
-        
+
         ctx.fillStyle = `hsl(${hue}, 70%, 50%)`;
         ctx.fillRect(0, 0, 512, 512);
-        
+
         // Add some pattern
         ctx.fillStyle = 'rgba(0,0,0,0.3)';
         for (let i = 0; i < 20; i++) {
@@ -326,7 +395,7 @@ export class ImageLoader {
                 Math.random() * 100
             );
         }
-        
+
         // Add text if imageData has info
         if (imageData?.id) {
             ctx.fillStyle = 'rgba(255,255,255,0.8)';
@@ -334,13 +403,13 @@ export class ImageLoader {
             ctx.textAlign = 'center';
             ctx.fillText(imageData.id.substring(0, 20), 256, 256);
         }
-        
+
         const texture = new THREE.Texture(canvas);
-        texture.flipY = false;
+        texture.flipY = true; // Fix upside-down images
         texture.needsUpdate = true;
         return texture;
     }
-    
+
     /**
      * Get loading state
      * @returns {Object} Current loading state
@@ -348,7 +417,7 @@ export class ImageLoader {
     getLoadingState() {
         return { ...this.loadingState };
     }
-    
+
     /**
      * Dispose of all loaded textures
      */
@@ -357,7 +426,7 @@ export class ImageLoader {
         this.loadedImages = [];
         this.imageObjects = [];
     }
-    
+
     /**
      * Get texture manager stats
      * @returns {Object} Texture manager statistics
@@ -365,7 +434,7 @@ export class ImageLoader {
     getTextureStats() {
         return this.textureManager.getStats();
     }
-    
+
     // Legacy methods for backward compatibility
     async loadImageFromURL(url) {
         try {

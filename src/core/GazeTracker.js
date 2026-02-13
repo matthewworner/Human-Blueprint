@@ -5,34 +5,40 @@ export class GazeTracker {
         this.camera = camera;
         this.renderer = renderer;
         this.raycaster = new THREE.Raycaster();
-        
+
         // Device detection
         this.deviceType = this.detectDeviceType();
-        
+
+        // WebXR eye tracking
+        this.xrSession = null;
+        this.xrReferenceSpace = null;
+        this.eyeTrackingSupported = false;
+        this.eyeTrackingEnabled = false;
+
         // Gaze tracking state
         this.currentTarget = null;
         this.currentImageId = null;
         this.dwellStartTime = null;
         this.lastGazeTime = null;
         this.lastTargetChangeTime = null;
-        
+
         // Pattern detection
         this.viewedImages = new Set(); // Track which images have been viewed
         this.gazeHistory = []; // Track recent gaze positions for pattern detection
         this.maxHistoryLength = 10;
         this.scanningThreshold = 500; // ms - rapid target changes = scanning
         this.dwellingThreshold = 2000; // ms - staying on one target = dwelling
-        
+
         // Event callbacks
         this.onGazeStart = null;
         this.onGazeDwell = null;
         this.onGazeEnd = null;
         this.onGazePattern = null;
-        
+
         // Dwell time reporting interval (emit every 500ms while dwelling)
         this.lastDwellReportTime = null;
         this.dwellReportInterval = 500;
-        
+
         // Setup device-specific tracking
         this.setupDeviceTracking();
     }
@@ -40,16 +46,94 @@ export class GazeTracker {
     detectDeviceType() {
         // Detect device type for appropriate gaze tracking
         if (this.renderer.xr && this.renderer.xr.isPresenting) {
+            // Check for Vision Pro specifically
+            const isVisionPro = this.detectVisionPro();
+            if (isVisionPro) {
+                return 'vision_pro';
+            }
             return 'vr';
         }
-        
+
         // Check for mobile device
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (isMobile) {
             return 'phone';
         }
-        
+
         return 'desktop';
+    }
+
+    detectVisionPro() {
+        // Vision Pro detection based on user agent and WebXR capabilities
+        const userAgent = navigator.userAgent;
+        const platform = navigator.platform;
+
+        // Vision Pro specific indicators
+        const visionProIndicators = [
+            'Vision Pro',
+            'Apple Vision',
+            'Reality Pro'
+        ];
+
+        const hasVisionProUA = visionProIndicators.some(indicator =>
+            userAgent.includes(indicator) || platform.includes(indicator)
+        );
+
+        // Also check for high-precision eye tracking capabilities
+        const hasHighPrecisionEyeTracking = navigator.xr &&
+            navigator.xr.isSessionSupported &&
+            this.eyeTrackingSupported === true;
+
+        return hasVisionProUA || (hasHighPrecisionEyeTracking && this.checkVisionProCapabilities());
+    }
+
+    async checkVisionProCapabilities() {
+        // Check for Vision Pro specific WebXR features
+        if (!navigator.xr) return false;
+
+        try {
+            const supported = await navigator.xr.isSessionSupported('immersive-vr', {
+                requiredFeatures: ['eye-tracking', 'hit-test', 'anchors']
+            });
+            return supported;
+        } catch (error) {
+            return false;
+        }
+    }
+
+    async checkEyeTrackingSupport() {
+        if (!navigator.xr) return false;
+
+        try {
+            // Check if eye tracking is supported
+            const supported = await navigator.xr.isSessionSupported('immersive-vr', {
+                requiredFeatures: ['eye-tracking']
+            });
+            return supported;
+        } catch (error) {
+            console.log('Eye tracking support check failed:', error);
+            return false;
+        }
+    }
+
+    async initializeEyeTracking(session) {
+        this.xrSession = session;
+        this.eyeTrackingSupported = await this.checkEyeTrackingSupport();
+
+        if (this.eyeTrackingSupported) {
+            try {
+                // Request eye-level reference space for eye tracking
+                this.xrReferenceSpace = await this.xrSession.requestReferenceSpace('eye-level');
+                this.eyeTrackingEnabled = true;
+                console.log('WebXR eye tracking initialized');
+            } catch (error) {
+                console.warn('Failed to initialize eye tracking:', error);
+                this.eyeTrackingEnabled = false;
+            }
+        } else {
+            console.log('Eye tracking not supported');
+            this.eyeTrackingEnabled = false;
+        }
     }
     
     setupDeviceTracking() {
@@ -57,6 +141,8 @@ export class GazeTracker {
             this.setupDesktopTracking();
         } else if (this.deviceType === 'phone') {
             this.setupPhoneTracking();
+        } else if (this.deviceType === 'vision_pro') {
+            this.setupVisionProTracking();
         } else if (this.deviceType === 'vr') {
             this.setupVRTracking();
         }
@@ -107,17 +193,121 @@ export class GazeTracker {
     
     setupVRTracking() {
         // VR: Raycasting from headset gaze direction
-        // Use camera forward direction in VR mode
         this.mouse = new THREE.Vector2(0, 0); // Center for forward direction
-        
-        // In VR, we'll use the camera's forward direction
-        // The raycaster will be set from camera position and direction
+
+        // Initialize eye tracking if session is available
+        if (this.renderer.xr && this.renderer.xr.getSession) {
+            const session = this.renderer.xr.getSession();
+            if (session) {
+                this.initializeEyeTracking(session);
+            }
+        }
+
+        // Listen for session start events to initialize eye tracking
+        if (this.renderer.xr) {
+            this.renderer.xr.addEventListener('sessionstart', (event) => {
+                this.initializeEyeTracking(event.target.getSession());
+            });
+
+            this.renderer.xr.addEventListener('sessionend', () => {
+                this.eyeTrackingEnabled = false;
+                this.xrSession = null;
+                this.xrReferenceSpace = null;
+            });
+        }
+    }
+
+    setupVisionProTracking() {
+        // Vision Pro: High-precision eye tracking with optimized parameters
+        this.mouse = new THREE.Vector2(0, 0);
+
+        // Vision Pro specific optimizations
+        this.visionProSmoothing = 0.3; // Smoother gaze for Vision Pro's precision
+        this.visionProPrediction = 0.02; // Slight prediction for latency compensation
+        this.visionProConfidenceThreshold = 0.95; // Higher confidence required
+
+        // Initialize eye tracking with Vision Pro optimizations
+        if (this.renderer.xr && this.renderer.xr.getSession) {
+            const session = this.renderer.xr.getSession();
+            if (session) {
+                this.initializeVisionProEyeTracking(session);
+            }
+        }
+
+        // Listen for session events
+        if (this.renderer.xr) {
+            this.renderer.xr.addEventListener('sessionstart', (event) => {
+                this.initializeVisionProEyeTracking(event.target.getSession());
+            });
+
+            this.renderer.xr.addEventListener('sessionend', () => {
+                this.eyeTrackingEnabled = false;
+                this.xrSession = null;
+                this.xrReferenceSpace = null;
+            });
+        }
+    }
+
+    async initializeVisionProEyeTracking(session) {
+        this.xrSession = session;
+        this.eyeTrackingSupported = await this.checkEyeTrackingSupport();
+
+        if (this.eyeTrackingSupported) {
+            try {
+                // Request eye-level reference space optimized for Vision Pro
+                this.xrReferenceSpace = await this.xrSession.requestReferenceSpace('eye-level');
+
+                // Vision Pro specific: Request additional features for better tracking
+                const eyeTrackingFeature = await this.xrSession.requestReferenceSpace('eye-tracking');
+                if (eyeTrackingFeature) {
+                    this.eyeTrackingEnabled = true;
+                    console.log('Vision Pro eye tracking initialized with high precision');
+                } else {
+                    // Fallback to standard eye tracking
+                    this.eyeTrackingEnabled = true;
+                    console.log('Vision Pro eye tracking initialized (standard mode)');
+                }
+            } catch (error) {
+                console.warn('Failed to initialize Vision Pro eye tracking:', error);
+                this.eyeTrackingEnabled = false;
+            }
+        } else {
+            console.log('Vision Pro eye tracking not supported');
+            this.eyeTrackingEnabled = false;
+        }
     }
     
     getGazeDirection() {
         // Returns the ray direction based on device type
-        if (this.deviceType === 'vr') {
-            // VR: Use camera forward direction
+        if (this.deviceType === 'vision_pro') {
+            return this.getVisionProGazeDirection();
+        } else if (this.deviceType === 'vr') {
+            if (this.eyeTrackingEnabled && this.xrSession && this.xrReferenceSpace) {
+                // Use WebXR eye tracking data
+                const frame = this.renderer.xr.getFrame();
+                if (frame) {
+                    const pose = frame.getViewerPose(this.xrReferenceSpace);
+                    if (pose && pose.views.length > 0) {
+                        // Use the first view's transform for gaze direction
+                        const view = pose.views[0];
+                        const matrix = new THREE.Matrix4();
+                        matrix.fromArray(view.transform.matrix);
+
+                        const direction = new THREE.Vector3(0, 0, -1);
+                        direction.applyMatrix4(matrix);
+
+                        const position = new THREE.Vector3();
+                        position.setFromMatrixPosition(matrix);
+
+                        return {
+                            origin: position,
+                            direction: direction
+                        };
+                    }
+                }
+            }
+
+            // Fallback: Use camera forward direction
             const direction = new THREE.Vector3(0, 0, -1);
             direction.applyQuaternion(this.camera.quaternion);
             return {
@@ -132,6 +322,88 @@ export class GazeTracker {
             };
         }
     }
+
+    getVisionProGazeDirection() {
+        if (this.eyeTrackingEnabled && this.xrSession && this.xrReferenceSpace) {
+            const frame = this.renderer.xr.getFrame();
+            if (frame) {
+                const pose = frame.getViewerPose(this.xrReferenceSpace);
+                if (pose && pose.views.length > 0) {
+                    // Vision Pro: Use more precise eye tracking data
+                    const view = pose.views[0];
+                    const matrix = new THREE.Matrix4();
+                    matrix.fromArray(view.transform.matrix);
+
+                    let direction = new THREE.Vector3(0, 0, -1);
+                    direction.applyMatrix4(matrix);
+
+                    const position = new THREE.Vector3();
+                    position.setFromMatrixPosition(matrix);
+
+                    // Vision Pro optimizations: smoothing and prediction
+                    if (!this.lastVisionProDirection) {
+                        this.lastVisionProDirection = direction.clone();
+                        this.lastVisionProPosition = position.clone();
+                    }
+
+                    // Apply smoothing
+                    direction.lerp(this.lastVisionProDirection, this.visionProSmoothing);
+                    position.lerp(this.lastVisionProPosition, this.visionProSmoothing);
+
+                    // Store for next frame
+                    this.lastVisionProDirection = direction.clone();
+                    this.lastVisionProPosition = position.clone();
+
+                    // Add slight prediction for latency compensation
+                    const predictedDirection = direction.clone();
+                    const velocity = this.calculateGazeVelocity();
+                    predictedDirection.add(velocity.multiplyScalar(this.visionProPrediction));
+
+                    return {
+                        origin: position,
+                        direction: predictedDirection,
+                        confidence: this.getVisionProConfidence(frame)
+                    };
+                }
+            }
+        }
+
+        // Fallback: Use camera forward direction
+        const direction = new THREE.Vector3(0, 0, -1);
+        direction.applyQuaternion(this.camera.quaternion);
+        return {
+            origin: this.camera.position.clone(),
+            direction: direction,
+            confidence: 0.5
+        };
+    }
+
+    calculateGazeVelocity() {
+        // Calculate gaze direction velocity for prediction
+        if (!this.previousGazeDirection) {
+            this.previousGazeDirection = new THREE.Vector3(0, 0, -1);
+            return new THREE.Vector3(0, 0, 0);
+        }
+
+        const currentDirection = this.lastVisionProDirection || new THREE.Vector3(0, 0, -1);
+        const velocity = currentDirection.clone().sub(this.previousGazeDirection);
+        this.previousGazeDirection = currentDirection.clone();
+
+        return velocity;
+    }
+
+    getVisionProConfidence(frame) {
+        // Vision Pro specific confidence calculation
+        // In a real implementation, this would use eye tracking quality metrics
+        if (frame && frame.getViewerPose) {
+            const pose = frame.getViewerPose(this.xrReferenceSpace);
+            if (pose && pose.views.length > 0) {
+                // Simplified confidence based on pose stability
+                return Math.min(1.0, pose.views[0].transform ? 1.0 : 0.8);
+            }
+        }
+        return 0.5;
+    }
     
     detectGaze(objects) {
         const now = Date.now();
@@ -139,11 +411,19 @@ export class GazeTracker {
         let imageId = null;
         
         // Perform raycast based on device type
-        if (this.deviceType === 'vr') {
-            // VR: Raycast from camera forward
-            const direction = new THREE.Vector3(0, 0, -1);
-            direction.applyQuaternion(this.camera.quaternion);
-            this.raycaster.set(this.camera.position, direction);
+        if (this.deviceType === 'vision_pro' || this.deviceType === 'vr') {
+            // Vision Pro/VR: Use gaze direction (eye tracking if available, otherwise camera forward)
+            const gazeData = this.getGazeDirection();
+
+            // For Vision Pro, only use high-confidence gaze
+            if (this.deviceType === 'vision_pro' && gazeData.confidence < this.visionProConfidenceThreshold) {
+                // Fallback to camera forward for low confidence
+                const direction = new THREE.Vector3(0, 0, -1);
+                direction.applyQuaternion(this.camera.quaternion);
+                this.raycaster.set(this.camera.position.clone(), direction);
+            } else {
+                this.raycaster.set(gazeData.origin, gazeData.direction);
+            }
         } else {
             // Desktop/Phone: Raycast from mouse position
             this.raycaster.setFromCamera(this.mouse, this.camera);
@@ -276,11 +556,29 @@ export class GazeTracker {
     
     // Get current gaze state
     getCurrentGaze() {
+        const gazeData = this.getGazeDirection();
         return {
             target: this.currentTarget,
             imageId: this.currentImageId,
             dwellTime: this.dwellStartTime ? Date.now() - this.dwellStartTime : 0,
-            deviceType: this.deviceType
+            deviceType: this.deviceType,
+            eyeTrackingEnabled: this.eyeTrackingEnabled,
+            eyeTrackingSupported: this.eyeTrackingSupported,
+            confidence: gazeData.confidence || 1.0,
+            visionProOptimizations: this.deviceType === 'vision_pro' ? {
+                smoothing: this.visionProSmoothing,
+                prediction: this.visionProPrediction,
+                confidenceThreshold: this.visionProConfidenceThreshold
+            } : null
+        };
+    }
+
+    // Get eye tracking status
+    getEyeTrackingStatus() {
+        return {
+            supported: this.eyeTrackingSupported,
+            enabled: this.eyeTrackingEnabled,
+            sessionActive: this.xrSession !== null
         };
     }
     

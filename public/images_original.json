@@ -1,0 +1,8295 @@
+[
+  {
+    "id": "chauvet_handprints_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      15,
+      -7.5,
+      0
+    ],
+    "era": -32000,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "cueva_manos_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cueva_de_las_Manos_%28Santa_Cruz%29.jpg/800px-Cueva_de_las_Manos_%28Santa_Cruz%29.jpg",
+    "position": [
+      12.38,
+      -7.2,
+      8.99
+    ],
+    "era": -7300,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "black",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "lascaux_bull_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      4.82,
+      -6.9,
+      14.83
+    ],
+    "era": -17000,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "red",
+      "ochre"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "altamira_bison_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -4.91,
+      -6.6,
+      15.11
+    ],
+    "era": -14000,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "black",
+      "ochre"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "pech_merle_horses_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pech_Merle_Spotted_Horses.jpg/800px-Pech_Merle_Spotted_Horses.jpg",
+    "position": [
+      -13.08,
+      -6.3,
+      9.5
+    ],
+    "era": -25000,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "el_castillo_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/El_Castillo_Cave_Hand_Stencils.jpg/800px-El_Castillo_Cave_Hand_Stencils.jpg",
+    "position": [
+      -16.44,
+      -6,
+      0
+    ],
+    "era": -40800,
+    "region": "Europe",
+    "colors": [
+      "red"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "ubirr_rock_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -13.51,
+      -5.7,
+      -9.81
+    ],
+    "era": -20000,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "yellow",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "bhimbetka_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -5.23,
+      -5.4,
+      -16.1
+    ],
+    "era": -30000,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "serra_capivara_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Serra_da_Capivara_Handprints.jpg/800px-Serra_da_Capivara_Handprints.jpg",
+    "position": [
+      5.3,
+      -5.1,
+      -16.31
+    ],
+    "era": -25000,
+    "region": "Americas",
+    "colors": [
+      "red"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "tassili_ajjer_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      14.04,
+      -4.8,
+      -10.2
+    ],
+    "era": -6000,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "yellow",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "kakadu_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kakadu_National_Park_Hand_Stencils.jpg/800px-Kakadu_National_Park_Hand_Stencils.jpg",
+    "position": [
+      17.52,
+      -4.5,
+      0
+    ],
+    "era": -20000,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "laas_geel_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Laas_Geel_Cave_Paintings.jpg/800px-Laas_Geel_Cave_Paintings.jpg",
+    "position": [
+      14.3,
+      -4.2,
+      10.39
+    ],
+    "era": -9000,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "white",
+      "yellow"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "gargas_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Gargas_Cave_Mutilated_Hand_Stencils.jpg/800px-Gargas_Cave_Mutilated_Hand_Stencils.jpg",
+    "position": [
+      5.5,
+      -3.9,
+      16.93
+    ],
+    "era": -27000,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "cosquer_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cosquer_Cave_Hand_Stencils.jpg/800px-Cosquer_Cave_Hand_Stencils.jpg",
+    "position": [
+      -5.53,
+      -3.6,
+      17.02
+    ],
+    "era": -27000,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "tadrart_acacus_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Tadrart_Acacus_Rock_Art.jpg/800px-Tadrart_Acacus_Rock_Art.jpg",
+    "position": [
+      -14.53,
+      -3.3,
+      10.55
+    ],
+    "era": -12000,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "lubang_jeriji_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bull_painting_Lubang_Jeriji_Saléh.jpg/800px-Bull_painting_Lubang_Jeriji_Saléh.jpg",
+    "position": [
+      -17.99,
+      -3,
+      0
+    ],
+    "era": -40000,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "ochre"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "drakensberg_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Drakensberg_Rock_Art.jpg/800px-Drakensberg_Rock_Art.jpg",
+    "position": [
+      -14.56,
+      -2.7,
+      -10.58
+    ],
+    "era": -4000,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "white",
+      "black"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "nazca_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -5.55,
+      -2.4,
+      -17.1
+    ],
+    "era": -500,
+    "region": "Americas",
+    "colors": [
+      "earth",
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "newgrange_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      5.54,
+      -2.1,
+      -17.04
+    ],
+    "era": -3200,
+    "region": "Europe",
+    "colors": [
+      "stone",
+      "grey"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "petra_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Petra_Treasury_Facade.jpg/800px-Petra_Treasury_Facade.jpg",
+    "position": [
+      14.43,
+      -1.8,
+      -10.49
+    ],
+    "era": -100,
+    "region": "Middle East",
+    "colors": [
+      "red",
+      "brown",
+      "sand"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "egyptian_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      17.73,
+      -1.5,
+      0
+    ],
+    "era": -3000,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "blue",
+      "black"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "maya_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Maya_Handprint_Mural.jpg/800px-Maya_Handprint_Mural.jpg",
+    "position": [
+      14.23,
+      -1.2,
+      10.34
+    ],
+    "era": 600,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "buddhist_mandala_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      5.38,
+      -0.9,
+      16.57
+    ],
+    "era": 1000,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "red",
+      "blue",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "celtic_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Celtic_Spiral_Design.jpg/800px-Celtic_Spiral_Design.jpg",
+    "position": [
+      -5.33,
+      -0.6,
+      16.39
+    ],
+    "era": 500,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "aboriginal_dot_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -13.77,
+      -0.3,
+      10.01
+    ],
+    "era": 1970,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "yellow",
+      "black",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "banksy_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -16.8,
+      0,
+      0
+    ],
+    "era": 2010,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "white",
+      "red"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "chalk_protest_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -13.39,
+      0.3,
+      -9.73
+    ],
+    "era": 2020,
+    "region": "Americas",
+    "colors": [
+      "white",
+      "black",
+      "red"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "cairo_graffiti_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      -5.03,
+      0.6,
+      -15.49
+    ],
+    "era": 2011,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "red",
+      "black",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "hong_kong_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      4.95,
+      0.9,
+      -15.22
+    ],
+    "era": 2019,
+    "region": "Asia",
+    "colors": [
+      "yellow",
+      "black",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "blm_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      12.72,
+      1.2,
+      -9.24
+    ],
+    "era": 2020,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "white",
+      "red",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "ukraine_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      15.42,
+      1.5,
+      0
+    ],
+    "era": 2022,
+    "region": "Europe",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "sego_canyon_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      12.24,
+      1.8,
+      8.89
+    ],
+    "era": -2000,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "tainter_cave_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      4.58,
+      2.1,
+      14.1
+    ],
+    "era": -1000,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "chumash_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -4.49,
+      2.4,
+      13.82
+    ],
+    "era": -1000,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "petroglyph_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -11.52,
+      2.7,
+      8.37
+    ],
+    "era": -3000,
+    "region": "Americas",
+    "colors": [
+      "stone",
+      "grey"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "maori_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -13.95,
+      3,
+      0
+    ],
+    "era": 1500,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "japanese_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Japanese_Handprint_Seal.jpg/800px-Japanese_Handprint_Seal.jpg",
+    "position": [
+      -11.06,
+      3.3,
+      -8.04
+    ],
+    "era": 1800,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "indian_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Indian_Handprint_Ritual.jpg/800px-Indian_Handprint_Ritual.jpg",
+    "position": [
+      -4.14,
+      3.6,
+      -12.75
+    ],
+    "era": 1900,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "yellow",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "african_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/African_Handprint_Ceremony.jpg/800px-African_Handprint_Ceremony.jpg",
+    "position": [
+      4.07,
+      3.9,
+      -12.52
+    ],
+    "era": 1950,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "white",
+      "black"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "street_art_eye_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Street_Art_Eye_Mural.jpg/800px-Street_Art_Eye_Mural.jpg",
+    "position": [
+      10.47,
+      4.2,
+      -7.6
+    ],
+    "era": 2015,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "green",
+      "black",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "basquiat_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Basquiat_Hand_Drawing.jpg/800px-Basquiat_Hand_Drawing.jpg",
+    "position": [
+      12.73,
+      4.5,
+      0
+    ],
+    "era": 1985,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "red",
+      "blue",
+      "yellow"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "picasso_hand_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Picasso_Hand_Drawing.jpg/800px-Picasso_Hand_Drawing.jpg",
+    "position": [
+      10.15,
+      4.8,
+      7.37
+    ],
+    "era": 1950,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "blue"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "child_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Child_Handprint_Art.jpg/800px-Child_Handprint_Art.jpg",
+    "position": [
+      3.83,
+      5.1,
+      11.78
+    ],
+    "era": 2021,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "blue",
+      "yellow",
+      "green"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "bathroom_graffiti_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Bathroom_Stall_Graffiti.jpg/800px-Bathroom_Stall_Graffiti.jpg",
+    "position": [
+      -3.79,
+      5.4,
+      11.65
+    ],
+    "era": 2020,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "blue",
+      "red"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "digital_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Digital_Handprint_Art.jpg/800px-Digital_Handprint_Art.jpg",
+    "position": [
+      -9.83,
+      5.7,
+      7.14
+    ],
+    "era": 2023,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "green",
+      "white",
+      "black"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "spiral_graffiti_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Spiral_Graffiti_Tag.jpg/800px-Spiral_Graffiti_Tag.jpg",
+    "position": [
+      -12.07,
+      6,
+      0
+    ],
+    "era": 2018,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "red",
+      "blue"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "eye_graffiti_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Eye_Graffiti_Mural.jpg/800px-Eye_Graffiti_Mural.jpg",
+    "position": [
+      -9.72,
+      6.3,
+      -7.06
+    ],
+    "era": 2017,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "green",
+      "black",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "protest_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Protest_Spiral_Chalk.jpg/800px-Protest_Spiral_Chalk.jpg",
+    "position": [
+      -3.71,
+      6.6,
+      -11.41
+    ],
+    "era": 2021,
+    "region": "Europe",
+    "colors": [
+      "white",
+      "red",
+      "black"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "modern_handprint_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Modern_Handprint_Installation.jpg/800px-Modern_Handprint_Installation.jpg",
+    "position": [
+      3.71,
+      6.9,
+      -11.42
+    ],
+    "era": 2022,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "contemporary_spiral_001",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Contemporary_Spiral_Art.jpg/800px-Contemporary_Spiral_Art.jpg",
+    "position": [
+      9.75,
+      7.2,
+      -7.08
+    ],
+    "era": 2024,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "white",
+      "red",
+      "blue"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_051",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      6.71,
+      -3.45,
+      -6.46
+    ],
+    "era": -30262,
+    "region": "Europe",
+    "colors": [
+      "ochre",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_052",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      13.46,
+      -3.19,
+      17.48
+    ],
+    "era": -39495,
+    "region": "Middle East",
+    "colors": [
+      "stone",
+      "yellow",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_053",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      8.64,
+      7.7,
+      -6.02
+    ],
+    "era": -37272,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_054",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -2.07,
+      -2.62,
+      -3.62
+    ],
+    "era": -34272,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "blue",
+      "green",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_055",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -13.05,
+      2.3,
+      9.73
+    ],
+    "era": -36337,
+    "region": "Africa",
+    "colors": [
+      "ochre"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_056",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -11.91,
+      -1.6,
+      -16.34
+    ],
+    "era": -27191,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "blue",
+      "black",
+      "sand"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_057",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      19.78,
+      -1.49,
+      -11.46
+    ],
+    "era": -30491,
+    "region": "Europe",
+    "colors": [
+      "stone"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_058",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -3.45,
+      4.74,
+      -6.64
+    ],
+    "era": -38152,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "blue",
+      "grey",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_059",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -5.34,
+      8.02,
+      -9.44
+    ],
+    "era": -47774,
+    "region": "Americas",
+    "colors": [
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_060",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      18.73,
+      1.97,
+      10.38
+    ],
+    "era": -12495,
+    "region": "Oceania",
+    "colors": [
+      "yellow"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_061",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      -8.03,
+      1.41,
+      -14.11
+    ],
+    "era": -47945,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "grey",
+      "yellow"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_062",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -0.39,
+      -0.19,
+      4.04
+    ],
+    "era": -25394,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "ochre",
+      "sand",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_063",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      -16.22,
+      6.18,
+      18.47
+    ],
+    "era": -13443,
+    "region": "Asia",
+    "colors": [
+      "green",
+      "blue",
+      "grey"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_064",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      5.82,
+      -8.46,
+      14.12
+    ],
+    "era": -25718,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_065",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -5.08,
+      -2.3,
+      -0.92
+    ],
+    "era": -46541,
+    "region": "Americas",
+    "colors": [
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_066",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      17.91,
+      -9.1,
+      -16.41
+    ],
+    "era": -42286,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "black",
+      "green",
+      "sand"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_067",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      0.77,
+      -6.95,
+      16.41
+    ],
+    "era": -47418,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_068",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -11.9,
+      8.51,
+      -13.8
+    ],
+    "era": -47433,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "grey",
+      "sand",
+      "brown"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_069",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -6.91,
+      -2.3,
+      -14.39
+    ],
+    "era": -32265,
+    "region": "Middle East",
+    "colors": [
+      "green",
+      "blue",
+      "ochre",
+      "grey"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_070",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      18.44,
+      0.19,
+      -19.79
+    ],
+    "era": -43618,
+    "region": "Europe",
+    "colors": [
+      "green",
+      "sand",
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_071",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      6.4,
+      8.83,
+      5.49
+    ],
+    "era": -12235,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "green"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_072",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      14.54,
+      3.93,
+      0.76
+    ],
+    "era": -18866,
+    "region": "Africa",
+    "colors": [
+      "ochre",
+      "grey",
+      "sand"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_073",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      -12.44,
+      1.92,
+      -10.72
+    ],
+    "era": -42771,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "blue",
+      "green",
+      "white"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_074",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -9.3,
+      4.08,
+      -15.67
+    ],
+    "era": -14550,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "stone",
+      "yellow"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_075",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      19.71,
+      -9.53,
+      -10.48
+    ],
+    "era": -36532,
+    "region": "Americas",
+    "colors": [
+      "yellow"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_076",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -3.14,
+      4.84,
+      7.84
+    ],
+    "era": -28552,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "blue",
+      "ochre",
+      "brown"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_077",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -9.61,
+      3.82,
+      -0.66
+    ],
+    "era": -22636,
+    "region": "Middle East",
+    "colors": [
+      "stone",
+      "blue",
+      "ochre",
+      "grey"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_078",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      6.34,
+      -0.18,
+      9.21
+    ],
+    "era": -11349,
+    "region": "Africa",
+    "colors": [
+      "black",
+      "stone",
+      "sand",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_079",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      16.64,
+      -8.14,
+      17.82
+    ],
+    "era": -25067,
+    "region": "Oceania",
+    "colors": [
+      "green",
+      "sand",
+      "brown"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_080",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -6.75,
+      5.83,
+      0.68
+    ],
+    "era": -11437,
+    "region": "Middle East",
+    "colors": [
+      "green",
+      "blue",
+      "red",
+      "grey"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_081",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -5.36,
+      -3.07,
+      -0.33
+    ],
+    "era": -48625,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "stone",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_082",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      -0.71,
+      -5.78,
+      -6
+    ],
+    "era": -12595,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "grey",
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_083",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      8.84,
+      0.82,
+      10.19
+    ],
+    "era": -26163,
+    "region": "Europe",
+    "colors": [
+      "blue",
+      "stone"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_084",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      18.91,
+      -1.03,
+      -9.06
+    ],
+    "era": -44408,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "ochre",
+      "red",
+      "brown"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_085",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      5.16,
+      7.55,
+      11.06
+    ],
+    "era": -31385,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "grey",
+      "sand",
+      "ochre"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_086",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      13.3,
+      -1.4,
+      -9.7
+    ],
+    "era": -38899,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "stone"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_087",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      6.37,
+      0.52,
+      -5.11
+    ],
+    "era": -42320,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "blue",
+      "yellow"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_088",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      -5.59,
+      -6.62,
+      17.9
+    ],
+    "era": -15271,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "green"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_089",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      14.7,
+      2.44,
+      8.64
+    ],
+    "era": -32628,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "stone"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_090",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -0.86,
+      -9.36,
+      -9.55
+    ],
+    "era": -46272,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "red",
+      "grey",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_091",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      17.91,
+      -7.6,
+      -5.73
+    ],
+    "era": -28997,
+    "region": "Europe",
+    "colors": [
+      "grey",
+      "brown"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_092",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      10.48,
+      6.14,
+      4.83
+    ],
+    "era": -31772,
+    "region": "Americas",
+    "colors": [
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_093",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      1.08,
+      -3.17,
+      14.98
+    ],
+    "era": -30499,
+    "region": "Africa",
+    "colors": [
+      "black"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_094",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      16.46,
+      2.66,
+      -18.64
+    ],
+    "era": -44627,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "black",
+      "sand",
+      "ochre"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_095",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -8.27,
+      -4.91,
+      -19.64
+    ],
+    "era": -26627,
+    "region": "Africa",
+    "colors": [
+      "stone"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_096",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -11.67,
+      3.74,
+      -19.85
+    ],
+    "era": -35443,
+    "region": "Americas",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_097",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -3.14,
+      2.39,
+      2.84
+    ],
+    "era": -31413,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "green"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_098",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -3.94,
+      2.2,
+      -15.29
+    ],
+    "era": -38322,
+    "region": "Europe",
+    "colors": [
+      "grey",
+      "stone",
+      "sand",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_099",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -11.38,
+      4.29,
+      -2.22
+    ],
+    "era": -46518,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "stone",
+      "ochre",
+      "yellow"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_100",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      13.8,
+      -0.37,
+      11.88
+    ],
+    "era": -30960,
+    "region": "Middle East",
+    "colors": [
+      "red",
+      "sand",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_101",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -1.73,
+      8.14,
+      9.62
+    ],
+    "era": -48847,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "ochre",
+      "yellow",
+      "brown"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_102",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -4.76,
+      8.17,
+      -8.2
+    ],
+    "era": -31732,
+    "region": "Oceania",
+    "colors": [
+      "green",
+      "red",
+      "stone"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_103",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -12.96,
+      -2.29,
+      -16.66
+    ],
+    "era": -18400,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "green",
+      "brown"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_104",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -19.56,
+      7.25,
+      12.84
+    ],
+    "era": -46307,
+    "region": "Americas",
+    "colors": [
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_105",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      7.14,
+      -8.27,
+      19.44
+    ],
+    "era": -28589,
+    "region": "Africa",
+    "colors": [
+      "red"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_106",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -12.68,
+      -5.43,
+      -16.37
+    ],
+    "era": -30600,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "grey",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_107",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -6.76,
+      -5.66,
+      2.08
+    ],
+    "era": -37936,
+    "region": "Oceania",
+    "colors": [
+      "red"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_108",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      4.32,
+      7.09,
+      10.7
+    ],
+    "era": -27629,
+    "region": "Africa",
+    "colors": [
+      "black",
+      "stone",
+      "sand"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_109",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -8.98,
+      4.62,
+      -4.9
+    ],
+    "era": -24090,
+    "region": "Middle East",
+    "colors": [
+      "ochre"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_110",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      18.54,
+      7.64,
+      -11.9
+    ],
+    "era": -25319,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "red",
+      "stone",
+      "ochre"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_111",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -17.83,
+      -8.53,
+      -13.04
+    ],
+    "era": -13914,
+    "region": "Europe",
+    "colors": [
+      "green",
+      "sand",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_112",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      14.43,
+      7.24,
+      -11.55
+    ],
+    "era": -24389,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "black",
+      "grey",
+      "brown"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_113",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -5.43,
+      3.84,
+      -1.64
+    ],
+    "era": -39276,
+    "region": "Middle East",
+    "colors": [
+      "brown"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_114",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      14.93,
+      8.07,
+      -17.94
+    ],
+    "era": -27774,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "stone"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_115",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      9.47,
+      -8.06,
+      11.27
+    ],
+    "era": -3036,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "black",
+      "green",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_116",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -9.51,
+      9.82,
+      3.19
+    ],
+    "era": -7117,
+    "region": "Europe",
+    "colors": [
+      "green",
+      "grey",
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_117",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -10.91,
+      9.21,
+      7.38
+    ],
+    "era": -8665,
+    "region": "Oceania",
+    "colors": [
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_118",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      1.81,
+      -4.31,
+      15.99
+    ],
+    "era": -6658,
+    "region": "Oceania",
+    "colors": [
+      "ochre",
+      "sand",
+      "yellow",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_119",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -19.47,
+      4.8,
+      -0.14
+    ],
+    "era": -6523,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "ochre",
+      "green",
+      "brown"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_120",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      0.37,
+      2.6,
+      -13.39
+    ],
+    "era": -7576,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_121",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      9.81,
+      1.33,
+      -8.2
+    ],
+    "era": -4611,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "black",
+      "ochre",
+      "red"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_122",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      18.04,
+      -8.13,
+      -1.71
+    ],
+    "era": -3949,
+    "region": "Asia",
+    "colors": [
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_123",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -17.69,
+      -5.78,
+      -6.7
+    ],
+    "era": -4547,
+    "region": "Asia",
+    "colors": [
+      "white",
+      "black",
+      "brown"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_124",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      14.44,
+      -2.94,
+      2.91
+    ],
+    "era": -4127,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "sand"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_125",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      1.38,
+      2.53,
+      3.55
+    ],
+    "era": -4419,
+    "region": "Americas",
+    "colors": [
+      "sand"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_126",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      19.98,
+      1,
+      -12.85
+    ],
+    "era": -7421,
+    "region": "Middle East",
+    "colors": [
+      "red"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_127",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -16.78,
+      -6.21,
+      -6.52
+    ],
+    "era": -3942,
+    "region": "Europe",
+    "colors": [
+      "sand"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_128",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -5.93,
+      -2.04,
+      -3.82
+    ],
+    "era": -5910,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_129",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      11.47,
+      -4.52,
+      -11.95
+    ],
+    "era": -5290,
+    "region": "Oceania",
+    "colors": [
+      "stone",
+      "yellow",
+      "white"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_130",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      0.38,
+      6.57,
+      13.21
+    ],
+    "era": -6359,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "brown"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_131",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -6.15,
+      6.97,
+      -9.45
+    ],
+    "era": -6812,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "blue",
+      "grey",
+      "sand"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_132",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -0.94,
+      -5.17,
+      -14.56
+    ],
+    "era": -3142,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_133",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -17.35,
+      -1.92,
+      -14.7
+    ],
+    "era": -5104,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_134",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      8.56,
+      -7.52,
+      -7.63
+    ],
+    "era": -6107,
+    "region": "Asia",
+    "colors": [
+      "ochre",
+      "sand",
+      "red",
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_135",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -11.19,
+      6.21,
+      11.17
+    ],
+    "era": -4183,
+    "region": "Africa",
+    "colors": [
+      "gold"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_136",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      4.01,
+      -7.43,
+      -17.19
+    ],
+    "era": -8039,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "blue",
+      "ochre",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_137",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      18.75,
+      -7.65,
+      -17.39
+    ],
+    "era": -8648,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "sand"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_138",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      6.28,
+      3.46,
+      18.7
+    ],
+    "era": -4621,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_139",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      14.91,
+      9.46,
+      18.11
+    ],
+    "era": -3099,
+    "region": "Europe",
+    "colors": [
+      "white"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_140",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      5.41,
+      8.68,
+      -2.78
+    ],
+    "era": -4492,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "black",
+      "ochre"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_141",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -14.23,
+      -7.42,
+      -0.46
+    ],
+    "era": -8379,
+    "region": "Europe",
+    "colors": [
+      "green",
+      "sand",
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_142",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      18.58,
+      -9.9,
+      -15.13
+    ],
+    "era": -8673,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "ochre",
+      "yellow"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_143",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      11.86,
+      1.69,
+      -13.04
+    ],
+    "era": -6965,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "grey"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_144",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -10.66,
+      4.81,
+      7.7
+    ],
+    "era": -8766,
+    "region": "Middle East",
+    "colors": [
+      "grey",
+      "ochre",
+      "stone",
+      "yellow"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_145",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      3.46,
+      -1.34,
+      16.36
+    ],
+    "era": -9751,
+    "region": "Middle East",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_146",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -5.49,
+      -2.62,
+      8.78
+    ],
+    "era": -6155,
+    "region": "Africa",
+    "colors": [
+      "sand"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_147",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      10.68,
+      6.39,
+      -0.54
+    ],
+    "era": -8723,
+    "region": "Asia",
+    "colors": [
+      "sand",
+      "white"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_148",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      11.84,
+      8.92,
+      18.76
+    ],
+    "era": -3091,
+    "region": "Americas",
+    "colors": [
+      "yellow",
+      "red",
+      "sand",
+      "ochre"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_149",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      1.96,
+      0.49,
+      19.65
+    ],
+    "era": -5407,
+    "region": "Asia",
+    "colors": [
+      "brown",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_150",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      16.69,
+      6.64,
+      18.13
+    ],
+    "era": -7481,
+    "region": "Africa",
+    "colors": [
+      "ochre",
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_151",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      15.17,
+      8.01,
+      -17.53
+    ],
+    "era": -7913,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "black",
+      "red",
+      "green"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_152",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -9.07,
+      -0.61,
+      7.77
+    ],
+    "era": -5752,
+    "region": "Asia",
+    "colors": [
+      "gold"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_153",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      12.21,
+      8.13,
+      8.14
+    ],
+    "era": -8047,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "red",
+      "green",
+      "sand"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_154",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -13.88,
+      8.56,
+      -12.64
+    ],
+    "era": -9144,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "ochre",
+      "green",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_155",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -5.01,
+      7.41,
+      18.73
+    ],
+    "era": -6929,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "grey",
+      "sand",
+      "yellow"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_156",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      4.09,
+      0.59,
+      17.16
+    ],
+    "era": -8794,
+    "region": "Oceania",
+    "colors": [
+      "ochre"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_157",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -6.97,
+      2.9,
+      13.48
+    ],
+    "era": -3942,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "green",
+      "stone",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_158",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      19.75,
+      -2.37,
+      18.94
+    ],
+    "era": -9959,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "grey",
+      "red",
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_159",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -15.84,
+      -7.52,
+      9.69
+    ],
+    "era": -5068,
+    "region": "Americas",
+    "colors": [
+      "red"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_160",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -18.56,
+      -9.63,
+      3.34
+    ],
+    "era": -3588,
+    "region": "Oceania",
+    "colors": [
+      "brown",
+      "black",
+      "sand",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_161",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -6.42,
+      -6.57,
+      15.64
+    ],
+    "era": -4852,
+    "region": "Middle East",
+    "colors": [
+      "red",
+      "brown"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_162",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      18.66,
+      -8.53,
+      19.35
+    ],
+    "era": -3857,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "grey",
+      "yellow"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_163",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -18.79,
+      -3.88,
+      8.84
+    ],
+    "era": -7346,
+    "region": "Asia",
+    "colors": [
+      "stone",
+      "black",
+      "green",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_164",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      13.69,
+      4.79,
+      -6.46
+    ],
+    "era": -7214,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "ochre",
+      "sand"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_165",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      3.21,
+      -0.18,
+      -1.74
+    ],
+    "era": -3402,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "blue",
+      "green",
+      "yellow"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_166",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -9.41,
+      -6.1,
+      15.97
+    ],
+    "era": -6576,
+    "region": "Africa",
+    "colors": [
+      "green",
+      "blue",
+      "stone",
+      "yellow"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_167",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -13.36,
+      -3.83,
+      -14.46
+    ],
+    "era": -9872,
+    "region": "Middle East",
+    "colors": [
+      "grey",
+      "stone",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_168",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      0.19,
+      5.83,
+      0.17
+    ],
+    "era": -7305,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "ochre",
+      "brown"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_169",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      5.22,
+      -3.75,
+      -6.53
+    ],
+    "era": -3436,
+    "region": "Asia",
+    "colors": [
+      "blue"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_170",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      1.72,
+      -4.11,
+      -0.31
+    ],
+    "era": -9745,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_171",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -5.84,
+      8.03,
+      -15.23
+    ],
+    "era": -6906,
+    "region": "Oceania",
+    "colors": [
+      "sand"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_172",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -14.09,
+      6.08,
+      17.95
+    ],
+    "era": -7409,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "sand",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_173",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -17.12,
+      7.34,
+      -18.73
+    ],
+    "era": -4789,
+    "region": "Europe",
+    "colors": [
+      "white",
+      "ochre",
+      "stone",
+      "brown"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_174",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      1.64,
+      -4.82,
+      10.88
+    ],
+    "era": -8465,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "sand",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_175",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      9.57,
+      3.7,
+      9.64
+    ],
+    "era": -6309,
+    "region": "Africa",
+    "colors": [
+      "ochre",
+      "yellow",
+      "brown"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_176",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      1.87,
+      -0.72,
+      -13.19
+    ],
+    "era": -5016,
+    "region": "Asia",
+    "colors": [
+      "brown"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_177",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      13.63,
+      -2.8,
+      18.47
+    ],
+    "era": -7333,
+    "region": "Africa",
+    "colors": [
+      "green"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_178",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      17.83,
+      -6.77,
+      10.1
+    ],
+    "era": -7053,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_179",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -10.03,
+      -6.98,
+      -13.37
+    ],
+    "era": -5632,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "black",
+      "green"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_180",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      16.79,
+      5.7,
+      7.33
+    ],
+    "era": -611,
+    "region": "Middle East",
+    "colors": [
+      "ochre",
+      "green",
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_181",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -15.68,
+      -9.83,
+      4.87
+    ],
+    "era": -1140,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "blue",
+      "ochre"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_182",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      16.95,
+      -1.07,
+      -4.79
+    ],
+    "era": -2092,
+    "region": "Americas",
+    "colors": [
+      "sand",
+      "yellow",
+      "brown"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_183",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      2.21,
+      1.84,
+      -3
+    ],
+    "era": -2979,
+    "region": "Africa",
+    "colors": [
+      "brown",
+      "blue",
+      "ochre",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_184",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      15.43,
+      0.87,
+      -19.67
+    ],
+    "era": -408,
+    "region": "Middle East",
+    "colors": [
+      "white",
+      "ochre",
+      "blue",
+      "brown"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_185",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -2.8,
+      -5.04,
+      6.01
+    ],
+    "era": -2166,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "sand",
+      "yellow"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_186",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -8.73,
+      -2.62,
+      -7.66
+    ],
+    "era": -373,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "sand",
+      "brown"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_187",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      8.75,
+      2.79,
+      18.51
+    ],
+    "era": -1013,
+    "region": "Europe",
+    "colors": [
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_188",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -0.83,
+      -8.99,
+      -5.26
+    ],
+    "era": -1974,
+    "region": "Africa",
+    "colors": [
+      "black"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_189",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      14.24,
+      4.3,
+      -9.73
+    ],
+    "era": -586,
+    "region": "Americas",
+    "colors": [
+      "green",
+      "grey",
+      "sand",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_190",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      16.33,
+      -7.72,
+      -9.23
+    ],
+    "era": -443,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "red",
+      "sand",
+      "ochre"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_191",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -8.22,
+      -4.19,
+      -14.91
+    ],
+    "era": -2286,
+    "region": "Americas",
+    "colors": [
+      "green",
+      "blue",
+      "stone",
+      "sand"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_192",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -19.45,
+      2.89,
+      -18.88
+    ],
+    "era": -1210,
+    "region": "Americas",
+    "colors": [
+      "ochre",
+      "yellow",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_193",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      10.46,
+      -6.57,
+      6.65
+    ],
+    "era": -732,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "green",
+      "stone",
+      "sand"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_194",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -6.69,
+      8.97,
+      8.5
+    ],
+    "era": -154,
+    "region": "Asia",
+    "colors": [
+      "ochre"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_195",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      3.4,
+      -6.08,
+      -7.44
+    ],
+    "era": -1245,
+    "region": "Africa",
+    "colors": [
+      "brown",
+      "ochre",
+      "stone",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_196",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -1.55,
+      7.77,
+      4.91
+    ],
+    "era": -1807,
+    "region": "Oceania",
+    "colors": [
+      "gold"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_197",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -16.84,
+      -2.45,
+      -2.82
+    ],
+    "era": -1802,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "blue",
+      "black",
+      "green"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_198",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -17.19,
+      -2.91,
+      -18.83
+    ],
+    "era": -1008,
+    "region": "Europe",
+    "colors": [
+      "brown"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_199",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      15.09,
+      5.5,
+      -11.52
+    ],
+    "era": -2050,
+    "region": "Asia",
+    "colors": [
+      "blue"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_200",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -16.91,
+      -7.24,
+      5.63
+    ],
+    "era": -1334,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "black",
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_201",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      3.17,
+      -3.16,
+      3.59
+    ],
+    "era": -2771,
+    "region": "Africa",
+    "colors": [
+      "black"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_202",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      12.56,
+      -8.49,
+      -11.18
+    ],
+    "era": -1856,
+    "region": "Africa",
+    "colors": [
+      "red"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_203",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -12.98,
+      4.42,
+      -15.85
+    ],
+    "era": -335,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "black",
+      "stone",
+      "red"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_204",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -13.7,
+      4.62,
+      -11.39
+    ],
+    "era": -2704,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "grey",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_205",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -12.29,
+      6.03,
+      -16.41
+    ],
+    "era": -2262,
+    "region": "Middle East",
+    "colors": [
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_206",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -11.63,
+      7.35,
+      9.7
+    ],
+    "era": -2310,
+    "region": "Americas",
+    "colors": [
+      "ochre",
+      "stone"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_207",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -4.44,
+      9.39,
+      4.5
+    ],
+    "era": -487,
+    "region": "Middle East",
+    "colors": [
+      "red",
+      "sand"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_208",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      16.08,
+      -2.19,
+      -10
+    ],
+    "era": -2980,
+    "region": "Americas",
+    "colors": [
+      "sand",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_209",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      0.97,
+      2.51,
+      7.65
+    ],
+    "era": -864,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "grey",
+      "stone",
+      "sand"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_210",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -13.5,
+      -4.09,
+      8.75
+    ],
+    "era": -452,
+    "region": "Middle East",
+    "colors": [
+      "grey",
+      "green"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_211",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      13.19,
+      6.52,
+      19.37
+    ],
+    "era": -1774,
+    "region": "Europe",
+    "colors": [
+      "ochre",
+      "green",
+      "red"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_212",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -2.06,
+      -0.94,
+      5.35
+    ],
+    "era": -675,
+    "region": "Africa",
+    "colors": [
+      "green",
+      "sand",
+      "yellow",
+      "white"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_213",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      2.49,
+      -8.14,
+      -12.79
+    ],
+    "era": -2348,
+    "region": "Africa",
+    "colors": [
+      "blue"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_214",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      3.36,
+      -9.11,
+      15.78
+    ],
+    "era": -2908,
+    "region": "Europe",
+    "colors": [
+      "stone"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_215",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      2.42,
+      3.17,
+      8.59
+    ],
+    "era": -848,
+    "region": "Africa",
+    "colors": [
+      "grey"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_216",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      12.6,
+      -9.85,
+      3.49
+    ],
+    "era": -2811,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "grey",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_217",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -17.52,
+      2.66,
+      6.25
+    ],
+    "era": -1316,
+    "region": "Asia",
+    "colors": [
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_218",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      5.78,
+      -0.91,
+      -3.59
+    ],
+    "era": -1931,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "green"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_219",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -10.1,
+      -0.08,
+      -16.44
+    ],
+    "era": -2364,
+    "region": "Africa",
+    "colors": [
+      "black",
+      "ochre"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_220",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -14.34,
+      2.08,
+      12.15
+    ],
+    "era": -357,
+    "region": "Europe",
+    "colors": [
+      "grey",
+      "sand"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_221",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      8.17,
+      -5.16,
+      -18.85
+    ],
+    "era": -2838,
+    "region": "Asia",
+    "colors": [
+      "green"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_222",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      19.67,
+      5.8,
+      14.11
+    ],
+    "era": -804,
+    "region": "Africa",
+    "colors": [
+      "red"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_223",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      3.85,
+      3.95,
+      -1.61
+    ],
+    "era": -1461,
+    "region": "Europe",
+    "colors": [
+      "grey"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_224",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      6.3,
+      8.57,
+      -14.34
+    ],
+    "era": -1851,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "red",
+      "stone"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_225",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      16.41,
+      -5.43,
+      -13.68
+    ],
+    "era": -403,
+    "region": "Asia",
+    "colors": [
+      "sand"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_226",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      3.64,
+      -7.18,
+      15.95
+    ],
+    "era": -1930,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "grey",
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_227",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -3.85,
+      -8.21,
+      -8
+    ],
+    "era": -2186,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "red",
+      "grey",
+      "sand"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_228",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      9.87,
+      -5.36,
+      -6.37
+    ],
+    "era": -2075,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "stone"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_229",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -5.34,
+      -0.78,
+      0.35
+    ],
+    "era": -676,
+    "region": "Africa",
+    "colors": [
+      "red"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_230",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      19.94,
+      8.99,
+      0.1
+    ],
+    "era": -2583,
+    "region": "Africa",
+    "colors": [
+      "brown",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_231",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      2.83,
+      3.91,
+      -13.96
+    ],
+    "era": -346,
+    "region": "Middle East",
+    "colors": [
+      "grey"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_232",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -5.63,
+      -1.84,
+      16.47
+    ],
+    "era": -19,
+    "region": "Africa",
+    "colors": [
+      "black",
+      "stone",
+      "yellow",
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_233",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      3.36,
+      3.81,
+      15.4
+    ],
+    "era": -2652,
+    "region": "Oceania",
+    "colors": [
+      "white",
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_234",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -6.74,
+      8.77,
+      9.23
+    ],
+    "era": -245,
+    "region": "Africa",
+    "colors": [
+      "red"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_235",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -0.51,
+      -8.99,
+      11.14
+    ],
+    "era": -356,
+    "region": "Asia",
+    "colors": [
+      "black"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_236",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -5.6,
+      3.73,
+      -1.36
+    ],
+    "era": -2197,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "blue",
+      "grey",
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_237",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -15.49,
+      1.17,
+      -3.6
+    ],
+    "era": -1518,
+    "region": "Europe",
+    "colors": [
+      "sand"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_238",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -2.42,
+      6.59,
+      -6.33
+    ],
+    "era": -1445,
+    "region": "Middle East",
+    "colors": [
+      "red"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_239",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -7.17,
+      1.92,
+      4.44
+    ],
+    "era": -1689,
+    "region": "Asia",
+    "colors": [
+      "yellow",
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_240",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -12.63,
+      2.75,
+      -8.99
+    ],
+    "era": -2307,
+    "region": "Oceania",
+    "colors": [
+      "ochre"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_241",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -4.48,
+      0.9,
+      -4.78
+    ],
+    "era": -84,
+    "region": "Africa",
+    "colors": [
+      "black",
+      "stone",
+      "yellow",
+      "brown"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_242",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      15.58,
+      -5.32,
+      -9.89
+    ],
+    "era": -1372,
+    "region": "Middle East",
+    "colors": [
+      "stone",
+      "black",
+      "grey"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_243",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      3.16,
+      6.38,
+      11.04
+    ],
+    "era": -998,
+    "region": "Europe",
+    "colors": [
+      "black"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_244",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -16.16,
+      -3.15,
+      5.43
+    ],
+    "era": -1823,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "grey",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_245",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      4.44,
+      -3.79,
+      2.58
+    ],
+    "era": -2316,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "ochre",
+      "sand"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_246",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      5.52,
+      -1.39,
+      -11.83
+    ],
+    "era": -403,
+    "region": "Middle East",
+    "colors": [
+      "ochre",
+      "stone"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_247",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      19.15,
+      -8.69,
+      -13.08
+    ],
+    "era": -260,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "red",
+      "grey",
+      "sand"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_248",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -13.17,
+      -0.4,
+      -14.29
+    ],
+    "era": -2591,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "black",
+      "green"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_249",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -16.3,
+      4.16,
+      16.41
+    ],
+    "era": -2242,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "ochre",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_250",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -8.96,
+      2.6,
+      -16.51
+    ],
+    "era": -508,
+    "region": "Asia",
+    "colors": [
+      "grey",
+      "red",
+      "green"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_251",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -8.33,
+      5.2,
+      -2.43
+    ],
+    "era": -1704,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "yellow",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_252",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      6.58,
+      -3.87,
+      16.92
+    ],
+    "era": -2071,
+    "region": "Europe",
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_253",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      18.55,
+      -2.56,
+      -19.89
+    ],
+    "era": 519,
+    "region": "Europe",
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_254",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      15.99,
+      -0.79,
+      -11.39
+    ],
+    "era": 997,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_255",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -10.98,
+      7.81,
+      -8.06
+    ],
+    "era": 82,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "green",
+      "ochre",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_256",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      4.65,
+      2.13,
+      -1.96
+    ],
+    "era": 293,
+    "region": "Africa",
+    "colors": [
+      "yellow"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_257",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      10.05,
+      3.7,
+      1.15
+    ],
+    "era": 481,
+    "region": "Middle East",
+    "colors": [
+      "stone"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_258",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -14.44,
+      -8.06,
+      -16.52
+    ],
+    "era": 1476,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "blue",
+      "black",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_259",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      11.22,
+      0.59,
+      15.2
+    ],
+    "era": 1114,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "red"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_260",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -4.07,
+      7.84,
+      -5.45
+    ],
+    "era": 1043,
+    "region": "Middle East",
+    "colors": [
+      "red",
+      "black",
+      "yellow"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_261",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      15.13,
+      3.9,
+      -13.42
+    ],
+    "era": 947,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "grey",
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_262",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      14.94,
+      -9.11,
+      -3.54
+    ],
+    "era": 475,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "grey"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_263",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      1.9,
+      -5.28,
+      -16.67
+    ],
+    "era": 1436,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "sand"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_264",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      17.97,
+      -5.47,
+      -6.63
+    ],
+    "era": 148,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "black",
+      "green",
+      "ochre"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_265",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -13.69,
+      -4.45,
+      -9.66
+    ],
+    "era": 1493,
+    "region": "Europe",
+    "colors": [
+      "blue",
+      "sand",
+      "yellow",
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_266",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      5.09,
+      0.23,
+      -9.08
+    ],
+    "era": 1056,
+    "region": "Americas",
+    "colors": [
+      "stone",
+      "red",
+      "green",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_267",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -9.36,
+      5.05,
+      -9.32
+    ],
+    "era": 769,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "stone",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_268",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      8.92,
+      0.58,
+      8.61
+    ],
+    "era": 511,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "ochre",
+      "yellow",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_269",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      17.42,
+      -9.33,
+      -10.44
+    ],
+    "era": 326,
+    "region": "Oceania",
+    "colors": [
+      "brown"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_270",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      0.76,
+      -8.61,
+      4.32
+    ],
+    "era": 73,
+    "region": "Americas",
+    "colors": [
+      "grey",
+      "ochre",
+      "green",
+      "sand"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_271",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      3.17,
+      6.77,
+      18.06
+    ],
+    "era": 93,
+    "region": "Africa",
+    "colors": [
+      "grey"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_272",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      11.46,
+      4.46,
+      -16.52
+    ],
+    "era": 1373,
+    "region": "Europe",
+    "colors": [
+      "blue",
+      "green",
+      "yellow",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_273",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      6.41,
+      0.26,
+      3.97
+    ],
+    "era": 873,
+    "region": "Africa",
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_274",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -17.21,
+      9.82,
+      -14.52
+    ],
+    "era": 588,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "ochre"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_275",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -2.07,
+      -7.98,
+      -15.43
+    ],
+    "era": 1424,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "ochre",
+      "stone",
+      "red"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_276",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -7.93,
+      -1.86,
+      7.8
+    ],
+    "era": 633,
+    "region": "Oceania",
+    "colors": [
+      "sand",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_277",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -14.55,
+      7.09,
+      14.46
+    ],
+    "era": 1194,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "black",
+      "green"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_278",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -11.88,
+      7.31,
+      2.27
+    ],
+    "era": 130,
+    "region": "Middle East",
+    "colors": [
+      "green"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_279",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      11.27,
+      1.88,
+      -6.36
+    ],
+    "era": 1404,
+    "region": "Europe",
+    "colors": [
+      "grey"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_280",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      0.56,
+      -4.29,
+      4.15
+    ],
+    "era": 192,
+    "region": "Americas",
+    "colors": [
+      "green"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_281",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      10.4,
+      -8.24,
+      -17.64
+    ],
+    "era": 47,
+    "region": "Oceania",
+    "colors": [
+      "gold"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_282",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -6.82,
+      -7.96,
+      -14.55
+    ],
+    "era": 525,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "black"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_283",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      -14.53,
+      -6.25,
+      -7.9
+    ],
+    "era": 322,
+    "region": "Oceania",
+    "colors": [
+      "ochre"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_284",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      10.36,
+      -4.75,
+      13.57
+    ],
+    "era": 702,
+    "region": "Middle East",
+    "colors": [
+      "stone",
+      "black",
+      "green"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_285",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      14.13,
+      0.52,
+      5.33
+    ],
+    "era": 1276,
+    "region": "Africa",
+    "colors": [
+      "grey"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_286",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      7.15,
+      -8.24,
+      16.85
+    ],
+    "era": 720,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "stone",
+      "ochre",
+      "brown"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_287",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -9.48,
+      -7.47,
+      -9.32
+    ],
+    "era": 450,
+    "region": "Africa",
+    "colors": [
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_288",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -19.72,
+      9.85,
+      13.66
+    ],
+    "era": 1022,
+    "region": "Europe",
+    "colors": [
+      "red"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_289",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      10.7,
+      -4.07,
+      9.59
+    ],
+    "era": 1284,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "blue",
+      "black",
+      "green"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_290",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -12.64,
+      5.21,
+      16.23
+    ],
+    "era": 284,
+    "region": "Oceania",
+    "colors": [
+      "green",
+      "red",
+      "stone",
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_291",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      15.1,
+      5.36,
+      -13.08
+    ],
+    "era": 595,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_292",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      7.78,
+      6.32,
+      -17.5
+    ],
+    "era": 477,
+    "region": "Americas",
+    "colors": [
+      "grey",
+      "green",
+      "sand"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_293",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      4.83,
+      2.84,
+      -5.05
+    ],
+    "era": 841,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "ochre",
+      "grey"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_294",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      11.29,
+      -1.52,
+      -4.07
+    ],
+    "era": 1186,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "grey",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_295",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -18.02,
+      -8.3,
+      10.1
+    ],
+    "era": 1111,
+    "region": "Oceania",
+    "colors": [
+      "red"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_296",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -14.23,
+      -9.34,
+      16.01
+    ],
+    "era": 1255,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "sand"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_297",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      5.53,
+      -1.06,
+      16.92
+    ],
+    "era": 1059,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_298",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -19.59,
+      -2.88,
+      -12.68
+    ],
+    "era": 1373,
+    "region": "Europe",
+    "colors": [
+      "stone",
+      "sand",
+      "yellow",
+      "white"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_299",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -19.21,
+      -1.04,
+      -8.34
+    ],
+    "era": 631,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "black",
+      "green",
+      "stone"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_300",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      -7.16,
+      1.56,
+      -16.81
+    ],
+    "era": 1475,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "stone",
+      "sand",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_301",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -9.03,
+      -6.58,
+      -9.21
+    ],
+    "era": 376,
+    "region": "Africa",
+    "colors": [
+      "ochre",
+      "grey",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_302",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      10.87,
+      7.56,
+      -5.86
+    ],
+    "era": 1344,
+    "region": "Europe",
+    "colors": [
+      "blue",
+      "stone",
+      "yellow"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_303",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      16.28,
+      -9.14,
+      19
+    ],
+    "era": 889,
+    "region": "Europe",
+    "colors": [
+      "grey",
+      "green"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_304",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      13.25,
+      -1.7,
+      15.2
+    ],
+    "era": 1381,
+    "region": "Middle East",
+    "colors": [
+      "grey",
+      "red",
+      "green",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_305",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -1.96,
+      -7.15,
+      -7.77
+    ],
+    "era": 1102,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "black",
+      "red"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_306",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      9.69,
+      -6.86,
+      -3.02
+    ],
+    "era": 500,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "blue"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_307",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -9.65,
+      -0.42,
+      -13.54
+    ],
+    "era": 498,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "black",
+      "stone",
+      "ochre"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_308",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      0.15,
+      -6.79,
+      -16.02
+    ],
+    "era": 1474,
+    "region": "Europe",
+    "colors": [
+      "ochre",
+      "green"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_309",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -11.26,
+      -2.99,
+      10.08
+    ],
+    "era": 738,
+    "region": "Americas",
+    "colors": [
+      "ochre",
+      "green",
+      "sand",
+      "yellow"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_310",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      1.38,
+      3.58,
+      -9.33
+    ],
+    "era": 1188,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "green",
+      "grey",
+      "sand"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_311",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      16.1,
+      -3.45,
+      13.51
+    ],
+    "era": 564,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "green",
+      "red"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_312",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      6.38,
+      9.77,
+      -9.47
+    ],
+    "era": 289,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "yellow"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_313",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -6.72,
+      9.05,
+      -11.55
+    ],
+    "era": 880,
+    "region": "Oceania",
+    "colors": [
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_314",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      2.39,
+      -7.08,
+      -3.68
+    ],
+    "era": 619,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "stone",
+      "sand",
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_315",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      19.86,
+      -6.1,
+      -2.03
+    ],
+    "era": 208,
+    "region": "Africa",
+    "colors": [
+      "grey"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_316",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      14.35,
+      1.3,
+      -1.34
+    ],
+    "era": 1385,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "red",
+      "sand"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_317",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      -7.29,
+      -2.05,
+      -17.2
+    ],
+    "era": 1325,
+    "region": "Africa",
+    "colors": [
+      "ochre",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_318",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      9.14,
+      -0.68,
+      -1.94
+    ],
+    "era": 1280,
+    "region": "Americas",
+    "colors": [
+      "ochre",
+      "sand",
+      "yellow"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_319",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -1.03,
+      -2.07,
+      -16.95
+    ],
+    "era": 1363,
+    "region": "Europe",
+    "colors": [
+      "stone"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_320",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      8.33,
+      0.03,
+      -7.24
+    ],
+    "era": 109,
+    "region": "Americas",
+    "colors": [
+      "stone",
+      "blue",
+      "green",
+      "grey"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_321",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -17.06,
+      7.81,
+      3.76
+    ],
+    "era": 568,
+    "region": "Africa",
+    "colors": [
+      "red"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_322",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -12.81,
+      6.49,
+      10.96
+    ],
+    "era": 969,
+    "region": "Europe",
+    "colors": [
+      "blue",
+      "green",
+      "brown"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_323",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -8.72,
+      -3.87,
+      -4.12
+    ],
+    "era": 249,
+    "region": "Americas",
+    "colors": [
+      "stone",
+      "green"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_324",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      16.64,
+      4.43,
+      10.79
+    ],
+    "era": 1624,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "black",
+      "red"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_325",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -7.67,
+      2.37,
+      -19.23
+    ],
+    "era": 1506,
+    "region": "Oceania",
+    "colors": [
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_326",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -4.06,
+      5.96,
+      -12.8
+    ],
+    "era": 1521,
+    "region": "Oceania",
+    "colors": [
+      "ochre",
+      "green",
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_327",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      17.23,
+      -1.78,
+      14.42
+    ],
+    "era": 1844,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "red",
+      "sand"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_328",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -13.33,
+      -4.88,
+      9.39
+    ],
+    "era": 1750,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "stone",
+      "sand",
+      "ochre"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_329",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      17.77,
+      7.97,
+      -3.4
+    ],
+    "era": 1558,
+    "region": "Africa",
+    "colors": [
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_330",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      0.09,
+      3.29,
+      1.11
+    ],
+    "era": 1847,
+    "region": "Africa",
+    "colors": [
+      "black"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_331",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -1.42,
+      -0.95,
+      -9.17
+    ],
+    "era": 1664,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "blue",
+      "red",
+      "green"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_332",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -9.42,
+      -6.96,
+      9.77
+    ],
+    "era": 1582,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "ochre",
+      "brown"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_333",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -0.42,
+      4.97,
+      -10.9
+    ],
+    "era": 1672,
+    "region": "Middle East",
+    "colors": [
+      "green"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_334",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -16.72,
+      -5.17,
+      -8.11
+    ],
+    "era": 1743,
+    "region": "Europe",
+    "colors": [
+      "stone",
+      "green"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_335",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -13.76,
+      -3.46,
+      -12.1
+    ],
+    "era": 1532,
+    "region": "Oceania",
+    "colors": [
+      "grey",
+      "sand"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_336",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      8.86,
+      1,
+      17.82
+    ],
+    "era": 1722,
+    "region": "Middle East",
+    "colors": [
+      "gold"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_337",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      4.08,
+      -2.14,
+      10.52
+    ],
+    "era": 1875,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "grey",
+      "brown"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_338",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      9.69,
+      -7.38,
+      -12.16
+    ],
+    "era": 1745,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "blue",
+      "green",
+      "sand"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_339",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      13.24,
+      7.61,
+      -3.56
+    ],
+    "era": 1837,
+    "region": "Asia",
+    "colors": [
+      "ochre"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_340",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      11.81,
+      -3.91,
+      -7.77
+    ],
+    "era": 1628,
+    "region": "Americas",
+    "colors": [
+      "black"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_341",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -10.86,
+      0.69,
+      19.28
+    ],
+    "era": 1566,
+    "region": "Middle East",
+    "colors": [
+      "ochre",
+      "grey",
+      "brown"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_342",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      5.19,
+      -0.12,
+      -16.59
+    ],
+    "era": 1669,
+    "region": "Asia",
+    "colors": [
+      "stone",
+      "grey"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_343",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      12.33,
+      -1.59,
+      -1.12
+    ],
+    "era": 1867,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "red",
+      "green",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_344",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -10.22,
+      7,
+      1.15
+    ],
+    "era": 1618,
+    "region": "Oceania",
+    "colors": [
+      "blue",
+      "black"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_345",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      -6.8,
+      6.9,
+      -7.28
+    ],
+    "era": 1764,
+    "region": "Oceania",
+    "colors": [
+      "ochre"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_346",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      7.21,
+      0.77,
+      -16.05
+    ],
+    "era": 1764,
+    "region": "Middle East",
+    "colors": [
+      "grey",
+      "stone",
+      "yellow",
+      "white"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_347",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      10.31,
+      -1.99,
+      10.62
+    ],
+    "era": 1586,
+    "region": "Americas",
+    "colors": [
+      "grey",
+      "green",
+      "sand"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_348",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      18.8,
+      5.25,
+      -11.87
+    ],
+    "era": 1896,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "red",
+      "green",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_349",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -15.07,
+      -4.45,
+      12.94
+    ],
+    "era": 1573,
+    "region": "Middle East",
+    "colors": [
+      "ochre",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_350",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      19.09,
+      -6.68,
+      -4.67
+    ],
+    "era": 1509,
+    "region": "Europe",
+    "colors": [
+      "brown",
+      "stone",
+      "white"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_351",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -18.04,
+      6.96,
+      -8.45
+    ],
+    "era": 1556,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "green",
+      "yellow"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_352",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -1.81,
+      -4.15,
+      -16.01
+    ],
+    "era": 1576,
+    "region": "Europe",
+    "colors": [
+      "stone",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_353",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      16.4,
+      0.43,
+      -18.5
+    ],
+    "era": 1895,
+    "region": "Oceania",
+    "colors": [
+      "green",
+      "blue",
+      "grey",
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_354",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      2.33,
+      -9.85,
+      9.08
+    ],
+    "era": 1517,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "black"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_355",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      16.23,
+      1.07,
+      12.85
+    ],
+    "era": 1876,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "ochre",
+      "sand",
+      "red"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_356",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -11.03,
+      4.94,
+      -6.36
+    ],
+    "era": 1862,
+    "region": "Europe",
+    "colors": [
+      "ochre"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_357",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -1.34,
+      9.38,
+      -14.72
+    ],
+    "era": 1814,
+    "region": "Americas",
+    "colors": [
+      "ochre",
+      "grey",
+      "sand"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_358",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      4.2,
+      -2.99,
+      -4.02
+    ],
+    "era": 1646,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "stone",
+      "brown"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_359",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -5.73,
+      4.99,
+      -0.46
+    ],
+    "era": 1594,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "stone",
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_360",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      17.5,
+      4.31,
+      1.77
+    ],
+    "era": 1577,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "black",
+      "ochre"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_361",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      17.58,
+      -7.41,
+      -5.23
+    ],
+    "era": 1677,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "blue",
+      "ochre",
+      "sand"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_362",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -9.99,
+      -4.26,
+      14.7
+    ],
+    "era": 1794,
+    "region": "Africa",
+    "colors": [
+      "black",
+      "stone"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_363",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -8.37,
+      -3.18,
+      18.55
+    ],
+    "era": 1621,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "sand",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_364",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      3.91,
+      -3.65,
+      -5.78
+    ],
+    "era": 1772,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "brown"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_365",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      8.1,
+      5.12,
+      4.57
+    ],
+    "era": 1836,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "green",
+      "sand"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_366",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      18.02,
+      -5.75,
+      -0.11
+    ],
+    "era": 1882,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "blue",
+      "black",
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_367",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      14.68,
+      6.75,
+      13.12
+    ],
+    "era": 1612,
+    "region": "Asia",
+    "colors": [
+      "yellow",
+      "white",
+      "blue",
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_368",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      11.75,
+      5.95,
+      -13.21
+    ],
+    "era": 1516,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "red",
+      "stone"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_369",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -8.18,
+      -2.15,
+      2.65
+    ],
+    "era": 1617,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "black",
+      "ochre",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_370",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -18.27,
+      -9.56,
+      16.98
+    ],
+    "era": 1647,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_371",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      19.95,
+      3.94,
+      14.68
+    ],
+    "era": 1525,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "grey",
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_372",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -1.06,
+      1.5,
+      -15.99
+    ],
+    "era": 1737,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_373",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -15.86,
+      -0.89,
+      2.41
+    ],
+    "era": 1714,
+    "region": "Asia",
+    "colors": [
+      "stone",
+      "black",
+      "green",
+      "gold"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_374",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      -0.84,
+      3.34,
+      8
+    ],
+    "era": 1547,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "grey",
+      "sand",
+      "yellow"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_375",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      12.93,
+      -5.44,
+      6.13
+    ],
+    "era": 1541,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "red",
+      "stone"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_376",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -11.5,
+      9.97,
+      6.5
+    ],
+    "era": 1760,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "red",
+      "stone",
+      "sand"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_377",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -17.64,
+      0.69,
+      0.67
+    ],
+    "era": 1756,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "stone"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_378",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -2.13,
+      3.97,
+      -5.37
+    ],
+    "era": 1540,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "ochre",
+      "stone"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_379",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -16.36,
+      3.73,
+      12.81
+    ],
+    "era": 1636,
+    "region": "Oceania",
+    "colors": [
+      "ochre"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_380",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -5.13,
+      1.17,
+      17.07
+    ],
+    "era": 1725,
+    "region": "Middle East",
+    "colors": [
+      "brown"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_381",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -17.28,
+      -1.95,
+      -19.27
+    ],
+    "era": 1671,
+    "region": "Middle East",
+    "colors": [
+      "grey",
+      "white"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_382",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -2.71,
+      -3.82,
+      1.09
+    ],
+    "era": 1509,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "blue",
+      "red",
+      "green"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_383",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -4.12,
+      1.58,
+      -8.09
+    ],
+    "era": 1579,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "grey",
+      "red"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_384",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -12.92,
+      -0.32,
+      10.36
+    ],
+    "era": 1865,
+    "region": "Oceania",
+    "colors": [
+      "sand"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_385",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -15.26,
+      3.36,
+      -4.22
+    ],
+    "era": 1875,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "grey"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_386",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -11.02,
+      1.85,
+      14.26
+    ],
+    "era": 1684,
+    "region": "Europe",
+    "colors": [
+      "sand",
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_387",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -10.59,
+      5.08,
+      1.71
+    ],
+    "era": 1543,
+    "region": "Middle East",
+    "colors": [
+      "yellow"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_388",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -2.89,
+      -6.06,
+      1.56
+    ],
+    "era": 1800,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "sand",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_389",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -10.82,
+      1.86,
+      2.48
+    ],
+    "era": 1836,
+    "region": "Africa",
+    "colors": [
+      "brown",
+      "yellow",
+      "white"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_390",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      7.45,
+      5.95,
+      -0.62
+    ],
+    "era": 1775,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "black",
+      "green",
+      "red"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_391",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -12.45,
+      7.73,
+      7.86
+    ],
+    "era": 1503,
+    "region": "Africa",
+    "colors": [
+      "black",
+      "ochre",
+      "yellow"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_392",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -1.08,
+      5.93,
+      -12.96
+    ],
+    "era": 1737,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "sand"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_393",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -7.48,
+      -2.96,
+      2.45
+    ],
+    "era": 1787,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "red",
+      "yellow"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_394",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -6.35,
+      3,
+      -2.64
+    ],
+    "era": 1888,
+    "region": "Europe",
+    "colors": [
+      "black"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_395",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      16.22,
+      -6.2,
+      -8.59
+    ],
+    "era": 1532,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "sand"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_396",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      3.96,
+      6.34,
+      10.24
+    ],
+    "era": 1647,
+    "region": "Europe",
+    "colors": [
+      "ochre",
+      "green",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_397",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -8.61,
+      -4.14,
+      17.45
+    ],
+    "era": 1940,
+    "region": "Africa",
+    "colors": [
+      "black"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_398",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      4.79,
+      4.39,
+      -6.38
+    ],
+    "era": 1975,
+    "region": "Americas",
+    "colors": [
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_399",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      -17.22,
+      -4.17,
+      -7.76
+    ],
+    "era": 1928,
+    "region": "Europe",
+    "colors": [
+      "stone",
+      "blue",
+      "green",
+      "brown"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_400",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      10.53,
+      -0.85,
+      13.81
+    ],
+    "era": 1989,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "stone",
+      "sand",
+      "ochre"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_401",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -6.26,
+      1.17,
+      -13.7
+    ],
+    "era": 1906,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "black",
+      "grey",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_402",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -1.57,
+      6.62,
+      0.23
+    ],
+    "era": 1967,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "black"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_403",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -19.04,
+      9.87,
+      -10.69
+    ],
+    "era": 1967,
+    "region": "Europe",
+    "colors": [
+      "red",
+      "green",
+      "sand",
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_404",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -18.84,
+      -4.95,
+      12.57
+    ],
+    "era": 1943,
+    "region": "Americas",
+    "colors": [
+      "gold"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_405",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mohamed_Mahmoud_Street_Graffiti.jpg/800px-Mohamed_Mahmoud_Street_Graffiti.jpg",
+    "position": [
+      -13.05,
+      -7.85,
+      6.18
+    ],
+    "era": 1953,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "yellow",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_406",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -0.32,
+      -7.84,
+      7.28
+    ],
+    "era": 1929,
+    "region": "Middle East",
+    "colors": [
+      "yellow"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_407",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -0.97,
+      0.25,
+      -3.17
+    ],
+    "era": 1955,
+    "region": "Asia",
+    "colors": [
+      "stone",
+      "green"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_408",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      14.2,
+      1,
+      9.15
+    ],
+    "era": 1945,
+    "region": "Europe",
+    "colors": [
+      "blue",
+      "ochre",
+      "sand",
+      "brown"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_409",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      19.84,
+      -7.14,
+      -8
+    ],
+    "era": 1949,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "sand",
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_410",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      2.41,
+      5.07,
+      -19.84
+    ],
+    "era": 1988,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "stone"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_411",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      17.51,
+      -4.7,
+      -12.68
+    ],
+    "era": 1974,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "grey"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_412",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -18.28,
+      4.69,
+      17.98
+    ],
+    "era": 1908,
+    "region": "Europe",
+    "colors": [
+      "grey",
+      "white"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_413",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -5.74,
+      3.04,
+      11.75
+    ],
+    "era": 1970,
+    "region": "Oceania",
+    "colors": [
+      "grey"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_414",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -4.3,
+      0.36,
+      12.17
+    ],
+    "era": 1931,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "grey"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_415",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      16.7,
+      5.01,
+      -3.69
+    ],
+    "era": 1959,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "grey",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_416",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      11.87,
+      0.04,
+      17.33
+    ],
+    "era": 2000,
+    "region": "Africa",
+    "colors": [
+      "yellow"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_417",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      9.64,
+      8.73,
+      -4.6
+    ],
+    "era": 1966,
+    "region": "Africa",
+    "colors": [
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_418",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      1.16,
+      -5.48,
+      0.78
+    ],
+    "era": 1954,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "ochre",
+      "yellow"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_419",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      8.46,
+      8.57,
+      -17.36
+    ],
+    "era": 1996,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_420",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      0.57,
+      -4.72,
+      -5.25
+    ],
+    "era": 1991,
+    "region": "Africa",
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_421",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      7.74,
+      4.59,
+      0.43
+    ],
+    "era": 1955,
+    "region": "Africa",
+    "colors": [
+      "grey"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_422",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      17.67,
+      5.85,
+      4.13
+    ],
+    "era": 1905,
+    "region": "Americas",
+    "colors": [
+      "green"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_423",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -1.94,
+      3.63,
+      15.61
+    ],
+    "era": 1903,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "green",
+      "brown"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_424",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      14.49,
+      -4.41,
+      13.11
+    ],
+    "era": 1958,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "black",
+      "stone",
+      "red"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_425",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -10.29,
+      1.9,
+      -19.05
+    ],
+    "era": 1937,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "sand",
+      "ochre",
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_426",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      16.95,
+      -1.12,
+      12.81
+    ],
+    "era": 1965,
+    "region": "Americas",
+    "colors": [
+      "grey",
+      "stone"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_427",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      13.57,
+      -5.93,
+      8.54
+    ],
+    "era": 1905,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "yellow",
+      "brown"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_428",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -0.58,
+      -7.71,
+      -9.67
+    ],
+    "era": 1993,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "grey"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_429",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -12.91,
+      6.75,
+      -3.31
+    ],
+    "era": 1945,
+    "region": "Europe",
+    "colors": [
+      "ochre",
+      "sand",
+      "red",
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_430",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      -11.95,
+      0.83,
+      10.6
+    ],
+    "era": 1971,
+    "region": "Africa",
+    "colors": [
+      "black"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_431",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      8.79,
+      -2.36,
+      2.44
+    ],
+    "era": 1974,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "ochre"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_432",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -10.63,
+      0.56,
+      3.33
+    ],
+    "era": 1910,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "red"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_433",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Banksy_Hand_Graffiti.jpg/800px-Banksy_Hand_Graffiti.jpg",
+    "position": [
+      2.54,
+      -0.56,
+      14.69
+    ],
+    "era": 1964,
+    "region": "Asia",
+    "colors": [
+      "stone"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_434",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      5.76,
+      -2.2,
+      -4.61
+    ],
+    "era": 1946,
+    "region": "Asia",
+    "colors": [
+      "black"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_435",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      15.73,
+      -6.07,
+      6.56
+    ],
+    "era": 1951,
+    "region": "Asia",
+    "colors": [
+      "grey"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_436",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      18.14,
+      -5.22,
+      -10.87
+    ],
+    "era": 1962,
+    "region": "Middle East",
+    "colors": [
+      "brown"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_437",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -10.06,
+      9.17,
+      5.74
+    ],
+    "era": 1983,
+    "region": "Africa",
+    "colors": [
+      "red",
+      "sand"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_438",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -9.1,
+      -1.99,
+      -17.65
+    ],
+    "era": 1963,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "grey"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_439",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      -2.49,
+      8,
+      -18.16
+    ],
+    "era": 1999,
+    "region": "Africa",
+    "colors": [
+      "stone",
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_440",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      8.92,
+      -5.38,
+      5.79
+    ],
+    "era": 1925,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "black",
+      "sand"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_441",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -16.12,
+      3.96,
+      -11.94
+    ],
+    "era": 1969,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "red",
+      "sand",
+      "yellow"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_442",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -5.87,
+      0.66,
+      -5.65
+    ],
+    "era": 1959,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "black",
+      "grey",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_443",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      6.92,
+      8.03,
+      -15.18
+    ],
+    "era": 1954,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "sand"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_444",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -2.17,
+      -2.29,
+      -14.72
+    ],
+    "era": 1989,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "black",
+      "green",
+      "brown"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_445",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      1.11,
+      0.47,
+      15.83
+    ],
+    "era": 1922,
+    "region": "Asia",
+    "colors": [
+      "gold",
+      "brown"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_446",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -7.57,
+      -6.44,
+      -18.16
+    ],
+    "era": 1982,
+    "region": "Europe",
+    "colors": [
+      "yellow",
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_447",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -8.37,
+      9.68,
+      13.97
+    ],
+    "era": 1992,
+    "region": "Europe",
+    "colors": [
+      "grey",
+      "yellow"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_448",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -10.84,
+      -5.76,
+      -9.56
+    ],
+    "era": 1924,
+    "region": "Americas",
+    "colors": [
+      "red",
+      "stone",
+      "yellow",
+      "white"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_449",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -12.7,
+      -7.86,
+      -5.92
+    ],
+    "era": 1914,
+    "region": "Oceania",
+    "colors": [
+      "grey",
+      "black",
+      "green",
+      "yellow"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_450",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      -13.68,
+      5.72,
+      -13.08
+    ],
+    "era": 1979,
+    "region": "Europe",
+    "colors": [
+      "sand"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_451",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -6.44,
+      5.18,
+      11.35
+    ],
+    "era": 1961,
+    "region": "Europe",
+    "colors": [
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_452",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      8.31,
+      -2.71,
+      -10.41
+    ],
+    "era": 1914,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "stone"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_453",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      6.17,
+      -5.93,
+      -16.92
+    ],
+    "era": 1915,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "black",
+      "yellow"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_454",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      15.99,
+      -0.56,
+      12.39
+    ],
+    "era": 1930,
+    "region": "Middle East",
+    "colors": [
+      "stone",
+      "grey"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_455",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      -19.69,
+      7.21,
+      14.56
+    ],
+    "era": 1997,
+    "region": "Americas",
+    "colors": [
+      "black",
+      "brown"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_456",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      9.13,
+      7.97,
+      -1.69
+    ],
+    "era": 1949,
+    "region": "Asia",
+    "colors": [
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_457",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      3.22,
+      -0.07,
+      18.05
+    ],
+    "era": 1945,
+    "region": "Asia",
+    "colors": [
+      "yellow"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_458",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      7.63,
+      -8.05,
+      -1.68
+    ],
+    "era": 1972,
+    "region": "Europe",
+    "colors": [
+      "white",
+      "red",
+      "grey",
+      "brown"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_459",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BLM_Handprint_Mural.jpg/800px-BLM_Handprint_Mural.jpg",
+    "position": [
+      7.06,
+      -5.15,
+      -1.13
+    ],
+    "era": 1997,
+    "region": "Middle East",
+    "colors": [
+      "stone",
+      "brown"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_460",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ukraine_Handprint_Memorial.jpg/800px-Ukraine_Handprint_Memorial.jpg",
+    "position": [
+      -5.92,
+      -4.86,
+      -8.66
+    ],
+    "era": 1975,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "stone",
+      "sand"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_461",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -17.05,
+      7.07,
+      -12.16
+    ],
+    "era": 1994,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "red",
+      "stone"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_462",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      14.9,
+      6.68,
+      16.51
+    ],
+    "era": 1920,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "sand",
+      "ochre",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_463",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      11.56,
+      -9.73,
+      12.62
+    ],
+    "era": 1976,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "stone",
+      "yellow"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_464",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -8,
+      -7.71,
+      -11.87
+    ],
+    "era": 1966,
+    "region": "Middle East",
+    "colors": [
+      "black",
+      "ochre",
+      "green",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_465",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -16.63,
+      2.1,
+      -16.23
+    ],
+    "era": 1956,
+    "region": "Middle East",
+    "colors": [
+      "blue",
+      "red",
+      "stone",
+      "grey"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_466",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      -18.1,
+      5.74,
+      -10.48
+    ],
+    "era": 1927,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_467",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -15.02,
+      7.36,
+      9.23
+    ],
+    "era": 1940,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "blue",
+      "green"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_468",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -10.94,
+      -1.86,
+      14.56
+    ],
+    "era": 2012,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "green"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_469",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      -7.32,
+      0.87,
+      -19.88
+    ],
+    "era": 2025,
+    "region": "Middle East",
+    "colors": [
+      "yellow"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_470",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -9.97,
+      -9.09,
+      -5.06
+    ],
+    "era": 2013,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "black",
+      "red"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_471",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hong_Kong_Protest_Handprints.jpg/800px-Hong_Kong_Protest_Handprints.jpg",
+    "position": [
+      3.05,
+      3.47,
+      -11.51
+    ],
+    "era": 2018,
+    "region": "Europe",
+    "colors": [
+      "black",
+      "red",
+      "yellow"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_472",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubirr_Rock_Art.jpg/800px-Ubirr_Rock_Art.jpg",
+    "position": [
+      13.96,
+      -9.08,
+      2.78
+    ],
+    "era": 2014,
+    "region": "Oceania",
+    "colors": [
+      "black",
+      "green",
+      "white"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_473",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      14.1,
+      0.19,
+      2.39
+    ],
+    "era": 2010,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "black",
+      "sand"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_474",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      -8.52,
+      -9.88,
+      1.84
+    ],
+    "era": 2020,
+    "region": "Asia",
+    "colors": [
+      "white"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_475",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -0.64,
+      -6.84,
+      -16.79
+    ],
+    "era": 2021,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "grey",
+      "yellow"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_476",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      5.85,
+      8.66,
+      16.03
+    ],
+    "era": 2018,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_477",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      14.27,
+      1.07,
+      -4.87
+    ],
+    "era": 2013,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "black",
+      "stone",
+      "red"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_478",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Eye_of_Horus.jpg/800px-Eye_of_Horus.jpg",
+    "position": [
+      16.82,
+      1.94,
+      -18.69
+    ],
+    "era": 2014,
+    "region": "Oceania",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "type": "rock_painting"
+  },
+  {
+    "id": "generated_479",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      -16.87,
+      -7.83,
+      -5.95
+    ],
+    "era": 2008,
+    "region": "Oceania",
+    "colors": [
+      "stone"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_480",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Newgrange_Spiral_Carving.jpg/800px-Newgrange_Spiral_Carving.jpg",
+    "position": [
+      -5.4,
+      4.21,
+      17.37
+    ],
+    "era": 2013,
+    "region": "Asia",
+    "colors": [
+      "blue",
+      "red",
+      "grey",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_481",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tibetan_Mandala.jpg/800px-Tibetan_Mandala.jpg",
+    "position": [
+      -12.31,
+      -4.42,
+      9.97
+    ],
+    "era": 2023,
+    "region": "Africa",
+    "colors": [
+      "gold"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_482",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Chalk_Handprint_Protest.jpg/800px-Chalk_Handprint_Protest.jpg",
+    "position": [
+      3.27,
+      -5.23,
+      11.87
+    ],
+    "era": 2002,
+    "region": "Asia",
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_483",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tassili_n%27Ajjer_Rock_Art.jpg/800px-Tassili_n%27Ajjer_Rock_Art.jpg",
+    "position": [
+      -10.95,
+      4.59,
+      -15.83
+    ],
+    "era": 2011,
+    "region": "Africa",
+    "colors": [
+      "gold",
+      "ochre",
+      "green",
+      "stone"
+    ],
+    "type": "graffiti"
+  },
+  {
+    "id": "generated_484",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      9.35,
+      0.66,
+      -4.59
+    ],
+    "era": 2015,
+    "region": "Oceania",
+    "colors": [
+      "blue"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_485",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -16.74,
+      -6.08,
+      -8.93
+    ],
+    "era": 2006,
+    "region": "Africa",
+    "colors": [
+      "blue",
+      "ochre",
+      "red",
+      "white"
+    ],
+    "type": "digital"
+  },
+  {
+    "id": "generated_486",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      13.03,
+      8.37,
+      -9.49
+    ],
+    "era": 2023,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "ochre",
+      "stone"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_487",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Sego_Canyon_Handprints.jpg/800px-Sego_Canyon_Handprints.jpg",
+    "position": [
+      -14.1,
+      3.25,
+      -9.86
+    ],
+    "era": 2013,
+    "region": "Europe",
+    "colors": [
+      "gold",
+      "blue",
+      "sand"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_488",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      16.15,
+      -8.54,
+      -3.62
+    ],
+    "era": 2006,
+    "region": "Africa",
+    "colors": [
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_489",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      5.38,
+      -5.71,
+      9.2
+    ],
+    "era": 2012,
+    "region": "Oceania",
+    "colors": [
+      "gold",
+      "blue",
+      "sand"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_490",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bhimbetka_Rock_Shelters_Paintings.jpg/800px-Bhimbetka_Rock_Shelters_Paintings.jpg",
+    "position": [
+      13.81,
+      3.66,
+      14.09
+    ],
+    "era": 2016,
+    "region": "Middle East",
+    "colors": [
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_491",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      7.96,
+      -4.4,
+      14.07
+    ],
+    "era": 2017,
+    "region": "Asia",
+    "colors": [
+      "black",
+      "grey",
+      "yellow",
+      "brown"
+    ],
+    "type": "geoglyph"
+  },
+  {
+    "id": "generated_492",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Tainter_Cave_Pictographs.jpg/800px-Tainter_Cave_Pictographs.jpg",
+    "position": [
+      17.22,
+      -3.74,
+      -9.34
+    ],
+    "era": 2010,
+    "region": "Europe",
+    "colors": [
+      "green"
+    ],
+    "type": "handprint"
+  },
+  {
+    "id": "generated_493",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -5.14,
+      -6.27,
+      17.31
+    ],
+    "era": 2011,
+    "region": "Americas",
+    "colors": [
+      "blue",
+      "black",
+      "sand",
+      "ochre"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_494",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      -16.25,
+      5.69,
+      5.07
+    ],
+    "era": 2012,
+    "region": "Asia",
+    "colors": [
+      "red",
+      "brown"
+    ],
+    "type": "sketch"
+  },
+  {
+    "id": "generated_495",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Petroglyph_Spiral_Design.jpg/800px-Petroglyph_Spiral_Design.jpg",
+    "position": [
+      1.23,
+      1.67,
+      -9.65
+    ],
+    "era": 2023,
+    "region": "Asia",
+    "colors": [
+      "white"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_496",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      2.17,
+      8.77,
+      -1.43
+    ],
+    "era": 2006,
+    "region": "Middle East",
+    "colors": [
+      "red"
+    ],
+    "type": "painted"
+  },
+  {
+    "id": "generated_497",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Maori_Spiral_Tattoo.jpg/800px-Maori_Spiral_Tattoo.jpg",
+    "position": [
+      -17.34,
+      7.44,
+      14
+    ],
+    "era": 2006,
+    "region": "Europe",
+    "colors": [
+      "brown"
+    ],
+    "type": "protest"
+  },
+  {
+    "id": "generated_498",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Chumash_Rock_Art_Spiral.jpg/800px-Chumash_Rock_Art_Spiral.jpg",
+    "position": [
+      -6.7,
+      -4.89,
+      1.93
+    ],
+    "era": 2009,
+    "region": "Asia",
+    "colors": [
+      "grey",
+      "red",
+      "stone",
+      "ochre"
+    ],
+    "type": "pictograph"
+  },
+  {
+    "id": "generated_499",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/AltamiraBison.jpg/800px-AltamiraBison.jpg",
+    "position": [
+      -5.17,
+      -2.56,
+      8.13
+    ],
+    "era": 2001,
+    "region": "Middle East",
+    "colors": [
+      "gold",
+      "black",
+      "stone"
+    ],
+    "type": "cave_painting"
+  },
+  {
+    "id": "generated_500",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Aboriginal_Dot_Painting.jpg/800px-Aboriginal_Dot_Painting.jpg",
+    "position": [
+      -4.67,
+      -2.67,
+      11.69
+    ],
+    "era": 2017,
+    "region": "Americas",
+    "colors": [
+      "gold",
+      "green",
+      "grey"
+    ],
+    "type": "carved"
+  },
+  {
+    "id": "generated_501",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lascaux_painting.jpg/800px-Lascaux_painting.jpg",
+    "position": [
+      16.28,
+      -4.39,
+      16.37
+    ],
+    "era": 2020,
+    "region": "Americas",
+    "colors": [
+      "ochre",
+      "yellow",
+      "brown"
+    ],
+    "type": "pictograph"
+  }
+]

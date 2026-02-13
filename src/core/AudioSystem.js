@@ -19,13 +19,19 @@ export class AudioSystem {
         
         // Spatial audio: sound sources positioned at images
         this.imageSoundSources = new Map(); // imageId -> { oscillator, gain, panner, filter }
-        
+
+        // HRTF and binaural audio
+        this.hrtfEnabled = true;
+        this.binauralEnabled = true;
+        this.spatialAudioSources = new Map(); // imageId -> { leftEar, rightEar, convolver }
+
         // Context tracking
         this.currentImage = null;
         this.currentImageId = null;
         this.cameraPosition = { x: 0, y: 0, z: 5 };
         this.lastCameraPosition = { x: 0, y: 0, z: 5 };
         this.movementSpeed = 0;
+        this.headOrientation = new THREE.Euler(); // Head orientation for binaural audio
         
         // Smooth parameter changes
         this.targetFrequency = 80; // Base frequency (lower, more rumbling)
@@ -66,7 +72,10 @@ export class AudioSystem {
             
             // Create reverb using ConvolverNode with impulse response
             this.createReverb();
-            
+
+            // Create HRTF convolvers for binaural audio
+            this.createHRTFConvolvers();
+
             // Set up listener position (camera/listener is at origin in audio space)
             this.listener = this.audioContext.listener;
             if (this.listener.positionX) {
@@ -126,32 +135,131 @@ export class AudioSystem {
         const bufferSize = this.audioContext.sampleRate * 2;
         const buffer = this.audioContext.createBuffer(1, bufferSize, this.audioContext.sampleRate);
         const data = buffer.getChannelData(0);
-        
+
         for (let i = 0; i < bufferSize; i++) {
             data[i] = Math.random() * 2 - 1;
         }
-        
+
         this.noiseNode = this.audioContext.createBufferSource();
         this.noiseNode.buffer = buffer;
         this.noiseNode.loop = true;
-        
+
         // Heavy low-pass filter to make noise rumbly, not hissy
         const noiseFilter = this.audioContext.createBiquadFilter();
         noiseFilter.type = 'lowpass';
         noiseFilter.frequency.value = 150; // Very low, rumbling
         noiseFilter.Q.value = 1;
-        
+
         this.noiseGain = this.audioContext.createGain();
         this.noiseGain.gain.value = 0.02; // Very quiet (2% of base volume)
-        
+
         this.noiseNode.connect(noiseFilter);
         noiseFilter.connect(this.noiseGain);
         this.noiseGain.connect(this.dryGain);
         this.noiseGain.connect(this.reverbNode);
-        
+
         // Start noise (will loop)
         const now = this.audioContext.currentTime;
         this.noiseNode.start(now);
+    }
+
+    /**
+     * Create HRTF (Head-Related Transfer Function) convolvers for binaural audio
+     * HRTF simulates how sound waves interact with the human head and ears
+     */
+    createHRTFConvolvers() {
+        // Create simplified HRTF-like impulse responses
+        // In production, use actual HRTF measurements or a library
+        const sampleRate = this.audioContext.sampleRate;
+        const impulseLength = Math.floor(sampleRate * 0.1); // 100ms impulse response
+
+        // Left ear HRTF (simplified)
+        this.leftHRTFBuffer = this.createHRTFImpulse(true, impulseLength, sampleRate);
+
+        // Right ear HRTF (simplified)
+        this.rightHRTFBuffer = this.createHRTFImpulse(false, impulseLength, sampleRate);
+
+        // Create convolvers
+        this.leftHRTFConvolver = this.audioContext.createConvolver();
+        this.leftHRTFConvolver.buffer = this.leftHRTFBuffer;
+
+        this.rightHRTFConvolver = this.audioContext.createConvolver();
+        this.rightHRTFConvolver.buffer = this.rightHRTFBuffer;
+    }
+
+    /**
+     * Create a simplified HRTF impulse response
+     * @param {boolean} isLeft - Whether this is for the left ear
+     * @param {number} length - Length of impulse response
+     * @param {number} sampleRate - Audio sample rate
+     */
+    createHRTFImpulse(isLeft, length, sampleRate) {
+        const buffer = this.audioContext.createBuffer(1, length, sampleRate);
+        const data = buffer.getChannelData(0);
+
+        // Simplified HRTF: delay and filtering to simulate head shadowing
+        const delaySamples = Math.floor(sampleRate * (isLeft ? 0.0005 : 0.0003)); // Interaural time difference
+        const attenuation = isLeft ? 0.8 : 0.9; // Interaural level difference
+
+        for (let i = 0; i < length; i++) {
+            if (i < delaySamples) {
+                data[i] = 0;
+            } else {
+                // Exponential decay with some frequency shaping
+                const t = (i - delaySamples) / length;
+                const decay = Math.exp(-t * 3);
+                const frequency = (i / length) * Math.PI * 2;
+                const filter = 0.5 + 0.5 * Math.cos(frequency * (isLeft ? 1.1 : 0.9));
+
+                data[i] = decay * filter * attenuation;
+            }
+        }
+
+        return buffer;
+    }
+
+    /**
+     * Create binaural spatial audio source for an image
+     * @param {string} imageId - ID of the image
+     * @param {THREE.Vector3} position - 3D position of the image
+     */
+    createBinauralSource(imageId, position) {
+        if (!this.hrtfEnabled) return null;
+
+        // Create stereo splitter
+        const splitter = this.audioContext.createChannelSplitter(2);
+
+        // Create binaural processing chain
+        const leftGain = this.audioContext.createGain();
+        const rightGain = this.audioContext.createGain();
+
+        // Connect: splitter -> HRTF convolvers -> gains -> output
+        splitter.connect(this.leftHRTFConvolver, 0);
+        splitter.connect(this.rightHRTFConvolver, 1);
+
+        this.leftHRTFConvolver.connect(leftGain);
+        this.rightHRTFConvolver.connect(rightGain);
+
+        // Create merger for binaural output
+        const merger = this.audioContext.createChannelMerger(2);
+        leftGain.connect(merger, 0, 0);
+        rightGain.connect(merger, 0, 1);
+
+        // Connect to spatial audio output
+        merger.connect(this.dryGain);
+        merger.connect(this.reverbNode);
+
+        const binauralSource = {
+            splitter: splitter,
+            leftGain: leftGain,
+            rightGain: rightGain,
+            merger: merger,
+            position: position.clone(),
+            lastUpdate: this.audioContext.currentTime
+        };
+
+        this.spatialAudioSources.set(imageId, binauralSource);
+        return binauralSource;
     }
     
     /**
@@ -278,11 +386,19 @@ export class AudioSystem {
             
             // Create panner for spatial audio (will be positioned at gazed image)
             const panner = this.audioContext.createPanner();
-            panner.panningModel = 'HRTF'; // Head-related transfer function for 3D audio
+            panner.panningModel = this.binauralEnabled ? 'equalpower' : 'HRTF'; // Use binaural if enabled
             panner.distanceModel = 'inverse';
             panner.refDistance = 1;
             panner.maxDistance = 50;
             panner.rolloffFactor = 1.5; // More distance attenuation
+
+            // Create binaural splitter if binaural audio is enabled
+            let binauralSplitter = null;
+            if (this.binauralEnabled) {
+                binauralSplitter = this.audioContext.createChannelSplitter(2);
+                // Connect panner to binaural processing
+                panner.connect(binauralSplitter);
+            }
             
             // Connect: oscillator -> filter -> gain -> panner
             oscillator.connect(filter);
@@ -302,6 +418,7 @@ export class AudioSystem {
                 filter: filter,
                 gainNode: gainNode,
                 panner: panner,
+                binauralSplitter: binauralSplitter,
                 lfo: lfo,
                 lfoGain: lfoGain,
                 detune: detune,
@@ -495,32 +612,35 @@ export class AudioSystem {
     
     /**
      * Update spatial audio positioning (sound comes from gazed image)
-     * Positions drone layers at the gazed image location
+     * Positions drone layers at the gazed image location with binaural processing
      */
     updateSpatialPositioning(imageObject) {
         if (!this.camera || !this.droneOscillators.length) return;
-        
+
         const imagePos = imageObject.position;
         const cameraPos = this.camera.position;
-        
+
+        // Update head orientation from camera
+        this.headOrientation.copy(this.camera.rotation);
+
         // Calculate relative position (Web Audio API uses right-handed coordinates)
         // Web Audio API coordinate system: x = right, y = up, z = forward (toward listener)
         const x = imagePos.x - cameraPos.x;
         const y = imagePos.y - cameraPos.y;
         const z = imagePos.z - cameraPos.z;
-        
+
         // Update panner positions for each oscillator
         // Distribute them slightly around the image position for stereo width
         const now = this.audioContext.currentTime;
-        
+
         this.droneOscillators.forEach((layer, index) => {
             const spread = 0.4; // Small spread for stereo width
             const offset = (index - 1) * spread; // Center, left, right
-            
+
             const targetX = x + offset;
             const targetY = y;
             const targetZ = z;
-            
+
             if (this.isRupturing) {
                 // During rupture, set immediately (no smooth transition)
                 if (layer.panner.positionX) {
@@ -541,7 +661,36 @@ export class AudioSystem {
                     layer.panner.setPosition(targetX, targetY, targetZ);
                 }
             }
+
+            // Update binaural processing if enabled
+            if (this.binauralEnabled && layer.binauralSplitter) {
+                this.updateBinauralPositioning(layer, targetX, targetY, targetZ);
+            }
         });
+    }
+
+    /**
+     * Update binaural positioning for enhanced 3D spatial audio
+     * @param {Object} layer - Audio layer with binaural processing
+     * @param {number} x - X position
+     * @param {number} y - Y position
+     * @param {number} z - Z position
+     */
+    updateBinauralPositioning(layer, x, y, z) {
+        // Calculate azimuth and elevation for HRTF
+        const distance = Math.sqrt(x * x + y * y + z * z);
+        const azimuth = Math.atan2(x, z); // Horizontal angle
+        const elevation = Math.asin(y / distance); // Vertical angle
+
+        // Update HRTF gains based on position
+        // Simplified: closer = louder, angle affects left/right balance
+        const distanceAttenuation = Math.max(0.1, 1 / (1 + distance * 0.1));
+        const leftGain = distanceAttenuation * (azimuth > 0 ? 0.8 : 1.0);
+        const rightGain = distanceAttenuation * (azimuth < 0 ? 0.8 : 1.0);
+
+        const now = this.audioContext.currentTime;
+        layer.leftGain.gain.setTargetAtTime(leftGain, now, this.transitionTime);
+        layer.rightGain.gain.setTargetAtTime(rightGain, now, this.transitionTime);
     }
     
     /**
