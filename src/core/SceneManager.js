@@ -77,6 +77,33 @@ export class SceneManager {
 
         // Post-processing effects
         this.postProcessManager = new PostProcessManager(this.scene, this.camera, this.renderer);
+
+        // Cache for image objects (avoids repeated scene.traverse calls)
+        this.imageObjectsCache = new Set();
+    }
+
+    /**
+     * Register an image object in the cache
+     * @param {THREE.Object3D} imageObject - The image plane to cache
+     */
+    registerImageObject(imageObject) {
+        this.imageObjectsCache.add(imageObject);
+    }
+
+    /**
+     * Unregister an image object from the cache
+     * @param {THREE.Object3D} imageObject - The image plane to remove
+     */
+    unregisterImageObject(imageObject) {
+        this.imageObjectsCache.delete(imageObject);
+    }
+
+    /**
+     * Get all cached image objects
+     * @returns {Array} Array of image objects
+     */
+    getImageObjects() {
+        return Array.from(this.imageObjectsCache);
     }
 
     setupClickDetection() {
@@ -107,13 +134,8 @@ export class SceneManager {
         // Raycast
         this.raycaster.setFromCamera(this.mouse, this.camera);
 
-        // Find all image planes
-        const imageObjects = [];
-        this.scene.traverse((child) => {
-            if (child.userData?.imageData) {
-                imageObjects.push(child);
-            }
-        });
+        // Use cached image objects instead of traversing scene
+        const imageObjects = this.getImageObjects();
 
         const intersects = this.raycaster.intersectObjects(imageObjects, true);
 
@@ -122,12 +144,12 @@ export class SceneManager {
             const imageData = clickedObject.userData.imageData;
 
             // Trigger callback if registered
-            if (this.clickCallbacks.has(imageData.id)) {
+            if (imageData && this.clickCallbacks.has(imageData.id)) {
                 this.clickCallbacks.get(imageData.id)(clickedObject, imageData);
             }
 
             // Also trigger generic click callback
-            if (this.onImageClick) {
+            if (this.onImageClick && imageData) {
                 this.onImageClick(clickedObject, imageData);
             }
         }
@@ -164,11 +186,12 @@ export class SceneManager {
         if (!navigator.xr) return false;
 
         try {
-            // Check if eye tracking is supported
-            const supported = await navigator.xr.isSessionSupported('immersive-vr', {
-                requiredFeatures: ['eye-tracking']
-            });
-            return supported;
+            // Check if immersive VR is supported
+            // Note: isSessionSupported only takes mode string, not options
+            const vrSupported = await navigator.xr.isSessionSupported('immersive-vr');
+            
+            // Eye tracking support is checked during actual session request
+            return vrSupported;
         } catch (error) {
             console.log('Eye tracking support check failed:', error);
             return false;
@@ -191,19 +214,8 @@ export class SceneManager {
                     console.log('WebXR immersive-ar is supported');
                 }
 
-                // Check for advanced VR features
-                const eyeTrackingSupported = await this.checkEyeTrackingSupport();
-                if (eyeTrackingSupported) {
-                    console.log('WebXR eye tracking is supported');
-                }
-
-                // Check for hand tracking
-                const handTrackingSupported = await navigator.xr.isSessionSupported('immersive-vr', {
-                    requiredFeatures: ['hand-tracking']
-                });
-                if (handTrackingSupported) {
-                    console.log('WebXR hand tracking is supported');
-                }
+                // Note: Eye tracking and hand tracking support is checked during session request
+                // isSessionSupported() only takes the mode string, not feature options
 
             } catch (error) {
                 console.log('WebXR feature detection failed:', error);
@@ -346,6 +358,9 @@ export class SceneManager {
         }
 
         this.scene.add(plane);
+
+        // Register in cache for efficient lookups
+        this.registerImageObject(plane);
 
         return plane;
     }
@@ -529,13 +544,8 @@ export class SceneManager {
         const cameraPos = this.camera.position;
         const loadDistance = 30; // Distance to trigger load
 
-        // Find images that need loading
-        const imagesToCheck = [];
-        this.scene.traverse(child => {
-            if (child.userData?.imageData && child.userData.isImage) {
-                imagesToCheck.push(child);
-            }
-        });
+        // Use cached image objects instead of traversing scene
+        const imagesToCheck = this.getImageObjects();
 
         // Sort by distance to camera (load closest first)
         imagesToCheck.sort((a, b) => {

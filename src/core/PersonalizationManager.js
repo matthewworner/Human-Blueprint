@@ -1,4 +1,9 @@
 export class PersonalizationManager {
+    // Limits to prevent localStorage overflow (typically 5-10MB)
+    static MAX_TRACKED_IMAGES = 100;
+    static MAX_VISIT_TIMESTAMPS = 50;
+    static ESTIMATED_SIZE_LIMIT = 4 * 1024 * 1024; // 4MB safety limit
+
     constructor() {
         this.storageKey = 'humanBlueprint_personalization';
         this.data = this.loadData();
@@ -15,6 +20,49 @@ export class PersonalizationManager {
         };
 
         this.updateAdaptiveParams();
+    }
+
+    /**
+     * Estimate the size of data in bytes
+     * @returns {number} Estimated size in bytes
+     */
+    estimateDataSize() {
+        try {
+            return new Blob([JSON.stringify(this.data)]).size;
+        } catch {
+            return 0;
+        }
+    }
+
+    /**
+     * Prune old image data to stay within limits
+     */
+    pruneImageData() {
+        const images = this.data.attention.images;
+        const imageIds = Object.keys(images);
+
+        if (imageIds.length <= PersonalizationManager.MAX_TRACKED_IMAGES) {
+            return; // Within limit
+        }
+
+        // Sort by lastViewed (most recent first)
+        const sortedIds = imageIds.sort((a, b) => {
+            const aTime = images[a].lastViewed || 0;
+            const bTime = images[b].lastViewed || 0;
+            return bTime - aTime;
+        });
+
+        // Keep only the most recent images
+        const idsToKeep = new Set(sortedIds.slice(0, PersonalizationManager.MAX_TRACKED_IMAGES));
+
+        // Remove old entries
+        for (const id of imageIds) {
+            if (!idsToKeep.has(id)) {
+                delete images[id];
+            }
+        }
+
+        console.log(`Pruned ${imageIds.length - PersonalizationManager.MAX_TRACKED_IMAGES} old image entries`);
     }
 
     // Load data from localStorage
@@ -70,9 +118,41 @@ export class PersonalizationManager {
     // Save data to localStorage
     saveData() {
         try {
-            localStorage.setItem(this.storageKey, JSON.stringify(this.data));
+            // Prune old data if we're approaching size limits
+            this.pruneImageData();
+
+            // Also limit visit timestamps
+            if (this.data.visits.timestamps.length > PersonalizationManager.MAX_VISIT_TIMESTAMPS) {
+                this.data.visits.timestamps = this.data.visits.timestamps.slice(-PersonalizationManager.MAX_VISIT_TIMESTAMPS);
+            }
+
+            const serialized = JSON.stringify(this.data);
+
+            // Check if we're within size limits
+            if (serialized.length > PersonalizationManager.ESTIMATED_SIZE_LIMIT) {
+                console.warn('Personalization data approaching size limit, pruning more aggressively');
+                // More aggressive pruning - keep only half
+                const imageIds = Object.keys(this.data.attention.images);
+                if (imageIds.length > PersonalizationManager.MAX_TRACKED_IMAGES / 2) {
+                    this.pruneImageData();
+                }
+            }
+
+            localStorage.setItem(this.storageKey, serialized);
         } catch (error) {
             console.warn('Failed to save personalization data:', error);
+
+            // If quota exceeded, try to recover by clearing old data
+            if (error.name === 'QuotaExceededError' || error.code === 22) {
+                console.warn('localStorage quota exceeded, clearing old data');
+                this.data.attention.images = {};
+                this.data.visits.timestamps = this.data.visits.timestamps.slice(-10);
+                try {
+                    localStorage.setItem(this.storageKey, JSON.stringify(this.data));
+                } catch (retryError) {
+                    console.error('Failed to save even after clearing:', retryError);
+                }
+            }
         }
     }
 

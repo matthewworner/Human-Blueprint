@@ -51,6 +51,7 @@ export class RuptureSystem {
         this.temporalDisplacementThreshold = 300000; // 5 minutes of continuous engagement
         this.sessionStartTime = Date.now();
         this.engagementScore = 0; // Track user engagement over time
+        this.lastCameraPosition = null; // Track last camera position for movement detection
 
         this.ruptureCooldown = 10000; // 10 seconds between ruptures
         this.lastRuptureTime = 0;
@@ -99,6 +100,11 @@ export class RuptureSystem {
             }
         };
 
+        // Default transition properties (can be overridden by setters or per-type params)
+        this.fadeIntensity = 0.3;
+        this.highlightIntensity = 0.8;
+        this.transitionSpeed = 1200;
+
         // State tracking
         this.isRupturing = false;
         this.ruptureStartTime = null;
@@ -108,12 +114,16 @@ export class RuptureSystem {
         this.onRupture = null;
     }
     
-    update(camera, deltaTime) {
+    update(camera = null, deltaTime = null) {
         // Update is called from main loop
         // Dwell tracking happens in GazeTracker
 
+        // Use sceneManager's camera if not provided
+        const activeCamera = camera || this.sceneManager?.camera;
+        if (!activeCamera) return;
+
         // Track movement for rapid movement detection
-        this.trackMovement(camera, deltaTime);
+        this.trackMovement(activeCamera, deltaTime);
 
         // Update engagement score
         this.updateEngagementScore();
@@ -342,7 +352,7 @@ export class RuptureSystem {
      * Find appropriate target for specific rupture type
      */
     findTargetForRuptureType(ruptureType) {
-        const allImages = Array.from(this.sceneManager.scene.children)
+        const allImages = Array.from(this.sceneManager?.scene?.children || [])
             .filter(child => child.userData?.imageData);
 
         if (allImages.length === 0) return null;
@@ -373,12 +383,14 @@ export class RuptureSystem {
      * Find most spatially distant image
      */
     findMostDistantImage(images) {
-        if (!this.sceneManager.camera) return images[0];
+        if (!images || images.length === 0) return null;
+        if (!this.sceneManager?.camera) return images[0];
 
-        let farthest = null;
+        let farthest = images[0];
         let maxDistance = 0;
 
         images.forEach(img => {
+            if (!img?.position) return;
             const distance = img.position.distanceTo(this.sceneManager.camera.position);
             if (distance > maxDistance) {
                 maxDistance = distance;
@@ -393,6 +405,7 @@ export class RuptureSystem {
      * Find unexpected image (different from recent pattern)
      */
     findUnexpectedImage(images) {
+        if (!images || images.length === 0) return null;
         if (this.gazeHistory.length === 0) return images[0];
 
         const recentImage = this.gazeHistory[this.gazeHistory.length - 1];
@@ -401,7 +414,7 @@ export class RuptureSystem {
         if (!recentImgData) return images[0];
 
         // Find image most different from recent one
-        let mostDifferent = null;
+        let mostDifferent = images[0];
         let maxDifference = 0;
 
         images.forEach(img => {
@@ -446,6 +459,7 @@ export class RuptureSystem {
      * Find image from very different time period
      */
     findTemporalJumpImage(images) {
+        if (!images || images.length === 0) return null;
         if (this.gazeHistory.length === 0) return images[0];
 
         const recentImage = this.gazeHistory[this.gazeHistory.length - 1];
@@ -454,7 +468,7 @@ export class RuptureSystem {
         if (!recentImgData) return images[0];
 
         // Find image from most different era
-        let mostDifferent = null;
+        let mostDifferent = images[0];
         let maxEraDifference = 0;
 
         images.forEach(img => {
@@ -535,7 +549,7 @@ export class RuptureSystem {
      * Pulse highlight effect for emotional intensity
      */
     pulseHighlightEffect(params) {
-        const pulseInterval = setInterval(() => {
+        this.pulseInterval = setInterval(() => {
             this.sceneManager.scene.children.forEach(child => {
                 if (child.userData?.imageData && child.material) {
                     const intensity = 0.5 + Math.sin(Date.now() * 0.01) * 0.3;
@@ -546,7 +560,10 @@ export class RuptureSystem {
         }, 50);
 
         setTimeout(() => {
-            clearInterval(pulseInterval);
+            if (this.pulseInterval) {
+                clearInterval(this.pulseInterval);
+                this.pulseInterval = null;
+            }
         }, params.speed);
     }
 
@@ -555,7 +572,7 @@ export class RuptureSystem {
      */
     applyTemporalDistortion() {
         // Create a time-bending visual effect
-        const distortionInterval = setInterval(() => {
+        this.distortionInterval = setInterval(() => {
             this.sceneManager.scene.children.forEach(child => {
                 if (child.userData?.imageData && child.material) {
                     const distortion = Math.sin(Date.now() * 0.005) * 0.1;
@@ -565,7 +582,10 @@ export class RuptureSystem {
         }, 30);
 
         setTimeout(() => {
-            clearInterval(distortionInterval);
+            if (this.distortionInterval) {
+                clearInterval(this.distortionInterval);
+                this.distortionInterval = null;
+            }
         }, 2000);
     }
 
@@ -688,10 +708,10 @@ export class RuptureSystem {
     }
     
     findConnectedImage(sourceImage) {
-        const sourceData = sourceImage.userData?.imageData;
+        const sourceData = sourceImage?.userData?.imageData;
         if (!sourceData) return null;
-        
-        const allImages = Array.from(this.sceneManager.scene.children)
+
+        const allImages = Array.from(this.sceneManager?.scene?.children || [])
             .filter(child => child.userData?.imageData && child !== sourceImage);
         
         if (allImages.length === 0) return null;
@@ -802,7 +822,10 @@ export class RuptureSystem {
         });
     }
     
-    fadeCurrentImages() {
+    fadeCurrentImages(fadeIntensity = null) {
+        // Use provided intensity or fall back to instance property
+        const intensity = fadeIntensity !== null ? fadeIntensity : (this.fadeIntensity || 0.3);
+        
         // Fade all images to reduced opacity
         this.sceneManager.scene.children.forEach(child => {
             if (child.userData?.imageData && child.material) {
@@ -810,8 +833,8 @@ export class RuptureSystem {
                 if (!child.material.transparent) {
                     child.material.transparent = true;
                 }
-                // Fade to fadeIntensity opacity
-                child.material.opacity = this.fadeIntensity;
+                // Fade to specified intensity
+                child.material.opacity = intensity;
             }
         });
     }
@@ -857,11 +880,15 @@ export class RuptureSystem {
         };
     }
     
-    highlightDestination(destination) {
+    highlightDestination(destination, params = null) {
+        // Use provided params or fall back to instance properties
+        const highlightIntensity = params?.highlightIntensity || this.highlightIntensity || 0.8;
+        const transitionSpeed = params?.speed || this.transitionSpeed || 1200;
+        
         // Highlight destination image
         if (destination.material) {
             destination.material.emissive.setHex(0xffffff);
-            destination.material.emissive.multiplyScalar(this.highlightIntensity);
+            destination.material.emissive.multiplyScalar(highlightIntensity);
             
             // Scale up slightly
             const originalScale = destination.scale.clone();
@@ -874,7 +901,7 @@ export class RuptureSystem {
             setTimeout(() => {
                 destination.material.emissive.setHex(0x000000);
                 destination.scale.copy(originalScale);
-            }, this.transitionSpeed);
+            }, transitionSpeed);
         }
     }
     
@@ -980,6 +1007,39 @@ export class RuptureSystem {
 
     setHighlightIntensity(intensity) {
         this.highlightIntensity = Math.max(0, Math.min(1, intensity));
+    }
+
+    /**
+     * Clean up all intervals and resources
+     */
+    destroy() {
+        // Clear any active intervals
+        if (this.pulseInterval) {
+            clearInterval(this.pulseInterval);
+            this.pulseInterval = null;
+        }
+        if (this.distortionInterval) {
+            clearInterval(this.distortionInterval);
+            this.distortionInterval = null;
+        }
+
+        // Clear tracking data
+        this.dwellTimes.clear();
+        this.lastSeenTimes.clear();
+        this.gazeHistory = [];
+        this.movementHistory = [];
+        this.unexploredImages.clear();
+        this.exploredImages.clear();
+        this.originalImageOpacities.clear();
+        this.originalImageEmissives.clear();
+
+        // Reset state
+        this.isRupturing = false;
+
+        // Clear references
+        this.sceneManager = null;
+        this.gazeTracker = null;
+        this.audioSystem = null;
     }
 }
 

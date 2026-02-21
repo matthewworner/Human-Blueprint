@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 export class AudioSystem {
     constructor() {
         this.audioContext = null;
@@ -846,5 +848,47 @@ export class AudioSystem {
         setTimeout(() => {
             this.isRupturing = false;
         }, cutDuration * 1000);
+    }
+
+    /**
+     * Clean up all audio resources and stop soundscape
+     */
+    destroy() {
+        // Stop the soundscape
+        this.stopSoundscape();
+
+        // Clear any update interval
+        if (this.updateInterval) {
+            clearInterval(this.updateInterval);
+            this.updateInterval = null;
+        }
+
+        // Stop all active sources
+        this.activeSources.forEach(source => {
+            try {
+                source.stop();
+            } catch (e) {
+                // Source may already be stopped
+            }
+        });
+        this.activeSources = [];
+
+        // Close audio context if it exists
+        if (this.audioContext && this.audioContext.state !== 'closed') {
+            this.audioContext.close().catch(err => {
+                console.warn('Error closing audio context:', err);
+            });
+        }
+
+        // Clear references
+        this.imageObjects = null;
+        this.camera = null;
+        this.droneOscillators = [];
+        this.lfoNodes = [];
+        this.imageSoundSources.clear();
+        this.spatialAudioSources.clear();
+
+        this.soundscapeActive = false;
+        this.isInitialized = false;
     }
 }

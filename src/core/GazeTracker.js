@@ -6,6 +6,9 @@ export class GazeTracker {
         this.renderer = renderer;
         this.raycaster = new THREE.Raycaster();
 
+        // Initialize mouse position as fallback (will be set by device-specific tracking)
+        this.mouse = new THREE.Vector2();
+
         // Device detection
         this.deviceType = this.detectDeviceType();
 
@@ -92,9 +95,11 @@ export class GazeTracker {
         if (!navigator.xr) return false;
 
         try {
-            const supported = await navigator.xr.isSessionSupported('immersive-vr', {
-                requiredFeatures: ['eye-tracking', 'hit-test', 'anchors']
-            });
+            // Check if immersive VR is supported (isSessionSupported only takes mode, not options)
+            const supported = await navigator.xr.isSessionSupported('immersive-vr');
+            if (!supported) return false;
+            
+            // Note: Eye tracking and other features are checked during session request
             return supported;
         } catch (error) {
             return false;
@@ -105,11 +110,13 @@ export class GazeTracker {
         if (!navigator.xr) return false;
 
         try {
-            // Check if eye tracking is supported
-            const supported = await navigator.xr.isSessionSupported('immersive-vr', {
-                requiredFeatures: ['eye-tracking']
-            });
-            return supported;
+            // Check if immersive VR is supported
+            // Note: isSessionSupported only takes mode string, not options
+            const vrSupported = await navigator.xr.isSessionSupported('immersive-vr');
+            
+            // Eye tracking feature support is checked during actual session request
+            // This is a preliminary check
+            return vrSupported;
         } catch (error) {
             console.log('Eye tracking support check failed:', error);
             return false;
@@ -593,6 +600,36 @@ export class GazeTracker {
         this.currentImageId = null;
         this.dwellStartTime = null;
         this.lastDwellReportTime = null;
+    }
+
+    /**
+     * Clean up all resources and event listeners
+     */
+    destroy() {
+        // Reset tracking state
+        this.reset();
+
+        // Clear tracking data
+        this.viewedImages.clear();
+        this.gazeHistory = [];
+        this.previousGazeDirection = null;
+        this.lastVisionProDirection = null;
+        this.lastVisionProPosition = null;
+
+        // Clear XR session references
+        this.xrSession = null;
+        this.xrReferenceSpace = null;
+        this.eyeTrackingEnabled = false;
+
+        // Clear references
+        this.camera = null;
+        this.renderer = null;
+
+        // Clear callbacks
+        this.onGazeStart = null;
+        this.onGazeDwell = null;
+        this.onGazeEnd = null;
+        this.onGazePattern = null;
     }
 }
 
