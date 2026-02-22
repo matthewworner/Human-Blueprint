@@ -2,82 +2,104 @@
 
 A spatial computing experience that reveals the pattern of human mark-making consciousness across 50,000 years.
 
-## Phase 0: Proof of Concept
+## Status: Phase 0 Complete
 
-**Current Status:** Fully functional Three.js scene with real image loading, gaze tracking, rupture system, and generative audio.
+Fully functional Three.js scene with real image loading, gaze tracking, rupture system, and generative audio.
 
-### Features (Phase 0)
-- ✅ 50 real images loaded from JSON (spanning 50,000 years)
-- ✅ Modular positioning system (JSON, Spiral, Grid strategies)
-- ✅ Efficient texture management with caching
-- ✅ Mouse-based gaze detection with dwell tracking
-- ✅ Dwell-triggered rupture system (3-second threshold)
-- ✅ Generative ambient soundscape system
-- ✅ WebXR support (VR button enabled when available)
-- ✅ Click detection on images
-- ✅ Visual feedback (glow, scale) on gaze
+### Features
+- 50 real images loaded from JSON (spanning 50,000 years)
+- Modular positioning system (JSON, Spiral, Grid strategies)
+- Efficient texture management with caching and lazy loading
+- Mouse-based gaze detection with dwell tracking
+- Multi-type rupture system (8 rupture triggers)
+- Generative ambient soundscape with spatial audio
+- WebXR support (VR button enabled when available)
+- Personalization system with adaptive parameters
 
-### Getting Started
+### Quick Start
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
-
-# Build for production
-npm run build
 ```
 
 Visit `http://localhost:5173` in your browser.
 
-### Controls (Phase 0)
-- **Mouse movement**: Simulates gaze (looks at images, highlights them)
-- **Click**: Click on images for interaction
-- **Drag**: Orbit camera around the scene (OrbitControls)
-- **Dwell on image**: Hold mouse over image for 3 seconds to trigger rupture
-- **Rupture**: Camera transports to distant image with white flash and audio cue
-- **VR**: Click "Enter VR" button if WebXR is supported
+### Controls
+| Input | Action |
+|-------|--------|
+| Mouse movement | Simulates gaze (highlights images) |
+| Click | Click on images for interaction |
+| Drag | Orbit camera around scene |
+| Dwell (3s) | Hold mouse over image to trigger rupture |
+| VR Button | Enter WebXR immersive mode |
 
-### Project Structure
+## Project Structure
 
 ```
 src/
-  main.js                 # Application entry point & orchestration
+  main.js                    # Application entry point
   core/
-    SceneManager.js      # Three.js scene, camera, renderer, WebXR
-    ImageLoader.js       # Image loading from JSON with async handling
-    PositionStrategy.js  # Modular positioning (JSON, Spiral, Grid)
-    TextureManager.js    # Efficient texture caching and management
-    ArrangementAlgorithm.js  # 3D positioning logic (legacy)
-    GazeTracker.js       # Gaze/mouse tracking with raycasting
-    RuptureSystem.js     # Rupture mechanics and camera transport
-    AudioSystem.js       # Generative ambient soundscapes
+    SceneManager.js          # Three.js scene, camera, renderer, WebXR
+    ImageLoader.js           # Image loading with async handling
+    PositionStrategy.js      # Modular positioning strategies
+    TextureManager.js        # Texture caching and management
+    ArrangementAlgorithm.js  # UMAP-based 3D positioning
+    GazeTracker.js           # Gaze/mouse tracking with raycasting
+    RuptureSystem.js         # 8 rupture types with camera transport
+    AudioSystem.js           # Generative ambient soundscapes
+    PersonalizationManager.js # User behavior tracking
+    PostProcessManager.js    # Visual effects (rupture flash)
+    ImageClassifier.js       # Client-side AI classification
 
 public/
-  images.json            # 50 real images with metadata and positions
+  images.json                # Image metadata and positions
+
+scripts/
+  ingest.js                  # Image ingestion pipeline
+  computeLayout.js           # UMAP layout computation
+  scrape.js                  # Image scraping utilities
 ```
 
-### Next Steps (Phase 1)
+## Scripts
 
-- [x] Real image loading from JSON ✅
-- [x] WebXR integration (basic) ✅
-- [x] Generative audio system ✅
-- [ ] Multi-dimensional similarity arrangement (t-SNE/UMAP)
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run ingest       # Run image ingestion pipeline
+npm run compute-layout  # Compute UMAP layout
+```
+
+## Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| 3D Rendering | Three.js |
+| Spatial Computing | WebXR Device API |
+| Audio | Web Audio API |
+| ML Arrangement | UMAP-JS |
+| Build | Vite |
+
+## Roadmap
+
+### Phase 1 (Next)
 - [ ] Eye tracking (Vision Pro)
 - [ ] Connecting thread visualization
-- [ ] Expand image dataset to 500+ images
+- [ ] Expand image dataset to 500+
 - [ ] Continuous image ingestion pipeline
 
-### Tech Stack
+### Phase 2 (Future)
+- [ ] Multi-user experiences
+- [ ] Curated collections
+- [ ] Social sharing
 
-- **Three.js** - 3D rendering
-- **WebXR Device API** - Spatial computing (Phase 1)
-- **Web Audio API** - Generative soundscapes
-- **Vite** - Build tool and dev server
+## Documentation
+
+- [ARCHITECTURE.md](ARCHITECTURE.md) - System architecture
+- [STATUS.md](STATUS.md) - Current status
+- [TASKS.md](TASKS.md) - Active tasks
+- [Docs/](Docs/) - Additional documentation
 
 ---
 
 *"We've been marking for 50,000 years. We can't stop. This is the map of that compulsion."*
-

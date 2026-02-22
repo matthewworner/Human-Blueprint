@@ -26,3 +26,8 @@ npm-debug.log*
 # Testing
 coverage/
 
+# Archive (not needed in repo)
+Docs/archive/
+
+# Large data backups
+*.bak

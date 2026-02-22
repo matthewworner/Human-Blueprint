@@ -1,19 +1,28 @@
-# Art History - Active Tasks
-
-Use - [ ] for open, - [x] for done. Group by priority or area if needed.
+# The Human Blueprint - Tasks
 
 ## High Priority
-- [ ] Implement performance optimizations
-- [ ] Add requested features
-- [ ] Update documentation
+- [ ] Expand image dataset to 500+ images
+- [ ] Implement texture disposal for distant images
+- [ ] Add connecting thread visualization during rupture
 
 ## Medium Priority
-- [ ] Conduct user testing
-- [ ] Plan future enhancements
-- [ ] Fix identified bugs
+- [ ] Eye tracking integration (Vision Pro)
+- [ ] Add image metadata tooltips on hover
+- [ ] Implement user path visualization
+- [ ] Add settings panel for audio/visual preferences
 
-## Low/Someday
-- [ ] Explore VR/AR integration
-- [ ] Develop voice command features
-- [ ] Create curated collections
-- [ ] Add social sharing features
+## Low Priority
+- [ ] Add curated collections/themes
+- [ ] Social sharing features
+- [ ] Voice command navigation
+- [ ] Multi-user sync
+
+## Completed (2026-02-21)
+- [x] Fix AudioSystem THREE import
+- [x] Fix RuptureSystem parameter mismatches
+- [x] Add destroy() methods for cleanup
+- [x] Implement image caching for performance
+- [x] Add localStorage size limits
+- [x] Fix WebXR API usage
+- [x] Clean up project structure
+- [x] Update documentation
