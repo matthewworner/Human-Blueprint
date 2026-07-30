@@ -320,17 +320,14 @@ class HumanBlueprint {
                 const artist = imageData?.metadata?.artist || '';
                 const date = imageData?.metadata?.date || '';
                 const era = imageData?.era;
+                const credit = imageData?.licence?.credit || '';
 
                 tooltipTitle.textContent = title;
                 tooltipMeta.textContent = [artist, date].filter(Boolean).join(' · ') || 'Artwork';
 
-                // Format era
-                if (era) {
-                    const eraStr = era < 0 ? `${Math.abs(era)} BCE` : `${era} CE`;
-                    tooltipEra.textContent = eraStr;
-                } else {
-                    tooltipEra.textContent = '';
-                }
+                // Format era, and show rights/attribution when we have it.
+                const eraStr = era ? (era < 0 ? `${Math.abs(era)} BCE` : `${era} CE`) : '';
+                tooltipEra.textContent = [eraStr, credit].filter(Boolean).join(' · ');
 
                 tooltip.classList.add('visible');
             }

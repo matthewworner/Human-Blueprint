@@ -539,7 +539,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.776Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.889Z"
+    "updatedAt": "2026-05-16T11:09:10.889Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "1982.60.399",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/466105",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/md/original/DT133.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_453351",
@@ -1080,7 +1087,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "1994.141",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/453351",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/is/original/DP234015.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_456949",
@@ -1623,7 +1637,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2008.312",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/456949",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/is/original/DP167067.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_51776",
@@ -2165,7 +2186,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "52.177.1",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/51776",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DP154526.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_394633",
@@ -2708,7 +2736,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "53.600.1099",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/394633",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/dp/original/DP826386.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_394741",
@@ -3250,7 +3285,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "53.600.1079(2)",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/394741",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/dp/original/DP826251.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_465966",
@@ -3792,7 +3834,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "1974.121a–d",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/465966",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/md/original/DP155528.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_24860",
@@ -4335,7 +4384,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "1970.77",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/24860",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/aa/original/LC-1970_77-001.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_548065",
@@ -4877,7 +4933,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.780",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/548065",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-81.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_548069",
@@ -5420,7 +5483,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.772",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/548069",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-9.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_548075",
@@ -5962,7 +6032,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.785",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/548075",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-177.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_548068",
@@ -6504,7 +6581,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.784",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/548068",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-169.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_547969",
@@ -7046,7 +7130,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.759",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/547969",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-14.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_547976",
@@ -7589,7 +7680,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.754",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/547976",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/vs23.3.754b.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_547968",
@@ -8130,7 +8228,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.790",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/547968",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-166.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_547977",
@@ -8673,7 +8778,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.753",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/547977",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/vs23.3.782c.jpg.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_548067",
@@ -9214,7 +9326,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.778",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/548067",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-74.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_548053",
@@ -9757,7 +9876,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "23.3.755",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/548053",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/eg/original/bb468-221.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_591851",
@@ -10299,7 +10425,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "143.6 S92",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/591851",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/li/original/li143.6 S92.R.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_591839",
@@ -10841,7 +10974,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "250 T34",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/591839",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/li/original/li250 T34.R.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_54344",
@@ -11384,7 +11524,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "JP1137",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/54344",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DP143393.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_55176",
@@ -11927,7 +12074,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.777Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "JP3192",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/55176",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DP143854.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_55614",
@@ -12469,7 +12623,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "JP3419",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/55614",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DP130176.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_55219",
@@ -13013,7 +13174,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "JP3227",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/55219",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DP146902.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_55220",
@@ -13556,7 +13724,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "JP3228",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/55220",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/JP 3228.JPG",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_55221",
@@ -14099,7 +14274,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "JP3229",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/55221",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/JP 3229.JPG",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_55188",
@@ -14643,7 +14825,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "JP3204",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/55188",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DP143060.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_435680",
@@ -15185,7 +15374,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "1972.171",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/435680",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/ep/original/DP145411.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_42721",
@@ -15729,7 +15925,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2011.575.1a, b",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/42721",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/2011_575_1ab.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_53120",
@@ -16271,7 +16474,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2011.575.3a, b",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/53120",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/L37147_2011_575_3ab.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_53129",
@@ -16814,7 +17024,14 @@
       "department": "Asian Art"
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
-    "layoutMethod": "umap"
+    "layoutMethod": "umap",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2008.674a, b",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/53129",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DT208239.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_78187",
@@ -17356,7 +17573,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.890Z"
+    "updatedAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2012.444.2",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/78187",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DP307219.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_53123",
@@ -17897,7 +18121,14 @@
       "department": "Asian Art"
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
-    "layoutMethod": "umap"
+    "layoutMethod": "umap",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2009.512.1a, b",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/53123",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/as/original/DT208238.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_468471",
@@ -18441,7 +18672,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.892Z"
+    "updatedAt": "2026-05-16T11:09:10.892Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "55.135.8",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/468471",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/md/original/DP-25593-001.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_244889",
@@ -18985,7 +19223,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.892Z"
+    "updatedAt": "2026-05-16T11:09:10.892Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "81.6.18",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/244889",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/gr/original/DP111325.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_444832",
@@ -19528,7 +19773,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.892Z"
+    "updatedAt": "2026-05-16T11:09:10.892Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "95.14.12",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/444832",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/is/original/LC-95_14_12.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_252306",
@@ -20072,7 +20324,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.892Z"
+    "updatedAt": "2026-05-16T11:09:10.892Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "26.31.357",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/252306",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/gr/original/DP-31933-001.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_318444",
@@ -20615,7 +20874,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.892Z"
+    "updatedAt": "2026-05-16T11:09:10.892Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2018.868",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/318444",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/ao/original/DP-23881-001.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_320329",
@@ -21157,7 +21423,14 @@
     },
     "createdAt": "2026-01-02T09:45:14.778Z",
     "layoutMethod": "umap",
-    "updatedAt": "2026-05-16T11:09:10.892Z"
+    "updatedAt": "2026-05-16T11:09:10.892Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "2008.569.18",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/320329",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/ao/original/TR.394.18.2008 Back.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_11113",
@@ -21699,7 +21972,14 @@
       "medium": "Oil on canvas",
       "department": "The American Wing"
     },
-    "createdAt": "2026-05-16T11:09:10.890Z"
+    "createdAt": "2026-05-16T11:09:10.890Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "06.1281",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/11113",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/ad/original/ap06.1281.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   },
   {
     "id": "museum_met_248473",
@@ -22239,6 +22519,13 @@
       "medium": "Marble",
       "department": "Greek and Roman Art"
     },
-    "createdAt": "2026-05-16T11:09:10.892Z"
+    "createdAt": "2026-05-16T11:09:10.892Z",
+    "licence": {
+      "isPublicDomain": true,
+      "accessionNumber": "11.55",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/248473",
+      "sourceImage": "https://images.metmuseum.org/CRDImages/gr/original/DP138725.jpg",
+      "credit": "Metropolitan Museum of Art, Open Access (CC0)"
+    }
   }
 ]

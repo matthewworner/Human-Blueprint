@@ -36,7 +36,7 @@ The 2,000 fabricated Wikimedia records were dropped, so the field is honest but 
 | Tooltip metadata | **FIXED**; now reads flattened metadata |
 | User-path persistence/visual trail | **CODED, NOT MANUALLY VERIFIED** |
 | WebXR / eye tracking / visionOS | **NOT VERIFIED / NATIVE PORT IS A STUB** |
-| 41 real Met artworks | **SELF-HOSTED** — local WebP, real metadata; per-record licence fields still TODO |
+| 41 real Met artworks | **SELF-HOSTED + CC0-VERIFIED** — local WebP, real metadata, per-record `licence` block |
 
 ## Dataset reality
 
@@ -46,7 +46,7 @@ The 2,000 fabricated Wikimedia records were dropped, so the field is honest but 
 - All 41 carry real `metadata` (title, artist, date, culture, medium, department) and a 512-dim `featureVector`.
 - The 2,000 fabricated `generated_*` / `upload.wikimedia.org` records were removed by `scripts/curate-met-corpus.js`.
 
-Still missing: per-record licence/attribution/canonical-source fields. The Met's Open Access policy covers public-domain CRDImages, but each object's `isPublicDomain` status has not been individually verified and recorded.
+Each record carries a `licence` block (verified via the Met Collection API): all 41 are `isPublicDomain: true` (CC0), with accession number, canonical object URL, the exact source image, and a credit line. The tooltip now shows the credit on hover.
 
 ## Implemented revival work
 
@@ -59,14 +59,14 @@ Still missing: per-record licence/attribution/canonical-source fields. The Met's
 - Removed the inactive `TextureDisposalManager` hookup; texture ownership remains in `SceneManager`/`TextureManager`.
 - Curated an honest 41-work corpus: `scripts/curate-met-corpus.js` downloads + resizes the real Met records to local WebP and rewrites `images.json`, dropping the 2,000 fabricated records.
 - Smoke test now targets a real artwork plane (via a minimal debug hook) and asserts a texture actually loads, rather than relying on a fixed coordinate and a stale record count.
+- Licence/provenance enrichment: `scripts/enrich-met-licence.js` records a CC0 `licence` block (accession, object URL, source image, credit) on every record; all 41 verified public domain. Tooltip surfaces the credit.
 
 ## Next decision
 
-The corpus renders. The open items are honesty and experience:
+Licence is recorded and verified CC0. What remains is experience:
 
-1. Record per-record licence/attribution (Met Open Access `isPublicDomain` + source URL) so usage rights are auditable.
-2. Human walkthrough: dwell on a real work → rupture → thread draws; tune the dwell threshold so a first-time visitor triggers it within ~30 s.
-3. Optionally grow the corpus beyond 41 once the licence fields exist.
+1. Human walkthrough: dwell on a real work → rupture → thread draws; tune the dwell threshold so a first-time visitor triggers it within ~30 s.
+2. Optionally grow the corpus beyond 41 (the licence machinery now exists to vet new records).
 
 ## Repository state
 
