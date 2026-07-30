@@ -23,14 +23,18 @@ try {
     page.on('pageerror', (error) => pageErrors.push(error));
     await page.setRequestInterception(true);
     page.on('request', (request) => {
-        if (request.resourceType() !== 'image' || !request.url().startsWith('https://')) {
+        // Treat local artwork textures as the requests worth exercising. Hold the
+        // first one forever (never settles) to prove the texture timeout still
+        // protects startup; let the rest through so the LOD queue recovers.
+        const isArtwork = request.resourceType() === 'image' && /\/images\/[^/]+\.webp$/.test(request.url());
+        if (!isArtwork) {
             request.continue();
         } else if (!heldArtworkRequest) {
             artworkRequestCount++;
-            heldArtworkRequest = request.url(); // Simulate a third-party image request that never settles.
+            heldArtworkRequest = request.url();
         } else {
             artworkRequestCount++;
-            request.abort();
+            request.continue();
         }
     });
 
@@ -53,7 +57,15 @@ try {
 
     await page.goto(`http://127.0.0.1:${address.port}/`, { waitUntil: 'domcontentloaded' });
     await ready;
-    await page.mouse.move(400, 300);
+    // Point at a real artwork rather than a fixed coordinate: with a sparse
+    // corpus the screen centre may be empty.
+    let target = null;
+    for (let i = 0; i < 60 && !target; i++) {
+        target = await page.evaluate(() => window.__bpPointAtArtwork?.() ?? null);
+        if (!target) await new Promise((resolve) => setTimeout(resolve, 50));
+    }
+    assert(target, 'No artwork was available to gaze at');
+    await page.mouse.move(target.x, target.y);
     for (let i = 0; i < 60 && !heldArtworkRequest; i++) {
         await new Promise((resolve) => setTimeout(resolve, 50));
     }
@@ -69,6 +81,13 @@ try {
         await new Promise((resolve) => setTimeout(resolve, 50));
     }
     assert.deepEqual(pageErrors, []);
+    // At least one real artwork texture must land on a plane (not just placeholders).
+    let loaded = 0;
+    for (let i = 0; i < 120 && !loaded; i++) {
+        loaded = await page.evaluate(() => window.__bpLoadedTextureCount?.() ?? 0);
+        if (!loaded) await new Promise((resolve) => setTimeout(resolve, 50));
+    }
+    assert(loaded > 0, 'No artwork texture loaded onto a plane');
     const state = await page.evaluate(() => ({
         loadingHidden: document.querySelector('#loading')?.classList.contains('hidden'),
         artworkCount: document.querySelector('#info-status')?.textContent,
@@ -77,7 +96,8 @@ try {
     }));
 
     assert.equal(state.loadingHidden, true);
-    assert.match(state.artworkCount, /2041/);
+    const expectedCount = await page.evaluate(() => fetch('/images.json').then(r => r.json()).then(a => a.length));
+    assert.match(state.artworkCount, new RegExp(String(expectedCount)));
     assert(state.tooltipTitle, 'Tooltip metadata was empty');
     assert.doesNotMatch(state.tooltipTitle, /^generated_/);
     assert.equal(state.canvasCount, 1);

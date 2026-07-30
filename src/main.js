@@ -126,6 +126,12 @@ class HumanBlueprint {
 
         console.log('Blueprint ready.');
 
+        // Minimal debug hook so the smoke test can gaze at a real artwork.
+        if (typeof window !== 'undefined') {
+            window.__bpPointAtArtwork = () => this.sceneManager?.pointAtNearestArtwork?.() ?? null;
+            window.__bpLoadedTextureCount = () => this.sceneManager?.loadedTextureCount?.() ?? 0;
+        }
+
         // Set up page unload cleanup
         window.addEventListener('beforeunload', () => {
             this.cleanup();

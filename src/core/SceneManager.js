@@ -108,6 +108,38 @@ export class SceneManager {
         return Array.from(this.imageObjectsCache);
     }
 
+    /**
+     * Screen coordinate (CSS px) of the artwork nearest screen centre.
+     * Used by the smoke test to gaze at a real plane; harmless if unused.
+     * @returns {{x:number,y:number}|null}
+     */
+    pointAtNearestArtwork() {
+        this.camera.updateMatrixWorld();
+        const v = new THREE.Vector3();
+        let best = null;
+        let bestDist = Infinity;
+        for (const obj of this.imageObjectsCache) {
+            v.copy(obj.position).project(this.camera);
+            if (v.z > 1) continue; // behind or outside the clip volume
+            const d = v.x * v.x + v.y * v.y;
+            if (d < bestDist) {
+                bestDist = d;
+                best = { x: (v.x * 0.5 + 0.5) * window.innerWidth, y: (-v.y * 0.5 + 0.5) * window.innerHeight };
+            }
+        }
+        return best;
+    }
+
+    /**
+     * Count of image planes whose texture has actually loaded. Smoke-test use.
+     * @returns {number}
+     */
+    loadedTextureCount() {
+        let n = 0;
+        for (const obj of this.imageObjectsCache) if (obj.material?.map) n++;
+        return n;
+    }
+
     setupClickDetection() {
         // Mouse click detection
         this.renderer.domElement.addEventListener('click', (event) => {

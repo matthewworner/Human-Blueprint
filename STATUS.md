@@ -4,11 +4,11 @@
 
 ## Stage
 
-**BOOT REVIVED — ARTWORK CORPUS BLOCKED**
+**BOOT REVIVED — 41-WORK REAL CORPUS SELF-HOSTED**
 
-The web app now starts, renders its Three.js scene, opens settings and completes the desktop pointer-gaze → rupture callback path. This is verified by an automated Puppeteer smoke test and a separate real-network browser run.
+The web app starts, renders its Three.js scene, opens settings, completes the desktop pointer-gaze → rupture callback path, and now renders real artwork: the 41 genuine Met records have been downloaded, resized to WebP and self-hosted locally. Verified by an automated Puppeteer smoke test (including an assertion that at least one texture lands on a plane) and the production build.
 
-The experience is **not yet a compelling artwork demo**. It currently renders coloured placeholders because the claimed 2,041-work corpus is predominantly generated data with unusable remote URLs.
+The 2,000 fabricated Wikimedia records were dropped, so the field is honest but sparse (41 works). Per-record licence/attribution fields are not yet recorded, and the visual rupture/thread experience still needs a human walkthrough.
 
 ## Verification
 
@@ -21,7 +21,7 @@ The experience is **not yet a compelling artwork demo**. It currently renders co
 | Settings panel | ✅ PASS | Opened by Puppeteer after ready |
 | Desktop pointer-gaze → destination rupture callback | ✅ PASS | Triggered automatically without page errors |
 | Real-network browser run | ✅ PASS for shell | Ready in 759 ms; rupture callback in 3.8 s; zero page errors |
-| Real artwork rendering | ❌ BLOCKED | No local artwork files; sampled generated Wikimedia URLs return HTTP 400 |
+| Real artwork rendering | ✅ PASS | 41 Met images self-hosted as WebP in `public/images/` (~2.2 MB); smoke test asserts ≥1 texture lands on a plane |
 
 ## Feature reality
 
@@ -36,19 +36,17 @@ The experience is **not yet a compelling artwork demo**. It currently renders co
 | Tooltip metadata | **FIXED**; now reads flattened metadata |
 | User-path persistence/visual trail | **CODED, NOT MANUALLY VERIFIED** |
 | WebXR / eye tracking / visionOS | **NOT VERIFIED / NATIVE PORT IS A STUB** |
-| 2,041 real artworks | **FALSE CLAIM — DATASET BLOCKED** |
+| 41 real Met artworks | **SELF-HOSTED** — local WebP, real metadata; per-record licence fields still TODO |
 
 ## Dataset reality
 
-`public/images.json` contains 2,041 **records**, not 2,041 verified artworks:
+`public/images.json` now contains **41 records**, all genuine Met works:
 
-- 1,950 IDs begin with `generated_`.
-- 1,499 URLs match the generator’s deliberately fabricated Wikimedia path pattern.
-- Only 41 records contain feature vectors.
-- No artwork files are stored locally.
-- The repository stores no licence, attribution or canonical source fields for the Wikimedia-backed records.
+- All 41 point to local assets (`/images/<id>.webp`, ~2.2 MB total, max edge 800 px).
+- All 41 carry real `metadata` (title, artist, date, culture, medium, department) and a 512-dim `featureVector`.
+- The 2,000 fabricated `generated_*` / `upload.wikimedia.org` records were removed by `scripts/curate-met-corpus.js`.
 
-Do **not** run the original audit recommendation to download all 2,041 URLs. The minimum honest next step is to approve a small, rights-cleared and metadata-verified corpus, self-host resized assets, and hand-author or verify its first meaningful rupture connections.
+Still missing: per-record licence/attribution/canonical-source fields. The Met's Open Access policy covers public-domain CRDImages, but each object's `isPublicDomain` status has not been individually verified and recorded.
 
 ## Implemented revival work
 
@@ -59,10 +57,16 @@ Do **not** run the original audit recommendation to download all 2,041 URLs. The
 - Fixed missing rupture update wiring, Three.js `FilmPass` API drift and audio autoplay/custom-binaural runtime errors.
 - Added deterministic Puppeteer coverage in `scripts/smoke-test.js`, exposed as `npm test`.
 - Removed the inactive `TextureDisposalManager` hookup; texture ownership remains in `SceneManager`/`TextureManager`.
+- Curated an honest 41-work corpus: `scripts/curate-met-corpus.js` downloads + resizes the real Met records to local WebP and rewrites `images.json`, dropping the 2,000 fabricated records.
+- Smoke test now targets a real artwork plane (via a minimal debug hook) and asserts a texture actually loads, rather than relying on a fixed coordinate and a stale record count.
 
 ## Next decision
 
-Choose the first honest demo corpus. Recommended default: curate a relevant subset from the 41 Met records, verify public-domain status and authoritative metadata, self-host resized images, then validate the complete visual rupture/thread experience manually.
+The corpus renders. The open items are honesty and experience:
+
+1. Record per-record licence/attribution (Met Open Access `isPublicDomain` + source URL) so usage rights are auditable.
+2. Human walkthrough: dwell on a real work → rupture → thread draws; tune the dwell threshold so a first-time visitor triggers it within ~30 s.
+3. Optionally grow the corpus beyond 41 once the licence fields exist.
 
 ## Repository state
 
