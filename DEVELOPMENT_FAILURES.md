@@ -88,7 +88,7 @@ try {
 - **Automated regression:** ✅ `npm test`.
 - **Settings and desktop dwell → destination rupture callback:** ✅ verified without page errors.
 - **Artwork corpus:** ❌ blocked; current scene is predominantly coloured placeholders.
-- **Working tree:** ⚠️ heavily dirty and uncommitted; a clean clone does not reproduce the revival state.
+- **Working tree:** ✅ committed (`7fcc81c`, 2026-07-30) and pushed to `origin/main`; a clean clone now reproduces the revival state.
 
 See [`STATUS.md`](STATUS.md) for the current feature table and evidence.
 
@@ -130,7 +130,7 @@ See [`STATUS.md`](STATUS.md) for the current feature table and evidence.
 2. Self-host resized assets with licence, attribution and canonical source metadata.
 3. Hand-author or verify the first meaningful rupture connections.
 4. Run a human visual/audio walkthrough after `npm test` passes.
-5. Snapshot the current dirty working tree only with explicit approval; do not push automatically.
+5. ~~Snapshot the current dirty working tree only with explicit approval; do not push automatically.~~ **Done (2026-07-30):** committed as `7fcc81c` and pushed to `origin/main` with explicit approval.
 
 ---
 

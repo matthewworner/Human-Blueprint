@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - The app shell is verified, but the artwork experience still renders placeholders.
 - Of 2,041 records, 1,950 are generated, 1,499 use fabricated Wikimedia URL patterns, only 41 contain feature vectors, and none point to local artwork files.
 - The 2026-05-16 claims of “100% metadata coverage” and “2,041 images” describe generated record coverage, not a verified real-artwork corpus. Do not self-host that dataset wholesale.
-- The working tree remains uncommitted and includes required untracked modules.
+- The working tree was committed (`7fcc81c`, 2026-07-30) and pushed to `origin/main`; required modules are tracked and a clean clone reproduces the revived shell.
 
 ## ⚠️ [UNVERIFIED] — 2026-05-16
 

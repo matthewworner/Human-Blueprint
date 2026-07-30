@@ -1,6 +1,6 @@
 # The Human Blueprint — Status
 
-**Last updated:** 2026-07-26
+**Last updated:** 2026-07-30
 
 ## Stage
 
@@ -66,7 +66,7 @@ Choose the first honest demo corpus. Recommended default: curate a relevant subs
 
 ## Repository state
 
-The working tree remains heavily modified and uncommitted, including required untracked core modules. Nothing was staged, committed or pushed during the revival pass. A clean clone does not yet reproduce this state.
+The revival pass was committed (`7fcc81c`, 2026-07-30) and pushed to `origin/main`. All required core modules and `scripts/smoke-test.js` are tracked, and Xcode user-state (`xcuserdata/`, `*.xcuserstate`) is now ignored. A clean clone reproduces the revived app.
 
 See also:
 

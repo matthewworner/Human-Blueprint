@@ -76,7 +76,7 @@ None — all changes are additive
 - The 2,041-entry dataset is not a verified artwork corpus; most records and URLs were generated.
 - No artwork assets are local, so current network failures resolve to coloured placeholders.
 - User-path output, WebXR hardware behaviour and visual/audio quality still need manual verification.
-- The working tree is uncommitted and required core modules remain untracked.
+- The working tree is committed (`7fcc81c`) and pushed to `origin/main`; required core modules are tracked. A clean clone reproduces the revived shell.
 
 ## Next Work
 

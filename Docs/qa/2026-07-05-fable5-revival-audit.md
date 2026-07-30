@@ -42,9 +42,9 @@ The original recommendation to download and self-host all 2,041 URLs **must not 
 
 **Revive the boot and interaction shell; replace the corpus and connection model.** The Three.js composition, settings and core dwell/rupture path are now runnable and regression-tested. The claimed visual-similarity dataset is not a foundation: most positions, labels and URLs were generated, and the current rupture selector relies on those random descriptors rather than a consistently verified vector set.
 
-### Remaining repository risk
+### Repository state — resolved 2026-07-30
 
-The working tree remains heavily dirty and uncommitted. Required core modules and the smoke test are still untracked, so a clean clone does not reproduce the revived app. Nothing was staged, committed or pushed during this pass.
+Committed as `7fcc81c` ("Revive boot shell and commit runnable working tree") and pushed to `origin/main`; Xcode user-state (`xcuserdata/`, `*.xcuserstate`) added to `.gitignore`. All required core modules and `scripts/smoke-test.js` are now tracked, so a clean clone reproduces the revived app. (The 2026-07-26 revival pass had left the tree uncommitted — that open risk is now closed.)
 
 ---
 
