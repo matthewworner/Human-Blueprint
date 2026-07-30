@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { PostProcessManager } from './PostProcessManager.js';
+import { TextureManager } from './TextureManager.js';
 
 export class SceneManager {
     constructor(container) {
@@ -77,6 +78,7 @@ export class SceneManager {
 
         // Post-processing effects
         this.postProcessManager = new PostProcessManager(this.scene, this.camera, this.renderer);
+        this.textureManager = new TextureManager();
 
         // Cache for image objects (avoids repeated scene.traverse calls)
         this.imageObjectsCache = new Set();
@@ -307,24 +309,12 @@ export class SceneManager {
         // Use 1.0x1.0 for square-ish images, or adjust based on image aspect
         const geometry = new THREE.PlaneGeometry(1.0, 1.0);
 
-        // Use texture from imageData or create placeholder
-        const texture = imageData.texture || this.createPlaceholderTexture(imageData);
-
-        // Ensure texture is properly configured
-        if (texture) {
-            texture.flipY = true; // Fix upside-down images
-            texture.needsUpdate = true;
-        }
-
-        // Log if using placeholder
-        if (!imageData.texture && imageData.url) {
-            console.warn(`Using placeholder for ${imageData.id} - texture not loaded yet`);
-        } else if (imageData.texture) {
-            console.log(`Using loaded texture for ${imageData.id}`);
-        }
+        // Start without remote textures; the LOD queue fills them in after first render.
+        const texture = imageData.texture || null;
 
         const material = new THREE.MeshStandardMaterial({
             map: texture,
+            color: texture ? 0xffffff : this.getPlaceholderColor(imageData),
             side: THREE.DoubleSide,
             emissive: 0x000000,
             transparent: false,
@@ -351,12 +341,6 @@ export class SceneManager {
         // Make plane clickable/gazeable
         plane.userData.isImage = true;
 
-        // If texture is still loading, update material when it loads
-        if (imageData.url && !imageData.texture && !imageData.metadata?.isPlaceholder) {
-            // Texture might be loading asynchronously - update when ready
-            this.updateTextureWhenReady(plane, imageData);
-        }
-
         this.scene.add(plane);
 
         // Register in cache for efficient lookups
@@ -365,121 +349,13 @@ export class SceneManager {
         return plane;
     }
 
-    async loadTestImageFromURL(url, position = { x: 0, y: 0, z: 0 }) {
-        return new Promise((resolve, reject) => {
-            const loader = new THREE.TextureLoader();
-
-            loader.load(
-                url,
-                (texture) => {
-                    // Create plane geometry
-                    const geometry = new THREE.PlaneGeometry(2, 2);
-
-                    const material = new THREE.MeshStandardMaterial({
-                        map: texture,
-                        side: THREE.DoubleSide,
-                        emissive: 0x000000
-                    });
-
-                    const plane = new THREE.Mesh(geometry, material);
-                    plane.position.set(position.x, position.y, position.z);
-
-                    // Store image metadata
-                    plane.userData = {
-                        imageData: { url: url },
-                        originalPosition: position,
-                        isGazed: false,
-                        dwellTime: 0
-                    };
-
-                    this.scene.add(plane);
-                    resolve(plane);
-                },
-                undefined,
-                (error) => {
-                    console.error('Error loading image:', error);
-                    reject(error);
-                }
-            );
-        });
-    }
-
-    /**
-     * Update texture when it loads asynchronously
-     * @param {THREE.Mesh} plane - The image plane
-     * @param {Object} imageData - Image data
-     */
-    async updateTextureWhenReady(plane, imageData) {
-        if (!imageData.url) return;
-
-        try {
-            // Try loading texture again (might have been cached by now)
-            const loader = new THREE.TextureLoader();
-            loader.load(
-                imageData.url,
-                (texture) => {
-                    texture.flipY = true; // Fix upside-down images
-                    texture.needsUpdate = true;
-                    plane.userData.material.map = texture;
-                    plane.userData.material.needsUpdate = true;
-                    plane.userData.imageData.texture = texture;
-                    console.log(`Texture updated for ${imageData.id}`);
-                },
-                undefined,
-                (error) => {
-                    console.warn(`Could not update texture for ${imageData.id}:`, error);
-                }
-            );
-        } catch (error) {
-            console.warn(`Error updating texture for ${imageData.id}:`, error);
+    getPlaceholderColor(imageData) {
+        let hash = 0;
+        const id = imageData?.id || '';
+        for (let i = 0; i < id.length; i++) {
+            hash = id.charCodeAt(i) + ((hash << 5) - hash);
         }
-    }
-
-    createPlaceholderTexture(imageData = null) {
-        // Create a simple colored texture as placeholder
-        const canvas = document.createElement('canvas');
-        canvas.width = 512;
-        canvas.height = 512;
-        const ctx = canvas.getContext('2d');
-
-        // Use image ID for consistent color, or random
-        let hue = 0;
-        if (imageData?.id) {
-            // Generate consistent color from ID
-            let hash = 0;
-            for (let i = 0; i < imageData.id.length; i++) {
-                hash = imageData.id.charCodeAt(i) + ((hash << 5) - hash);
-            }
-            hue = Math.abs(hash) % 360;
-        } else {
-            hue = Math.random() * 360;
-        }
-
-        ctx.fillStyle = `hsl(${hue}, 70%, 50%)`;
-        ctx.fillRect(0, 0, 512, 512);
-
-        // Add some pattern
-        ctx.fillStyle = 'rgba(0,0,0,0.3)';
-        for (let i = 0; i < 20; i++) {
-            ctx.fillRect(
-                Math.random() * 512,
-                Math.random() * 512,
-                Math.random() * 100,
-                Math.random() * 100
-            );
-        }
-
-        // Add text if imageData has info
-        if (imageData?.id) {
-            ctx.fillStyle = 'rgba(255,255,255,0.8)';
-            ctx.font = '24px sans-serif';
-            ctx.textAlign = 'center';
-            ctx.fillText(imageData.id.substring(0, 20), 256, 256);
-        }
-
-        const texture = new THREE.CanvasTexture(canvas);
-        texture.flipY = true; // Fix upside-down images
-        return texture;
+        return new THREE.Color().setHSL((Math.abs(hash) % 360) / 360, 0.7, 0.5);
     }
 
     onWindowResize() {
@@ -590,43 +466,34 @@ export class SceneManager {
 
         data.loading = true;
 
-        const loader = new THREE.TextureLoader();
-        loader.load(
-            data.url,
-            (texture) => {
-                texture.flipY = true;
-                texture.colorSpace = THREE.SRGBColorSpace;
+        this.textureManager.loadTexture(data.url).then((texture) => {
+            // Start with transparent, fade in
+            plane.material.transparent = true;
+            plane.material.opacity = 0;
+            plane.material.map = texture;
+            plane.material.color.setHex(0xffffff);
+            plane.material.needsUpdate = true;
 
-                // Start with transparent, fade in
-                plane.material.transparent = true;
-                plane.material.opacity = 0;
-                plane.material.map = texture;
-                plane.material.needsUpdate = true;
-
-                // Smooth fade-in animation
-                this.fadeInTexture(plane, () => {
-                    data.texture = texture;
-                    data.loading = false;
-                    data.queued = false;
-                    this.isLoadingTexture = false;
-
-                    // Small delay before next load to prevent stutter
-                    setTimeout(() => this.processTextureQueue(), 100);
-                });
-            },
-            undefined,
-            (err) => {
-                console.warn(`Failed to lazy load ${data.id}`);
+            // Smooth fade-in animation
+            this.fadeInTexture(plane, () => {
+                data.texture = texture;
                 data.loading = false;
                 data.queued = false;
-                data.metadata = data.metadata || {};
-                data.metadata.isPlaceholder = true;
                 this.isLoadingTexture = false;
 
-                // Try next in queue
-                setTimeout(() => this.processTextureQueue(), 50);
-            }
-        );
+                // Small delay before next load to prevent stutter
+                setTimeout(() => this.processTextureQueue(), 100);
+            });
+        }).catch(() => {
+            data.loading = false;
+            data.queued = false;
+            data.metadata = data.metadata || {};
+            data.metadata.isPlaceholder = true;
+            this.isLoadingTexture = false;
+
+            // Try next in queue
+            setTimeout(() => this.processTextureQueue(), 50);
+        });
     }
 
     fadeInTexture(plane, onComplete) {

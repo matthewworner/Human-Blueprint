@@ -9,6 +9,7 @@ export class TextureManager {
         this.textureCache = new Map(); // URL -> Texture mapping
         this.loadingPromises = new Map(); // URL -> Promise mapping (prevents duplicate loads)
         this.loader = new THREE.TextureLoader();
+        this.loadTimeout = 5000;
         
         // Texture settings for image viewing
         this.defaultTextureSettings = {
@@ -39,9 +40,23 @@ export class TextureManager {
         
         // Create new loading promise
         const promise = new Promise((resolve, reject) => {
+            let settled = false;
+            const timeout = setTimeout(() => {
+                settled = true;
+                this.loadingPromises.delete(url);
+                reject(new Error(`Texture load timed out after ${this.loadTimeout}ms: ${url}`));
+            }, this.loadTimeout);
+
             this.loader.load(
                 url,
                 (texture) => {
+                    if (settled) {
+                        texture.dispose();
+                        return;
+                    }
+                    settled = true;
+                    clearTimeout(timeout);
+
                     // Apply default settings
                     texture.flipY = true; // Fix upside-down images
                     texture.generateMipmaps = true;
@@ -49,17 +64,18 @@ export class TextureManager {
                     texture.magFilter = THREE.LinearFilter;
                     texture.colorSpace = THREE.SRGBColorSpace;
                     texture.needsUpdate = true;
-                    
+
                     // Cache the texture
                     this.textureCache.set(url, texture);
                     this.loadingPromises.delete(url);
-                    
-                    console.log(`Texture loaded: ${url}`);
+
                     resolve(texture);
                 },
-                undefined, // Progress callback (optional)
+                undefined,
                 (error) => {
-                    console.error(`Texture load failed: ${url}`, error);
+                    if (settled) return;
+                    settled = true;
+                    clearTimeout(timeout);
                     this.loadingPromises.delete(url);
                     reject(error);
                 }

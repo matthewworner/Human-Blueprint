@@ -156,7 +156,7 @@ export class ImageLoader {
 
             // Fetch JSON file
             console.log(`Fetching JSON from: ${jsonPath}`);
-            const response = await fetch(jsonPath);
+            const response = await fetch(jsonPath, { signal: AbortSignal.timeout(5000) });
             console.log(`Fetch response status: ${response.status}, statusText: ${response.statusText}, headers:`, Object.fromEntries(response.headers.entries()));
             if (!response.ok) {
                 const responseText = await response.text();
@@ -164,9 +164,7 @@ export class ImageLoader {
                 throw new Error(`Failed to load JSON: ${response.status} ${response.statusText} - ${responseText}`);
             }
 
-            let jsonData = await response.json();
-            // Remove test limit - use lazy loading instead
-            // jsonData = jsonData.slice(0, 50);
+            const jsonData = await response.json();
             this.loadingState.total = jsonData.length;
 
             // Load all images in parallel with error handling
@@ -190,17 +188,16 @@ export class ImageLoader {
                     this.loadedImages.push(placeholder);
                     this.loadingState.loaded++;
                 }
-
-                // Report progress
-                if (this.onProgress) {
-                    this.onProgress({
-                        loaded: this.loadingState.loaded,
-                        total: this.loadingState.total,
-                        failed: this.loadingState.failed,
-                        percentage: Math.round((this.loadingState.loaded / this.loadingState.total) * 100)
-                    });
-                }
             });
+
+            if (this.onProgress) {
+                this.onProgress({
+                    loaded: this.loadingState.loaded,
+                    total: this.loadingState.total,
+                    failed: this.loadingState.failed,
+                    percentage: 100
+                });
+            }
 
             this.loadingState.inProgress = false;
 
@@ -238,9 +235,8 @@ export class ImageLoader {
             let classification = null;
 
             if (imageData.url) {
-                // Optimized Loading: Only load first 10 textures immediately
-                // The rest will be lazy-loaded by SceneManager based on camera distance
-                const shouldLoadImmediately = !this.lazyLoad || index < 10;
+                // Metadata-first startup: textures load later through SceneManager's LOD queue.
+                const shouldLoadImmediately = !this.lazyLoad;
 
                 try {
                     if (shouldLoadImmediately) {
@@ -287,8 +283,8 @@ export class ImageLoader {
                         texture = this.createPlaceholderTexture(imageData);
                     }
                 }
-            } else {
-                // No URL provided - use Picsum as default
+            } else if (!this.lazyLoad) {
+                // No URL provided - use Picsum only when eager loading is explicitly requested
                 try {
                     const defaultUrl = `https://picsum.photos/800/600?random=${index}`;
                     texture = await this.textureManager.loadTexture(defaultUrl);
@@ -313,6 +309,7 @@ export class ImageLoader {
                 // Additional metadata
                 metadata: {
                     ...imageData,
+                    ...imageData.metadata,
                     loaded: true,
                     loadIndex: index,
                     aiConfidence: classification?.confidence || 0,

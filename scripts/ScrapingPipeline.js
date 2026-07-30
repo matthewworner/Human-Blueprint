@@ -64,14 +64,20 @@ class MetMuseumAPI extends BaseMuseumAPI {
 
   async scrape() {
     const results = [];
-    const searchTerms = ['painting', 'sculpture', 'drawing', 'print', 'rock art', 'petroglyph'];
+    // Expanded search terms for better coverage
+    const searchTerms = [
+      'painting', 'sculpture', 'drawing', 'print', 'rock art', 'petroglyph',
+      'manuscript', 'textile', 'metalwork', 'ceramic', 'glass', 'jewelry',
+      'photograph', 'installation', 'performance', 'digital', 'cave painting',
+      'ancient', 'medieval', 'renaissance', 'modern', 'contemporary'
+    ];
 
     for (const term of searchTerms) {
       try {
         const searchData = await this.makeRequest(`/search?hasImages=true&q=${encodeURIComponent(term)}`);
         if (searchData.objectIDs && searchData.objectIDs.length > 0) {
-          // Limit to first 10 objects per term to avoid overwhelming
-          const objectIds = searchData.objectIDs.slice(0, 10);
+          // Increased from 10 to 50 objects per term for better coverage
+          const objectIds = searchData.objectIDs.slice(0, 50);
 
           for (const objectId of objectIds) {
             try {
@@ -94,7 +100,7 @@ class MetMuseumAPI extends BaseMuseumAPI {
                 });
               }
             } catch (error) {
-              console.error(`Error fetching object ${objectId}:`, error.message);
+              // Silently skip failed fetches to continue processing
             }
           }
         }

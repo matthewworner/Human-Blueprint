@@ -1,0 +1,33 @@
+name: HumanBlueprint
+options:
+  bundleIdPrefix: com.humanblueprint
+  deploymentTarget:
+    visionOS: "1.2"
+  xcodeVersion: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "2"
+    ENABLE_PREVIEWS: YES
+
+targets:
+  HumanBlueprint:
+    type: application
+    platform: visionOS
+    sources:
+      - path: HumanBlueprint
+    settings:
+      base:
+        INFOPLIST_FILE: HumanBlueprint/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.humanblueprint.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+
+schemes:
+  HumanBlueprint:
+    build:
+      targets:
+        HumanBlueprint: all
+    run:
+      config: Debug

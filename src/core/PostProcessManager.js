@@ -47,10 +47,8 @@ export class PostProcessManager {
         // 3. Film Pass (Grain & Atmosphere)
         // noiseIntensity, scanlinesIntensity, scanlinesCount, grayscale
         this.filmPass = new FilmPass(
-            this.params.filmNoise, 
-            this.params.filmScanlines, 
-            648, 
-            this.params.filmGray
+            this.params.filmNoise,
+            Boolean(this.params.filmGray)
         );
         this.composer.addPass(this.filmPass);
         
@@ -135,7 +133,7 @@ export class PostProcessManager {
 
         // Increase noise
         if (this.filmPass) {
-            this.filmPass.uniforms.nIntensity.value = this.params.filmNoise + (intensity * 0.8);
+            this.filmPass.uniforms.intensity.value = this.params.filmNoise + (intensity * 0.8);
         }
 
         // Apply rupture shader distortion

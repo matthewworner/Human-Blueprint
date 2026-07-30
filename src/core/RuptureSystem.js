@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { ThreadVisualization } from './ThreadVisualization.js';
 
 export class RuptureSystem {
     // Rupture types
@@ -112,6 +113,10 @@ export class RuptureSystem {
         this.originalImageEmissives = new Map();
 
         this.onRupture = null;
+
+        // Thread visualization
+        this.threadVisualization = null;
+        this.activeThread = null;
     }
     
     update(camera = null, deltaTime = null) {
@@ -185,23 +190,6 @@ export class RuptureSystem {
      * Check for all rupture conditions
      */
     checkForRuptures() {
-        const now = Date.now();
-
-        // Check avoidance (not looking at certain images for too long)
-        if (this.detectAvoidance()) {
-            this.triggerRuptureByType(RuptureSystem.RUPTURE_TYPES.AVOIDANCE);
-        }
-
-        // Check scanning (rapid switching between images)
-        if (this.detectScanning()) {
-            this.triggerRuptureByType(RuptureSystem.RUPTURE_TYPES.SCANNING);
-        }
-
-        // Check returning (revisiting previously seen images)
-        if (this.detectReturning()) {
-            this.triggerRuptureByType(RuptureSystem.RUPTURE_TYPES.RETURNING);
-        }
-
         // Check rapid movement
         if (this.detectRapidMovement()) {
             this.triggerRuptureByType(RuptureSystem.RUPTURE_TYPES.RAPID_MOVEMENT);
@@ -800,7 +788,10 @@ export class RuptureSystem {
             this.audioSystem.triggerRupture();
         }
 
-        // Step 4: Smooth camera movement with disorienting effect
+        // Step 4: Create connecting thread visualization
+        this.createThreadVisualization(sourceImage, destination, ruptureType);
+
+        // Step 5: Smooth camera movement with disorienting effect
         this.moveCameraToDestination(destination, params);
 
         // Step 5: Highlight destination and fade in nearby images
@@ -811,7 +802,49 @@ export class RuptureSystem {
             this.completeRupture();
         }, params.speed + 500);
     }
-    
+
+    createThreadVisualization(sourceImage, destination, ruptureType) {
+        if (!sourceImage || !destination) return;
+
+        // Initialize thread visualization if needed
+        if (!this.threadVisualization && this.sceneManager?.scene) {
+            this.threadVisualization = new ThreadVisualization(this.sceneManager.scene);
+        }
+
+        if (!this.threadVisualization) return;
+
+        // Get style and params based on rupture type
+        const style = ThreadVisualization.getStyleForRuptureType(ruptureType);
+        const color = ThreadVisualization.getColorForRuptureType(ruptureType);
+        const duration = ThreadVisualization.getDurationForRuptureType(ruptureType, 1500);
+
+        // Create thread
+        this.activeThread = this.threadVisualization.createThread(
+            sourceImage,
+            destination,
+            {
+                style: style,
+                color: color,
+                duration: duration,
+                fadeOutDelay: duration * 0.3
+            }
+        );
+
+        // Start growth animation
+        this.threadVisualization.animateGrowth(this.activeThread);
+    }
+
+    updateThreadVisualization() {
+        this.threadVisualization?.update();
+    }
+
+    startThreadShrink() {
+        if (this.threadVisualization && this.activeThread) {
+            this.threadVisualization.startShrink(this.activeThread);
+            this.activeThread = null;
+        }
+    }
+
     storeOriginalProperties() {
         // Store original opacity and emissive for all images
         this.sceneManager.scene.children.forEach(child => {
@@ -930,6 +963,9 @@ export class RuptureSystem {
     }
     
     completeRupture() {
+        // Start thread shrinking
+        this.startThreadShrink();
+
         // Restore all image opacities
         this.sceneManager.scene.children.forEach(child => {
             if (child.userData?.imageData && child.material) {
@@ -1013,6 +1049,12 @@ export class RuptureSystem {
      * Clean up all intervals and resources
      */
     destroy() {
+        // Destroy thread visualization
+        if (this.threadVisualization) {
+            this.threadVisualization.destroyAll();
+            this.threadVisualization = null;
+        }
+
         // Clear any active intervals
         if (this.pulseInterval) {
             clearInterval(this.pulseInterval);

@@ -31,3 +31,7 @@ Docs/archive/
 
 # Large data backups
 *.bak
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate

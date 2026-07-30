@@ -1,0 +1,34 @@
+name: HumanBlueprint
+options:
+  bundleIdPrefix: com.humanblueprint
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15.0"
+
+settings:
+  base:
+    PRODUCT_NAME: HumanBlueprint
+    SWIFT_VERSION: "5.0"
+
+targets:
+  HumanBlueprint:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: HumanBlueprint.swift
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.humanblueprint.macos
+      INFOPLIST_FILE: Info.plist
+      CODE_SIGN_IDENTITY: "-"
+      CODE_SIGN_STYLE: Manual
+      DEVELOPMENT_TEAM: ""
+      MACOSX_DEPLOYMENT_TARGET: "14.0"
+
+schemes:
+  HumanBlueprint:
+    build:
+      targets:
+        HumanBlueprint: all
+    run:
+      config: Debug

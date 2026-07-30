@@ -8,7 +8,7 @@ export class AudioSystem {
         // Audio state for cutting/restoring
         this.activeSources = []; // Track active audio sources
         this.masterGain = null; // Master gain node for cutting audio
-        this.originalGain = 0.12; // Base volume (quiet, subliminal - Eno-style)
+        this.originalGain = 0.1; // 70% of previous (quiet, subliminal - Eno-style, Apple-friendly)
         
         // Generative soundscape state
         this.soundscapeActive = false;
@@ -24,7 +24,7 @@ export class AudioSystem {
 
         // HRTF and binaural audio
         this.hrtfEnabled = true;
-        this.binauralEnabled = true;
+        this.binauralEnabled = false; // Use the browser's native PannerNode HRTF path.
         this.spatialAudioSources = new Map(); // imageId -> { leftEar, rightEar, convolver }
 
         // Context tracking
@@ -61,12 +61,7 @@ export class AudioSystem {
         // Initialize Web Audio API
         try {
             this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            
-            // Resume audio context if suspended (browser autoplay policy)
-            if (this.audioContext.state === 'suspended') {
-                await this.audioContext.resume();
-            }
-            
+
             // Create master gain node for audio cutting
             this.masterGain = this.audioContext.createGain();
             this.masterGain.connect(this.audioContext.destination);
@@ -890,5 +885,24 @@ export class AudioSystem {
 
         this.soundscapeActive = false;
         this.isInitialized = false;
+    }
+
+    /**
+     * Set master volume (0-1 range)
+     * @param {number} volume - Volume level from 0 (muted) to 1 (full)
+     */
+    setMasterVolume(volume) {
+        if (!this.masterGain || !this.audioContext) return;
+        
+        // Clamp value
+        const clampedVolume = Math.max(0, Math.min(1, volume));
+        
+        const now = this.audioContext.currentTime;
+        this.masterGain.gain.cancelScheduledValues(now);
+        this.masterGain.gain.setValueAtTime(this.masterGain.gain.value, now);
+        this.masterGain.gain.exponentialRampToValueAtTime(
+            Math.max(0.001, clampedVolume * this.originalGain), 
+            now + 0.1 // 100ms transition
+        );
     }
 }

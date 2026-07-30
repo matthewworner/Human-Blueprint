@@ -1,0 +1,163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		463A341FAE59E74578151AA950E3A74A /* HumanBlueprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FAA2E368C8647DC3A1E0E292F124C /* HumanBlueprint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F7FAA2E368C8647DC3A1E0E292F124C /* HumanBlueprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanBlueprint.swift; sourceTree = "<group>"; };
+		B0CD501304318A2832CC22ABA232BD33 /* HumanBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1CECA6B272B2F90DFA2632C886CC0C72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0CD501304318A2832CC22ABA232BD33 /* HumanBlueprint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FADC512034C50CE6BD0CDFA1B49195D = {
+			isa = PBXGroup;
+			children = (
+				4F7FAA2E368C8647DC3A1E0E292F124C /* HumanBlueprint.swift */,
+				1CECA6B272B2F90DFA2632C886CC0C72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F063E8A8E881AFDA358480B87DC14D6C /* HumanBlueprint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6FAB5707C8786E6E26C2045AB35C853 /* Build configuration list for PBXNativeTarget "HumanBlueprint" */;
+			buildPhases = (
+				FA745F105147C85AA3D26070C4984EFC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HumanBlueprint;
+			productName = HumanBlueprint;
+			productReference = B0CD501304318A2832CC22ABA232BD33 /* HumanBlueprint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26AB1D45497E6232A9BD451F9AAD1F51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F063E8A8E881AFDA358480B87DC14D6C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = CDAA6BF63E3E828725E9E46A04AFF3A0 /* Build configuration list for PBXProject "HumanBlueprint" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FADC512034C50CE6BD0CDFA1B49195D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F063E8A8E881AFDA358480B87DC14D6C /* HumanBlueprint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA745F105147C85AA3D26070C4984EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463A341FAE59E74578151AA950E3A74A /* HumanBlueprint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0DC969BFF230CF731A498F045B224960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humanblueprint.macos;
+			};
+			name = Release;
+		};
+		3F6416C2DBE56602904CBE3E08927748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = HumanBlueprint;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5C38968FDA3B32A977D1E3A0640B8E40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = HumanBlueprint;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC66B9FA97372BBF90FCBAF380067D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humanblueprint.macos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6FAB5707C8786E6E26C2045AB35C853 /* Build configuration list for PBXNativeTarget "HumanBlueprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC66B9FA97372BBF90FCBAF380067D12 /* Debug */,
+				0DC969BFF230CF731A498F045B224960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		CDAA6BF63E3E828725E9E46A04AFF3A0 /* Build configuration list for PBXProject "HumanBlueprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C38968FDA3B32A977D1E3A0640B8E40 /* Debug */,
+				3F6416C2DBE56602904CBE3E08927748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26AB1D45497E6232A9BD451F9AAD1F51 /* Project object */;
+}
